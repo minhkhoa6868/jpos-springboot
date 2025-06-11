@@ -14,8 +14,7 @@ public class JposSpringbootApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		Q2 q2 = new Q2();
-		Thread thread = new Thread(q2);
-		thread.start();
+		Q2 q2 = new Q2(args);
+		q2.start();
 	}
 }

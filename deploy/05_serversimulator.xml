@@ -29,6 +29,6 @@
  <request-listener class="com.example.jpos_springboot.MyISORequestListener" logger="Q2" >
  </request-listener>
 
- <in>network-in</in>
- <out>network-out</out>
+ <!-- <in>network-in</in>
+ <out>network-out</out> -->
 </server>

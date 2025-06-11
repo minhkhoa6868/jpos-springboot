@@ -1,0 +1,15 @@
+<!-- Balance Inquiry (0200 processing with code 31) -->
+<isomsg>
+  <field id="0" value="0200"/>
+  <field id="2" value="4000001234567890"/>
+  <field id="3" value="310000"/>
+  <field id="4" value="000000000000"/>
+  <field id="7" value="0611171833"/>
+  <field id="11" value="000004"/>
+  <field id="12" value="171833"/>
+  <field id="13" value="0611"/>
+  <field id="22" value="012"/>
+  <field id="41" value="TERM003"/>
+  <field id="42" value="MERCHANT003"/>
+  <field id="49" value="840"/>
+</isomsg>

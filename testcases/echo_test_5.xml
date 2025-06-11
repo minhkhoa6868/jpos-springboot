@@ -1,0 +1,7 @@
+<!-- Sign-on Request (0800/001) -->
+<isomsg>
+  <field id="0" value="0800"/>
+  <field id="7" value="0611171834"/>
+  <field id="11" value="000005"/>
+  <field id="70" value="001"/>
+</isomsg>

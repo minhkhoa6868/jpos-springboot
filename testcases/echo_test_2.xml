@@ -1,0 +1,15 @@
+<!-- Financial Sale Transaction -->
+<isomsg>
+  <field id="0" value="0200"/>
+  <field id="2" value="4000001234567890"/>
+  <field id="3" value="000000"/>
+  <field id="4" value="000000010000"/>
+  <field id="7" value="0611171831"/>
+  <field id="11" value="000002"/>
+  <field id="12" value="171831"/>
+  <field id="13" value="0611"/>
+  <field id="22" value="012"/>
+  <field id="41" value="TERM001"/>
+  <field id="42" value="MERCHANT001"/>
+  <field id="49" value="840"/>
+</isomsg>

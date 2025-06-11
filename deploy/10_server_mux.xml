@@ -1,0 +1,5 @@
+<mux class="org.jpos.q2.iso.QMUX" name="s-mux" >
+    <in>network-out</in>
+    <out>network-in</out>
+    <unhandled>unhandled</unhandled>
+</mux>

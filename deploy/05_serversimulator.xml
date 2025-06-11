@@ -23,7 +23,12 @@
  <channel class="org.jpos.iso.channel.XMLChannel"
         logger="Q2" packager="org.jpos.iso.packager.XMLPackager">
  </channel>
- <request-listener class="org.jpos.bsh.BSHRequestListener" logger="Q2">
+ <!-- <request-listener class="org.jpos.bsh.BSHRequestListener" logger="Q2">
   <property name="source" value="cfg/serversimulator.bsh" />
+ </request-listener> -->
+ <request-listener class="com.example.jpos_springboot.MyISORequestListener" logger="Q2" >
  </request-listener>
+
+ <in>network-in</in>
+ <out>network-out</out>
 </server>

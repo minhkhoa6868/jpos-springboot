@@ -1,0 +1,3457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logger class="org.jpos.util.DailyLogListener">
+<log realm="system" at="2025-06-12T11:15:59.725620">
+  <warn>
+    start
+    <iso-exception>
+      org.jpos.core.ConfigurationException: java.lang.ClassNotFoundException: org.jpos.util.XmlLogWriter (java.lang.ClassNotFoundException: org.jpos.util.XmlLogWriter)
+      <iso-exception>
+        java.lang.ClassNotFoundException: org.jpos.util.XmlLogWriter
+        <nested-exception>
+        java.lang.ClassNotFoundException: org.jpos.util.XmlLogWriter
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:528)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:462)
+	at java.base/java.lang.Class.forName(Class.java:453)
+	at org.jpos.util.SimpleLogListener.setConfiguration(SimpleLogListener.java:93)
+	at org.jpos.q2.QFactory.setConfiguration(QFactory.java:390)
+	at org.jpos.q2.qbean.LoggerAdaptor.addListener(LoggerAdaptor.java:77)
+	at org.jpos.q2.qbean.LoggerAdaptor.startService(LoggerAdaptor.java:43)
+	at org.jpos.q2.QBeanSupport.start(QBeanSupport.java:137)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:112)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:46)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at org.jpos.q2.QFactory.startQBean(QFactory.java:183)
+	at org.jpos.q2.Q2.start(Q2.java:633)
+	at org.jpos.q2.Q2.deploy(Q2.java:418)
+	at org.jpos.q2.Q2.initSystemLogger(Q2.java:652)
+	at org.jpos.q2.Q2.run(Q2.java:230)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+        </nested-exception>
+        org.jpos.core.ConfigurationException: java.lang.ClassNotFoundException: org.jpos.util.XmlLogWriter (java.lang.ClassNotFoundException: org.jpos.util.XmlLogWriter)
+	at org.jpos.util.SimpleLogListener.setConfiguration(SimpleLogListener.java:95)
+	at org.jpos.q2.QFactory.setConfiguration(QFactory.java:390)
+	at org.jpos.q2.qbean.LoggerAdaptor.addListener(LoggerAdaptor.java:77)
+	at org.jpos.q2.qbean.LoggerAdaptor.startService(LoggerAdaptor.java:43)
+	at org.jpos.q2.QBeanSupport.start(QBeanSupport.java:137)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:112)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:46)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at org.jpos.q2.QFactory.startQBean(QFactory.java:183)
+	at org.jpos.q2.Q2.start(Q2.java:633)
+	at org.jpos.q2.Q2.deploy(Q2.java:418)
+	at org.jpos.q2.Q2.initSystemLogger(Q2.java:652)
+	at org.jpos.q2.Q2.run(Q2.java:230)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Nested:java.lang.ClassNotFoundException: org.jpos.util.XmlLogWriter
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:528)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:462)
+	at java.base/java.lang.Class.forName(Class.java:453)
+	at org.jpos.util.SimpleLogListener.setConfiguration(SimpleLogListener.java:93)
+	at org.jpos.q2.QFactory.setConfiguration(QFactory.java:390)
+	at org.jpos.q2.qbean.LoggerAdaptor.addListener(LoggerAdaptor.java:77)
+	at org.jpos.q2.qbean.LoggerAdaptor.startService(LoggerAdaptor.java:43)
+	at org.jpos.q2.QBeanSupport.start(QBeanSupport.java:137)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:112)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:46)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at org.jpos.q2.QFactory.startQBean(QFactory.java:183)
+	at org.jpos.q2.Q2.start(Q2.java:633)
+	at org.jpos.q2.Q2.deploy(Q2.java:418)
+	at org.jpos.q2.Q2.initSystemLogger(Q2.java:652)
+	at org.jpos.q2.Q2.run(Q2.java:230)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+      </iso-exception>
+      org.jpos.core.ConfigurationException: org.jpos.core.ConfigurationException: java.lang.ClassNotFoundException: org.jpos.util.XmlLogWriter (java.lang.ClassNotFoundException: org.jpos.util.XmlLogWriter) (org.jpos.core.ConfigurationException: java.lang.ClassNotFoundException: org.jpos.util.XmlLogWriter (java.lang.ClassNotFoundException: org.jpos.util.XmlLogWriter))
+	at org.jpos.q2.QFactory.setConfiguration(QFactory.java:392)
+	at org.jpos.q2.qbean.LoggerAdaptor.addListener(LoggerAdaptor.java:77)
+	at org.jpos.q2.qbean.LoggerAdaptor.startService(LoggerAdaptor.java:43)
+	at org.jpos.q2.QBeanSupport.start(QBeanSupport.java:137)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:112)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:46)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at org.jpos.q2.QFactory.startQBean(QFactory.java:183)
+	at org.jpos.q2.Q2.start(Q2.java:633)
+	at org.jpos.q2.Q2.deploy(Q2.java:418)
+	at org.jpos.q2.Q2.initSystemLogger(Q2.java:652)
+	at org.jpos.q2.Q2.run(Q2.java:230)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Nested:org.jpos.core.ConfigurationException: java.lang.ClassNotFoundException: org.jpos.util.XmlLogWriter (java.lang.ClassNotFoundException: org.jpos.util.XmlLogWriter)
+	at org.jpos.util.SimpleLogListener.setConfiguration(SimpleLogListener.java:95)
+	at org.jpos.q2.QFactory.setConfiguration(QFactory.java:390)
+	at org.jpos.q2.qbean.LoggerAdaptor.addListener(LoggerAdaptor.java:77)
+	at org.jpos.q2.qbean.LoggerAdaptor.startService(LoggerAdaptor.java:43)
+	at org.jpos.q2.QBeanSupport.start(QBeanSupport.java:137)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:112)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:46)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at org.jpos.q2.QFactory.startQBean(QFactory.java:183)
+	at org.jpos.q2.Q2.start(Q2.java:633)
+	at org.jpos.q2.Q2.deploy(Q2.java:418)
+	at org.jpos.q2.Q2.initSystemLogger(Q2.java:652)
+	at org.jpos.q2.Q2.run(Q2.java:230)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Nested:java.lang.ClassNotFoundException: org.jpos.util.XmlLogWriter
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:528)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:462)
+	at java.base/java.lang.Class.forName(Class.java:453)
+	at org.jpos.util.SimpleLogListener.setConfiguration(SimpleLogListener.java:93)
+	at org.jpos.q2.QFactory.setConfiguration(QFactory.java:390)
+	at org.jpos.q2.qbean.LoggerAdaptor.addListener(LoggerAdaptor.java:77)
+	at org.jpos.q2.qbean.LoggerAdaptor.startService(LoggerAdaptor.java:43)
+	at org.jpos.q2.QBeanSupport.start(QBeanSupport.java:137)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:112)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:46)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at org.jpos.q2.QFactory.startQBean(QFactory.java:183)
+	at org.jpos.q2.Q2.start(Q2.java:633)
+	at org.jpos.q2.Q2.deploy(Q2.java:418)
+	at org.jpos.q2.Q2.initSystemLogger(Q2.java:652)
+	at org.jpos.q2.Q2.run(Q2.java:230)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+    </iso-exception>
+  </warn>
+</log>
+<log realm="Q2.system" at="2025-06-12T11:15:59.736001">
+  <info>
+    Q2 started, deployDir=/Users/peace/jpos-springboot/deploy, environment=default
+  </info>
+</log>
+<log realm="Q2.system" at="2025-06-12T11:16:00.260193" lifespan="519ms">
+  <version>
+    jPOS 2.1.4 master/6225824 (2020-03-31 18:07:15 UYT) 
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+jPOS Community Edition, licensed under GNU AGPL v3.0.
+This software is probably not suitable for commercial use.
+Please see http://jpos.org/license for details.
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.9 (Darwin)
+
+iQEcBAEBAgAGBQJMolHDAAoJEOQyeO71nYtFv74H/3OgehDGEy1VXp2U3/GcAobg
+HH2eZjPUz53r38ARPiU3pzm9LwDa3WZgJJaa/b9VrJwKvbPwe9+0kY3gScDE1skT
+ladHt+KHHmGQArEutkzHlpZa73RbroFEIa1qmN6MaDEHGoxZqDh0Sv2cpvOaVYGO
+St8ZaddLBPC17bSjAPWo9sWbvL7FgPFOHhnPmbeux8SLtnfWxXWsgo5hLBanKmO1
+1z+I/w/6DL6ZYZU6bAJUk+eyVVImJqw0x3IEElI07Nh9MC6BA4iJ77ejobj8HI2r
+q9ulRPEqH9NR79619lNKVUkE206dVlXo7xHmJS1QZy5v/GT66xBxyDVfTduPFXk=
+=oP+v
+-----END PGP SIGNATURE-----
+
+  </version>
+</log>
+<log realm="Q2.system" at="2025-06-12T11:16:00.272722" lifespan="8ms">
+  <info>
+    deploy: /Users/peace/jpos-springboot/deploy/05_serversimulator.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2025-06-12T11:16:00.279346" lifespan="6ms">
+  <info>
+    deploy: /Users/peace/jpos-springboot/deploy/10_jpos_channel.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2025-06-12T11:16:00.299095" lifespan="19ms">
+  <info>
+    deploy: /Users/peace/jpos-springboot/deploy/20_mux.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2025-06-12T11:16:00.308731" lifespan="9ms">
+  <info>
+    deploy: /Users/peace/jpos-springboot/deploy/99_sysmon.xml
+  </info>
+</log>
+<log realm="simulator_10000.server" at="2025-06-12T11:16:00.345423">
+  <iso-server>
+    listening on port 10000
+  </iso-server>
+</log>
+<log realm="org.jpos.q2.qbean.SystemMonitor" at="2025-06-12T11:16:00.390074">
+  <info>
+    Starting SystemMonitor
+  </info>
+</log>
+<log realm="simulator_10000.server.session/127.0.0.1:51602" at="2025-06-12T11:16:00.395025">
+  <session-start/>
+</log>
+<log realm="org.jpos.q2.qbean.SystemMonitor" at="2025-06-12T11:16:00.411573">
+  <info>
+           OS: Mac OS X (12.7.6)
+         Java: 23 (Oracle Corporation) AES-secure
+  environment: default
+ process name: 47390@Peaces-MacBook-Pro-2.local
+    user name: peace
+         host: Peaces-MacBook-Pro-2.local/127.0.0.1
+          cwd: /Users/peace/jpos-springboot
+   free space: 18.4 GiB
+      version: 2.1.4 (6225824)
+     instance: bfb7fbd8-995c-44b0-b955-546c3e31eeba
+       uptime: 00:00:00.859 (3.784668)
+   processors: 8
+       drift : 0
+memory(t/u/f): 74/53/20
+     encoding: UTF-8
+     timezone: Asia/Ho_Chi_Minh (Ho Chi Minh City Time) +07:00
+watch service: sun.nio.fs.PollingWatchService
+        clock: 1749701760 2025-06-12T04:16:00.391993Z
+ thread count: 136
+ peak threads: 136
+ user threads: 124
+        Thread[#9,Reference Handler,10,system]
+        Thread[#10,Finalizer,8,system]
+        Thread[#11,Signal Dispatcher,9,system]
+        Thread[#18,Common-Cleaner,8,InnocuousThreadGroup]
+        Thread[#19,Notification Thread,9,system]
+        Thread[#21,RMI TCP Accept-0,5,system]
+        Thread[#22,RMI TCP Accept-45556,5,system]
+        Thread[#23,RMI TCP Accept-0,5,system]
+        Thread[#35,RMI TCP Connection(1)-127.0.0.1,5,RMI Runtime]
+        Thread[#36,RMI Scheduler(0),5,system]
+        Thread[#37,RMI TCP Connection(2)-127.0.0.1,5,RMI Runtime]
+        Thread[#38,JMX server connection timeout 38,5,RMI Runtime]
+        Thread[#39,Catalina-utility-1,1,main]
+        Thread[#40,Catalina-utility-2,1,main]
+        Thread[#41,container-0,5,main]
+        Thread[#42,http-nio-8080-exec-1,5,main]
+        Thread[#43,http-nio-8080-exec-2,5,main]
+        Thread[#44,http-nio-8080-exec-3,5,main]
+        Thread[#45,http-nio-8080-exec-4,5,main]
+        Thread[#46,http-nio-8080-exec-5,5,main]
+        Thread[#47,http-nio-8080-exec-6,5,main]
+        Thread[#48,http-nio-8080-exec-7,5,main]
+        Thread[#49,http-nio-8080-exec-8,5,main]
+        Thread[#50,http-nio-8080-exec-9,5,main]
+        Thread[#51,http-nio-8080-exec-10,5,main]
+        Thread[#52,http-nio-8080-Poller,5,main]
+        Thread[#53,http-nio-8080-Acceptor,5,main]
+        Thread[#54,pool-2-thread-1,5,main]
+        Thread[#55,Q2-bfb7fbd8-995c-44b0-b955-546c3e31eeba,5,main]
+        Thread[#56,FileSystemWatcher,5,main]
+        Thread[#57,DestroyJavaVM,5,main]
+        Thread[#58,Timer-0,5,main]
+        Thread[#60,simulator_10000-ThreadPool.PooledThread-0-running,5,simulator_10000-ThreadPool-0]
+        Thread[#61,simulator_10000-ThreadPool.PooledThread-1,5,simulator_10000-ThreadPool-0]
+        Thread[#62,simulator_10000-ThreadPool.PooledThread-2,5,simulator_10000-ThreadPool-0]
+        Thread[#63,simulator_10000-ThreadPool.PooledThread-3,5,simulator_10000-ThreadPool-0]
+        Thread[#64,simulator_10000-ThreadPool.PooledThread-4,5,simulator_10000-ThreadPool-0]
+        Thread[#65,simulator_10000-ThreadPool.PooledThread-5,5,simulator_10000-ThreadPool-0]
+        Thread[#66,simulator_10000-ThreadPool.PooledThread-6,5,simulator_10000-ThreadPool-0]
+        Thread[#67,simulator_10000-ThreadPool.PooledThread-7,5,simulator_10000-ThreadPool-0]
+        Thread[#68,simulator_10000-ThreadPool.PooledThread-8,5,simulator_10000-ThreadPool-0]
+        Thread[#69,simulator_10000-ThreadPool.PooledThread-9,5,simulator_10000-ThreadPool-0]
+        Thread[#70,simulator_10000-ThreadPool.PooledThread-10,5,simulator_10000-ThreadPool-0]
+        Thread[#71,simulator_10000-ThreadPool.PooledThread-11,5,simulator_10000-ThreadPool-0]
+        Thread[#72,simulator_10000-ThreadPool.PooledThread-12,5,simulator_10000-ThreadPool-0]
+        Thread[#73,simulator_10000-ThreadPool.PooledThread-13,5,simulator_10000-ThreadPool-0]
+        Thread[#74,simulator_10000-ThreadPool.PooledThread-14,5,simulator_10000-ThreadPool-0]
+        Thread[#75,simulator_10000-ThreadPool.PooledThread-15,5,simulator_10000-ThreadPool-0]
+        Thread[#76,simulator_10000-ThreadPool.PooledThread-16,5,simulator_10000-ThreadPool-0]
+        Thread[#77,simulator_10000-ThreadPool.PooledThread-17,5,simulator_10000-ThreadPool-0]
+        Thread[#78,simulator_10000-ThreadPool.PooledThread-18,5,simulator_10000-ThreadPool-0]
+        Thread[#79,simulator_10000-ThreadPool.PooledThread-19,5,simulator_10000-ThreadPool-0]
+        Thread[#80,simulator_10000-ThreadPool.PooledThread-20,5,simulator_10000-ThreadPool-0]
+        Thread[#81,simulator_10000-ThreadPool.PooledThread-21,5,simulator_10000-ThreadPool-0]
+        Thread[#82,simulator_10000-ThreadPool.PooledThread-22,5,simulator_10000-ThreadPool-0]
+        Thread[#83,simulator_10000-ThreadPool.PooledThread-23,5,simulator_10000-ThreadPool-0]
+        Thread[#84,simulator_10000-ThreadPool.PooledThread-24,5,simulator_10000-ThreadPool-0]
+        Thread[#85,simulator_10000-ThreadPool.PooledThread-25,5,simulator_10000-ThreadPool-0]
+        Thread[#86,simulator_10000-ThreadPool.PooledThread-26,5,simulator_10000-ThreadPool-0]
+        Thread[#87,simulator_10000-ThreadPool.PooledThread-27,5,simulator_10000-ThreadPool-0]
+        Thread[#88,simulator_10000-ThreadPool.PooledThread-28,5,simulator_10000-ThreadPool-0]
+        Thread[#89,simulator_10000-ThreadPool.PooledThread-29,5,simulator_10000-ThreadPool-0]
+        Thread[#90,simulator_10000-ThreadPool.PooledThread-30,5,simulator_10000-ThreadPool-0]
+        Thread[#91,simulator_10000-ThreadPool.PooledThread-31,5,simulator_10000-ThreadPool-0]
+        Thread[#92,simulator_10000-ThreadPool.PooledThread-32,5,simulator_10000-ThreadPool-0]
+        Thread[#93,simulator_10000-ThreadPool.PooledThread-33,5,simulator_10000-ThreadPool-0]
+        Thread[#94,simulator_10000-ThreadPool.PooledThread-34,5,simulator_10000-ThreadPool-0]
+        Thread[#95,simulator_10000-ThreadPool.PooledThread-35,5,simulator_10000-ThreadPool-0]
+        Thread[#96,simulator_10000-ThreadPool.PooledThread-36,5,simulator_10000-ThreadPool-0]
+        Thread[#97,simulator_10000-ThreadPool.PooledThread-37,5,simulator_10000-ThreadPool-0]
+        Thread[#98,simulator_10000-ThreadPool.PooledThread-38,5,simulator_10000-ThreadPool-0]
+        Thread[#99,simulator_10000-ThreadPool.PooledThread-39,5,simulator_10000-ThreadPool-0]
+        Thread[#100,simulator_10000-ThreadPool.PooledThread-40,5,simulator_10000-ThreadPool-0]
+        Thread[#101,simulator_10000-ThreadPool.PooledThread-41,5,simulator_10000-ThreadPool-0]
+        Thread[#102,simulator_10000-ThreadPool.PooledThread-42,5,simulator_10000-ThreadPool-0]
+        Thread[#103,simulator_10000-ThreadPool.PooledThread-43,5,simulator_10000-ThreadPool-0]
+        Thread[#104,simulator_10000-ThreadPool.PooledThread-44,5,simulator_10000-ThreadPool-0]
+        Thread[#105,simulator_10000-ThreadPool.PooledThread-45,5,simulator_10000-ThreadPool-0]
+        Thread[#106,simulator_10000-ThreadPool.PooledThread-46,5,simulator_10000-ThreadPool-0]
+        Thread[#107,simulator_10000-ThreadPool.PooledThread-47,5,simulator_10000-ThreadPool-0]
+        Thread[#108,simulator_10000-ThreadPool.PooledThread-48,5,simulator_10000-ThreadPool-0]
+        Thread[#109,simulator_10000-ThreadPool.PooledThread-49,5,simulator_10000-ThreadPool-0]
+        Thread[#110,simulator_10000-ThreadPool.PooledThread-50,5,simulator_10000-ThreadPool-0]
+        Thread[#111,simulator_10000-ThreadPool.PooledThread-51,5,simulator_10000-ThreadPool-0]
+        Thread[#112,simulator_10000-ThreadPool.PooledThread-52,5,simulator_10000-ThreadPool-0]
+        Thread[#113,simulator_10000-ThreadPool.PooledThread-53,5,simulator_10000-ThreadPool-0]
+        Thread[#114,simulator_10000-ThreadPool.PooledThread-54,5,simulator_10000-ThreadPool-0]
+        Thread[#115,simulator_10000-ThreadPool.PooledThread-55,5,simulator_10000-ThreadPool-0]
+        Thread[#116,simulator_10000-ThreadPool.PooledThread-56,5,simulator_10000-ThreadPool-0]
+        Thread[#117,simulator_10000-ThreadPool.PooledThread-57,5,simulator_10000-ThreadPool-0]
+        Thread[#118,simulator_10000-ThreadPool.PooledThread-58,5,simulator_10000-ThreadPool-0]
+        Thread[#119,simulator_10000-ThreadPool.PooledThread-59,5,simulator_10000-ThreadPool-0]
+        Thread[#120,simulator_10000-ThreadPool.PooledThread-60,5,simulator_10000-ThreadPool-0]
+        Thread[#121,simulator_10000-ThreadPool.PooledThread-61,5,simulator_10000-ThreadPool-0]
+        Thread[#122,simulator_10000-ThreadPool.PooledThread-62,5,simulator_10000-ThreadPool-0]
+        Thread[#123,simulator_10000-ThreadPool.PooledThread-63,5,simulator_10000-ThreadPool-0]
+        Thread[#124,simulator_10000-ThreadPool.PooledThread-64,5,simulator_10000-ThreadPool-0]
+        Thread[#125,simulator_10000-ThreadPool.PooledThread-65,5,simulator_10000-ThreadPool-0]
+        Thread[#126,simulator_10000-ThreadPool.PooledThread-66,5,simulator_10000-ThreadPool-0]
+        Thread[#127,simulator_10000-ThreadPool.PooledThread-67,5,simulator_10000-ThreadPool-0]
+        Thread[#128,simulator_10000-ThreadPool.PooledThread-68,5,simulator_10000-ThreadPool-0]
+        Thread[#129,simulator_10000-ThreadPool.PooledThread-69,5,simulator_10000-ThreadPool-0]
+        Thread[#130,simulator_10000-ThreadPool.PooledThread-70,5,simulator_10000-ThreadPool-0]
+        Thread[#131,simulator_10000-ThreadPool.PooledThread-71,5,simulator_10000-ThreadPool-0]
+        Thread[#132,simulator_10000-ThreadPool.PooledThread-72,5,simulator_10000-ThreadPool-0]
+        Thread[#133,simulator_10000-ThreadPool.PooledThread-73,5,simulator_10000-ThreadPool-0]
+        Thread[#134,simulator_10000-ThreadPool.PooledThread-74,5,simulator_10000-ThreadPool-0]
+        Thread[#135,simulator_10000-ThreadPool.PooledThread-75,5,simulator_10000-ThreadPool-0]
+        Thread[#136,simulator_10000-ThreadPool.PooledThread-76,5,simulator_10000-ThreadPool-0]
+        Thread[#137,simulator_10000-ThreadPool.PooledThread-77,5,simulator_10000-ThreadPool-0]
+        Thread[#138,simulator_10000-ThreadPool.PooledThread-78,5,simulator_10000-ThreadPool-0]
+        Thread[#139,simulator_10000-ThreadPool.PooledThread-79,5,simulator_10000-ThreadPool-0]
+        Thread[#140,simulator_10000-ThreadPool.PooledThread-80,5,simulator_10000-ThreadPool-0]
+        Thread[#141,simulator_10000-ThreadPool.PooledThread-81,5,simulator_10000-ThreadPool-0]
+        Thread[#142,simulator_10000-ThreadPool.PooledThread-82,5,simulator_10000-ThreadPool-0]
+        Thread[#143,simulator_10000-ThreadPool.PooledThread-83,5,simulator_10000-ThreadPool-0]
+        Thread[#144,simulator_10000-ThreadPool.PooledThread-84,5,simulator_10000-ThreadPool-0]
+        Thread[#145,simulator_10000-ThreadPool.PooledThread-85,5,simulator_10000-ThreadPool-0]
+        Thread[#146,simulator_10000-ThreadPool.PooledThread-86,5,simulator_10000-ThreadPool-0]
+        Thread[#147,simulator_10000-ThreadPool.PooledThread-87,5,simulator_10000-ThreadPool-0]
+        Thread[#148,simulator_10000-ThreadPool.PooledThread-88,5,simulator_10000-ThreadPool-0]
+        Thread[#149,simulator_10000-ThreadPool.PooledThread-89,5,simulator_10000-ThreadPool-0]
+        Thread[#150,simulator_10000-ThreadPool.PooledThread-90,5,simulator_10000-ThreadPool-0]
+        Thread[#151,simulator_10000-ThreadPool.PooledThread-91,5,simulator_10000-ThreadPool-0]
+        Thread[#152,simulator_10000-ThreadPool.PooledThread-92,5,simulator_10000-ThreadPool-0]
+        Thread[#153,simulator_10000-ThreadPool.PooledThread-93,5,simulator_10000-ThreadPool-0]
+        Thread[#154,simulator_10000-ThreadPool.PooledThread-94,5,simulator_10000-ThreadPool-0]
+        Thread[#155,simulator_10000-ThreadPool.PooledThread-95,5,simulator_10000-ThreadPool-0]
+        Thread[#156,simulator_10000-ThreadPool.PooledThread-96,5,simulator_10000-ThreadPool-0]
+        Thread[#157,simulator_10000-ThreadPool.PooledThread-97,5,simulator_10000-ThreadPool-0]
+        Thread[#158,simulator_10000-ThreadPool.PooledThread-98,5,simulator_10000-ThreadPool-0]
+        Thread[#159,simulator_10000-ThreadPool.PooledThread-99,5,simulator_10000-ThreadPool-0]
+        Thread[#160,Thread-3,5,main]
+        Thread[#161,channel-sender-network-out,5,main]
+        Thread[#162,channel-receiver-network-in,5,main]
+        Thread[#163,SystemMonitor,5,main]
+name-registrar:
+  tspace:default: org.jpos.space.TSpace
+    <key count='1'>jpos-channel.ready</key>
+     key-count: 1
+        gcinfo: 0,0
+  Q2: org.jpos.q2.Q2
+  jpos-channel: org.jpos.q2.iso.ChannelAdaptor
+    tx=0, rx=0, connects=1, last=0
+  simulator_10000: org.jpos.q2.iso.QServer
+  channel.jpos-channel: org.jpos.iso.channel.NACChannel
+  logger.Q2: org.jpos.util.Logger
+  logger.: org.jpos.util.Logger
+  mux.s-mux: org.jpos.q2.iso.QMUX
+    tx=0, rx=0, tx_expired=0, tx_pending=0, rx_expired=0, rx_pending=0, rx_unhandled=0, rx_forwarded=0, connected=false, last=0
+  server.simulator_10000: org.jpos.iso.ISOServer
+    connected=1, rx=0, tx=0, last=0
+      127.0.0.1:51602: rx=0, tx=0, last=0
+  </info>
+</log>
+<log realm="simulator_10000.server.session/127.0.0.1:51604" at="2025-06-12T11:16:32.891670">
+  <session-start/>
+</log>
+<log realm="channel/127.0.0.1:51604" at="2025-06-12T11:16:32.896809" lifespan="4ms">
+  <receive>
+    <isomsg direction="incoming">
+      <!-- org.jpos.iso.packager.XMLPackager -->
+      <field id="0" value="0200"/>
+      <field id="2" value="4000001234567890"/>
+      <field id="3" value="000000"/>
+      <field id="4" value="000000010000"/>
+      <field id="7" value="0611171831"/>
+      <field id="11" value="000002"/>
+      <field id="12" value="171831"/>
+      <field id="13" value="0611"/>
+      <field id="22" value="012"/>
+      <field id="41" value="TERM001"/>
+      <field id="42" value="MERCHANT001"/>
+      <field id="49" value="840"/>
+    </isomsg>
+  </receive>
+</log>
+<log realm="channel/127.0.0.1:51604" at="2025-06-12T11:16:32.899615">
+  <send>
+    <isomsg>
+      <!-- org.jpos.iso.packager.XMLPackager -->
+      <field id="0" value="0210"/>
+      <field id="2" value="4000001234567890"/>
+      <field id="3" value="000000"/>
+      <field id="4" value="000000010000"/>
+      <field id="7" value="0611171831"/>
+      <field id="11" value="000002"/>
+      <field id="12" value="171831"/>
+      <field id="13" value="0611"/>
+      <field id="22" value="012"/>
+      <field id="37" value="002147483647"/>
+      <field id="38" value="1683DF"/>
+      <field id="39" value="00"/>
+      <field id="41" value="TERM001"/>
+      <field id="42" value="MERCHANT001"/>
+      <field id="49" value="840"/>
+    </isomsg>
+  </send>
+</log>
+<log realm="channel/127.0.0.1:51604" at="2025-06-12T11:16:32.903655" lifespan="3ms">
+  <receive>
+    <peer-disconnect/>
+  </receive>
+</log>
+<log realm="simulator_10000.server.session/127.0.0.1:51604" at="2025-06-12T11:16:32.904181">
+  <session-end/>
+</log>
+<log realm="channel/127.0.0.1:51602" at="2025-06-12T11:21:00.447979" lifespan="300052ms">
+  <receive>
+    <io-timeout/>
+  </receive>
+</log>
+<log realm="simulator_10000.server.session/127.0.0.1:51602" at="2025-06-12T11:21:00.450945">
+  <session-end/>
+</log>
+<log realm="org.jpos.q2.iso.ChannelAdaptor" at="2025-06-12T11:21:00.450193">
+  <warn>
+    channel-receiver-network-in
+    Read timeout / EOF - reconnecting
+  </warn>
+</log>
+<log realm="simulator_10000.server.session/127.0.0.1:51616" at="2025-06-12T11:21:10.515142">
+  <session-start/>
+</log>
+<log realm="org.jpos.q2.iso.ChannelAdaptor" at="2025-06-12T11:26:10.516154">
+  <warn>
+    channel-receiver-network-in
+    Read timeout / EOF - reconnecting
+  </warn>
+</log>
+<log realm="channel/127.0.0.1:51616" at="2025-06-12T11:26:10.516405" lifespan="299995ms">
+  <receive>
+    <peer-disconnect/>
+  </receive>
+</log>
+<log realm="simulator_10000.server.session/127.0.0.1:51616" at="2025-06-12T11:26:10.522915">
+  <session-end/>
+</log>
+<log realm="simulator_10000.server.session/127.0.0.1:51637" at="2025-06-12T11:26:16.569798">
+  <session-start/>
+</log>
+<log realm="channel/127.0.0.1:51637" at="2025-06-12T11:26:16.573979" lifespan="3ms">
+  <receive>
+    <isomsg direction="incoming">
+      <!-- org.jpos.iso.packager.XMLPackager -->
+      <field id="0" value="0200"/>
+      <field id="2" value="4000001234567890"/>
+      <field id="3" value="310000"/>
+      <field id="4" value="000000000000"/>
+      <field id="7" value="0611171833"/>
+      <field id="11" value="000004"/>
+      <field id="12" value="171833"/>
+      <field id="13" value="0611"/>
+      <field id="22" value="012"/>
+      <field id="41" value="TERM003"/>
+      <field id="42" value="MERCHANT003"/>
+      <field id="49" value="840"/>
+    </isomsg>
+  </receive>
+</log>
+<log realm="channel/127.0.0.1:51637" at="2025-06-12T11:26:16.576190">
+  <send>
+    <isomsg>
+      <!-- org.jpos.iso.packager.XMLPackager -->
+      <field id="0" value="0210"/>
+      <field id="2" value="4000001234567890"/>
+      <field id="3" value="310000"/>
+      <field id="4" value="000000000000"/>
+      <field id="7" value="0611171833"/>
+      <field id="11" value="000004"/>
+      <field id="12" value="171833"/>
+      <field id="13" value="0611"/>
+      <field id="22" value="012"/>
+      <field id="37" value="002147483647"/>
+      <field id="38" value="D10373"/>
+      <field id="39" value="00"/>
+      <field id="41" value="TERM003"/>
+      <field id="42" value="MERCHANT003"/>
+      <field id="49" value="840"/>
+    </isomsg>
+  </send>
+</log>
+<log realm="channel/127.0.0.1:51637" at="2025-06-12T11:26:16.580414" lifespan="3ms">
+  <receive>
+    <peer-disconnect/>
+  </receive>
+</log>
+<log realm="simulator_10000.server.session/127.0.0.1:51637" at="2025-06-12T11:26:16.580803">
+  <session-end/>
+</log>
+<log realm="simulator_10000.server.session/127.0.0.1:51638" at="2025-06-12T11:26:20.644158">
+  <session-start/>
+</log>
+<log realm="org.jpos.q2.iso.ChannelAdaptor" at="2025-06-12T11:31:20.643897">
+  <warn>
+    channel-receiver-network-in
+    Read timeout / EOF - reconnecting
+  </warn>
+</log>
+<log realm="channel/127.0.0.1:51638" at="2025-06-12T11:31:20.644108" lifespan="299999ms">
+  <receive>
+    <peer-disconnect/>
+  </receive>
+</log>
+<log realm="simulator_10000.server.session/127.0.0.1:51638" at="2025-06-12T11:31:20.650938">
+  <session-end/>
+</log>
+<log realm="simulator_10000.server.session/127.0.0.1:51653" at="2025-06-12T11:31:30.675195">
+  <session-start/>
+</log>
+<log realm="Q2.system" at="2025-06-12T11:31:40.136752">
+  <info>
+    shutting down (hook)
+  </info>
+</log>
+<log realm="Q2.system" at="2025-06-12T11:31:41.806625">
+  <trace>
+    undeploying:/Users/peace/jpos-springboot/deploy/99_sysmon.xml
+  </trace>
+</log>
+<log realm="org.jpos.q2.qbean.SystemMonitor" at="2025-06-12T11:31:41.807287">
+  <info>
+    Stopping SystemMonitor
+  </info>
+</log>
+<log realm="Q2.system" at="2025-06-12T11:31:41.807825">
+  <info>
+    undeployed:/Users/peace/jpos-springboot/deploy/99_sysmon.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2025-06-12T11:31:41.808158">
+  <trace>
+    undeploying:/Users/peace/jpos-springboot/deploy/20_mux.xml
+  </trace>
+</log>
+<log realm="Q2.system" at="2025-06-12T11:31:41.815485">
+  <info>
+    undeployed:/Users/peace/jpos-springboot/deploy/20_mux.xml
+  </info>
+</log>
+<log realm="org.jpos.q2.qbean.SystemMonitor" at="2025-06-12T11:31:41.815952">
+  <info>
+           OS: Mac OS X (12.7.6)
+         Java: 23 (Oracle Corporation) AES-secure
+  environment: default
+ process name: 47390@Peaces-MacBook-Pro-2.local
+    user name: peace
+         host: Peaces-MacBook-Pro-2.local/127.0.0.1
+          cwd: /Users/peace/jpos-springboot
+   free space: 18.4 GiB
+      version: 2.1.4 (6225824)
+     instance: bfb7fbd8-995c-44b0-b955-546c3e31eeba
+       uptime: 00:15:42.272 (2.314453)
+   processors: 8
+       drift : 0
+memory(t/u/f): 74/58/15
+     encoding: UTF-8
+     timezone: Asia/Ho_Chi_Minh (Ho Chi Minh City Time) +07:00
+watch service: sun.nio.fs.PollingWatchService
+        clock: 1749702701 2025-06-12T04:31:41.807897Z
+ thread count: 122
+ peak threads: 139
+ user threads: 110
+        Thread[#9,Reference Handler,10,system]
+        Thread[#10,Finalizer,8,system]
+        Thread[#11,Signal Dispatcher,9,system]
+        Thread[#18,Common-Cleaner,8,InnocuousThreadGroup]
+        Thread[#19,Notification Thread,9,system]
+        Thread[#21,RMI TCP Accept-0,5,system]
+        Thread[#22,RMI TCP Accept-45556,5,system]
+        Thread[#23,RMI TCP Accept-0,5,system]
+        Thread[#36,RMI Scheduler(0),5,system]
+        Thread[#37,RMI TCP Connection(2)-127.0.0.1,5,RMI Runtime]
+        Thread[#38,JMX server connection timeout 38,5,RMI Runtime]
+        Thread[#54,pool-2-thread-1,5,main]
+        Thread[#55,Q2-bfb7fbd8-995c-44b0-b955-546c3e31eeba,5,main]
+        Thread[#56,FileSystemWatcher,5,main]
+        Thread[#57,DestroyJavaVM,5,main]
+        Thread[#58,Timer-0,5,main]
+        Thread[#60,simulator_10000-ThreadPool.PooledThread-0-idle,5,simulator_10000-ThreadPool-0]
+        Thread[#61,simulator_10000-ThreadPool.PooledThread-1-idle,5,simulator_10000-ThreadPool-0]
+        Thread[#62,simulator_10000-ThreadPool.PooledThread-2-idle,5,simulator_10000-ThreadPool-0]
+        Thread[#63,simulator_10000-ThreadPool.PooledThread-3-idle,5,simulator_10000-ThreadPool-0]
+        Thread[#64,simulator_10000-ThreadPool.PooledThread-4-idle,5,simulator_10000-ThreadPool-0]
+        Thread[#65,simulator_10000-ThreadPool.PooledThread-5-running,5,simulator_10000-ThreadPool-0]
+        Thread[#66,simulator_10000-ThreadPool.PooledThread-6,5,simulator_10000-ThreadPool-0]
+        Thread[#67,simulator_10000-ThreadPool.PooledThread-7,5,simulator_10000-ThreadPool-0]
+        Thread[#68,simulator_10000-ThreadPool.PooledThread-8,5,simulator_10000-ThreadPool-0]
+        Thread[#69,simulator_10000-ThreadPool.PooledThread-9,5,simulator_10000-ThreadPool-0]
+        Thread[#70,simulator_10000-ThreadPool.PooledThread-10,5,simulator_10000-ThreadPool-0]
+        Thread[#71,simulator_10000-ThreadPool.PooledThread-11,5,simulator_10000-ThreadPool-0]
+        Thread[#72,simulator_10000-ThreadPool.PooledThread-12,5,simulator_10000-ThreadPool-0]
+        Thread[#73,simulator_10000-ThreadPool.PooledThread-13,5,simulator_10000-ThreadPool-0]
+        Thread[#74,simulator_10000-ThreadPool.PooledThread-14,5,simulator_10000-ThreadPool-0]
+        Thread[#75,simulator_10000-ThreadPool.PooledThread-15,5,simulator_10000-ThreadPool-0]
+        Thread[#76,simulator_10000-ThreadPool.PooledThread-16,5,simulator_10000-ThreadPool-0]
+        Thread[#77,simulator_10000-ThreadPool.PooledThread-17,5,simulator_10000-ThreadPool-0]
+        Thread[#78,simulator_10000-ThreadPool.PooledThread-18,5,simulator_10000-ThreadPool-0]
+        Thread[#79,simulator_10000-ThreadPool.PooledThread-19,5,simulator_10000-ThreadPool-0]
+        Thread[#80,simulator_10000-ThreadPool.PooledThread-20,5,simulator_10000-ThreadPool-0]
+        Thread[#81,simulator_10000-ThreadPool.PooledThread-21,5,simulator_10000-ThreadPool-0]
+        Thread[#82,simulator_10000-ThreadPool.PooledThread-22,5,simulator_10000-ThreadPool-0]
+        Thread[#83,simulator_10000-ThreadPool.PooledThread-23,5,simulator_10000-ThreadPool-0]
+        Thread[#84,simulator_10000-ThreadPool.PooledThread-24,5,simulator_10000-ThreadPool-0]
+        Thread[#85,simulator_10000-ThreadPool.PooledThread-25,5,simulator_10000-ThreadPool-0]
+        Thread[#86,simulator_10000-ThreadPool.PooledThread-26,5,simulator_10000-ThreadPool-0]
+        Thread[#87,simulator_10000-ThreadPool.PooledThread-27,5,simulator_10000-ThreadPool-0]
+        Thread[#88,simulator_10000-ThreadPool.PooledThread-28,5,simulator_10000-ThreadPool-0]
+        Thread[#89,simulator_10000-ThreadPool.PooledThread-29,5,simulator_10000-ThreadPool-0]
+        Thread[#90,simulator_10000-ThreadPool.PooledThread-30,5,simulator_10000-ThreadPool-0]
+        Thread[#91,simulator_10000-ThreadPool.PooledThread-31,5,simulator_10000-ThreadPool-0]
+        Thread[#92,simulator_10000-ThreadPool.PooledThread-32,5,simulator_10000-ThreadPool-0]
+        Thread[#93,simulator_10000-ThreadPool.PooledThread-33,5,simulator_10000-ThreadPool-0]
+        Thread[#94,simulator_10000-ThreadPool.PooledThread-34,5,simulator_10000-ThreadPool-0]
+        Thread[#95,simulator_10000-ThreadPool.PooledThread-35,5,simulator_10000-ThreadPool-0]
+        Thread[#96,simulator_10000-ThreadPool.PooledThread-36,5,simulator_10000-ThreadPool-0]
+        Thread[#97,simulator_10000-ThreadPool.PooledThread-37,5,simulator_10000-ThreadPool-0]
+        Thread[#98,simulator_10000-ThreadPool.PooledThread-38,5,simulator_10000-ThreadPool-0]
+        Thread[#99,simulator_10000-ThreadPool.PooledThread-39,5,simulator_10000-ThreadPool-0]
+        Thread[#100,simulator_10000-ThreadPool.PooledThread-40,5,simulator_10000-ThreadPool-0]
+        Thread[#101,simulator_10000-ThreadPool.PooledThread-41,5,simulator_10000-ThreadPool-0]
+        Thread[#102,simulator_10000-ThreadPool.PooledThread-42,5,simulator_10000-ThreadPool-0]
+        Thread[#103,simulator_10000-ThreadPool.PooledThread-43,5,simulator_10000-ThreadPool-0]
+        Thread[#104,simulator_10000-ThreadPool.PooledThread-44,5,simulator_10000-ThreadPool-0]
+        Thread[#105,simulator_10000-ThreadPool.PooledThread-45,5,simulator_10000-ThreadPool-0]
+        Thread[#106,simulator_10000-ThreadPool.PooledThread-46,5,simulator_10000-ThreadPool-0]
+        Thread[#107,simulator_10000-ThreadPool.PooledThread-47,5,simulator_10000-ThreadPool-0]
+        Thread[#108,simulator_10000-ThreadPool.PooledThread-48,5,simulator_10000-ThreadPool-0]
+        Thread[#109,simulator_10000-ThreadPool.PooledThread-49,5,simulator_10000-ThreadPool-0]
+        Thread[#110,simulator_10000-ThreadPool.PooledThread-50,5,simulator_10000-ThreadPool-0]
+        Thread[#111,simulator_10000-ThreadPool.PooledThread-51,5,simulator_10000-ThreadPool-0]
+        Thread[#112,simulator_10000-ThreadPool.PooledThread-52,5,simulator_10000-ThreadPool-0]
+        Thread[#113,simulator_10000-ThreadPool.PooledThread-53,5,simulator_10000-ThreadPool-0]
+        Thread[#114,simulator_10000-ThreadPool.PooledThread-54,5,simulator_10000-ThreadPool-0]
+        Thread[#115,simulator_10000-ThreadPool.PooledThread-55,5,simulator_10000-ThreadPool-0]
+        Thread[#116,simulator_10000-ThreadPool.PooledThread-56,5,simulator_10000-ThreadPool-0]
+        Thread[#117,simulator_10000-ThreadPool.PooledThread-57,5,simulator_10000-ThreadPool-0]
+        Thread[#118,simulator_10000-ThreadPool.PooledThread-58,5,simulator_10000-ThreadPool-0]
+        Thread[#119,simulator_10000-ThreadPool.PooledThread-59,5,simulator_10000-ThreadPool-0]
+        Thread[#120,simulator_10000-ThreadPool.PooledThread-60,5,simulator_10000-ThreadPool-0]
+        Thread[#121,simulator_10000-ThreadPool.PooledThread-61,5,simulator_10000-ThreadPool-0]
+        Thread[#122,simulator_10000-ThreadPool.PooledThread-62,5,simulator_10000-ThreadPool-0]
+        Thread[#123,simulator_10000-ThreadPool.PooledThread-63,5,simulator_10000-ThreadPool-0]
+        Thread[#124,simulator_10000-ThreadPool.PooledThread-64,5,simulator_10000-ThreadPool-0]
+        Thread[#125,simulator_10000-ThreadPool.PooledThread-65,5,simulator_10000-ThreadPool-0]
+        Thread[#126,simulator_10000-ThreadPool.PooledThread-66,5,simulator_10000-ThreadPool-0]
+        Thread[#127,simulator_10000-ThreadPool.PooledThread-67,5,simulator_10000-ThreadPool-0]
+        Thread[#128,simulator_10000-ThreadPool.PooledThread-68,5,simulator_10000-ThreadPool-0]
+        Thread[#129,simulator_10000-ThreadPool.PooledThread-69,5,simulator_10000-ThreadPool-0]
+        Thread[#130,simulator_10000-ThreadPool.PooledThread-70,5,simulator_10000-ThreadPool-0]
+        Thread[#131,simulator_10000-ThreadPool.PooledThread-71,5,simulator_10000-ThreadPool-0]
+        Thread[#132,simulator_10000-ThreadPool.PooledThread-72,5,simulator_10000-ThreadPool-0]
+        Thread[#133,simulator_10000-ThreadPool.PooledThread-73,5,simulator_10000-ThreadPool-0]
+        Thread[#134,simulator_10000-ThreadPool.PooledThread-74,5,simulator_10000-ThreadPool-0]
+        Thread[#135,simulator_10000-ThreadPool.PooledThread-75,5,simulator_10000-ThreadPool-0]
+        Thread[#136,simulator_10000-ThreadPool.PooledThread-76,5,simulator_10000-ThreadPool-0]
+        Thread[#137,simulator_10000-ThreadPool.PooledThread-77,5,simulator_10000-ThreadPool-0]
+        Thread[#138,simulator_10000-ThreadPool.PooledThread-78,5,simulator_10000-ThreadPool-0]
+        Thread[#139,simulator_10000-ThreadPool.PooledThread-79,5,simulator_10000-ThreadPool-0]
+        Thread[#140,simulator_10000-ThreadPool.PooledThread-80,5,simulator_10000-ThreadPool-0]
+        Thread[#141,simulator_10000-ThreadPool.PooledThread-81,5,simulator_10000-ThreadPool-0]
+        Thread[#142,simulator_10000-ThreadPool.PooledThread-82,5,simulator_10000-ThreadPool-0]
+        Thread[#143,simulator_10000-ThreadPool.PooledThread-83,5,simulator_10000-ThreadPool-0]
+        Thread[#144,simulator_10000-ThreadPool.PooledThread-84,5,simulator_10000-ThreadPool-0]
+        Thread[#145,simulator_10000-ThreadPool.PooledThread-85,5,simulator_10000-ThreadPool-0]
+        Thread[#146,simulator_10000-ThreadPool.PooledThread-86,5,simulator_10000-ThreadPool-0]
+        Thread[#147,simulator_10000-ThreadPool.PooledThread-87,5,simulator_10000-ThreadPool-0]
+        Thread[#148,simulator_10000-ThreadPool.PooledThread-88,5,simulator_10000-ThreadPool-0]
+        Thread[#149,simulator_10000-ThreadPool.PooledThread-89,5,simulator_10000-ThreadPool-0]
+        Thread[#150,simulator_10000-ThreadPool.PooledThread-90,5,simulator_10000-ThreadPool-0]
+        Thread[#151,simulator_10000-ThreadPool.PooledThread-91,5,simulator_10000-ThreadPool-0]
+        Thread[#152,simulator_10000-ThreadPool.PooledThread-92,5,simulator_10000-ThreadPool-0]
+        Thread[#153,simulator_10000-ThreadPool.PooledThread-93,5,simulator_10000-ThreadPool-0]
+        Thread[#154,simulator_10000-ThreadPool.PooledThread-94,5,simulator_10000-ThreadPool-0]
+        Thread[#155,simulator_10000-ThreadPool.PooledThread-95,5,simulator_10000-ThreadPool-0]
+        Thread[#156,simulator_10000-ThreadPool.PooledThread-96,5,simulator_10000-ThreadPool-0]
+        Thread[#157,simulator_10000-ThreadPool.PooledThread-97,5,simulator_10000-ThreadPool-0]
+        Thread[#158,simulator_10000-ThreadPool.PooledThread-98,5,simulator_10000-ThreadPool-0]
+        Thread[#159,simulator_10000-ThreadPool.PooledThread-99,5,simulator_10000-ThreadPool-0]
+        Thread[#160,Thread-3,5,main]
+        Thread[#161,channel-sender-network-out,5,main]
+        Thread[#162,channel-receiver-network-in,5,main]
+        Thread[#163,SystemMonitor,5,main]
+        Thread[#164,SIGINT handler,9,system]
+        Thread[#59,Q2-ShutdownHook,5,main]
+name-registrar:
+  tspace:default: org.jpos.space.TSpace
+    <key count='1'>jpos-channel.ready</key>
+     key-count: 1
+        gcinfo: 0,0
+  Q2: org.jpos.q2.Q2
+  jpos-channel: org.jpos.q2.iso.ChannelAdaptor
+    tx=0, rx=0, connects=4, last=0
+  simulator_10000: org.jpos.q2.iso.QServer
+  channel.jpos-channel: org.jpos.iso.channel.NACChannel
+  logger.Q2: org.jpos.util.Logger
+  logger.: org.jpos.util.Logger
+  mux.s-mux: <NULL>
+  server.simulator_10000: org.jpos.iso.ISOServer
+    connected=1, rx=0, tx=0, last=1749702376575, idle=325240ms
+      127.0.0.1:51653: rx=0, tx=0, last=1749702376575
+  </info>
+</log>
+<log realm="Q2.system" at="2025-06-12T11:31:41.817138" lifespan="1ms">
+  <trace>
+    undeploying:/Users/peace/jpos-springboot/deploy/10_jpos_channel.xml
+  </trace>
+</log>
+<log realm="channel/127.0.0.1:51653" at="2025-06-12T11:31:41.817855" lifespan="11142ms">
+  <receive>
+    <peer-disconnect/>
+  </receive>
+</log>
+<log realm="simulator_10000.server.session/127.0.0.1:51653" at="2025-06-12T11:31:41.818122">
+  <session-end/>
+</log>
+<log realm="Q2.system" at="2025-06-12T11:31:41.819127">
+  <info>
+    undeployed:/Users/peace/jpos-springboot/deploy/10_jpos_channel.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2025-06-12T11:31:41.819334">
+  <trace>
+    undeploying:/Users/peace/jpos-springboot/deploy/05_serversimulator.xml
+  </trace>
+</log>
+<log realm="Q2.system" at="2025-06-12T11:31:41.820095">
+  <info>
+    undeployed:/Users/peace/jpos-springboot/deploy/05_serversimulator.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2025-06-12T11:31:41.820346">
+  <trace>
+    undeploying:/Users/peace/jpos-springboot/deploy/00_logger.xml
+  </trace>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T11:31:41.820540">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T11:31:41.820625">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T11:31:41.820868">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T11:31:41.820722">
+  <queue-closed/>
+</log>
+<log realm="Q2.system" at="2025-06-12T11:31:41.821063">
+  <info>
+    undeployed:/Users/peace/jpos-springboot/deploy/00_logger.xml
+  </info>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T11:31:41.821397">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T11:31:41.821212">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T11:31:41.822179" lifespan="1ms">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T11:31:41.822511">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T11:31:41.822700" lifespan="1ms">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T11:31:41.821547">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T11:31:41.822934">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T11:31:41.822441" lifespan="1ms">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T11:31:41.837490">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T11:31:41.837620">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T11:31:41.822245">
+<?xml version="1.0" encoding="UTF-8"?>
+<logger class="org.jpos.util.DailyLogListener">
+<log realm="system" at="2025-06-12T13:47:57.363101">
+  <warn>
+    start
+    <iso-exception>
+      org.jpos.core.ConfigurationException: java.lang.ClassNotFoundException: org.jpos.util.XmlLogWriter (java.lang.ClassNotFoundException: org.jpos.util.XmlLogWriter)
+      <iso-exception>
+        java.lang.ClassNotFoundException: org.jpos.util.XmlLogWriter
+        <nested-exception>
+        java.lang.ClassNotFoundException: org.jpos.util.XmlLogWriter
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:528)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:462)
+	at java.base/java.lang.Class.forName(Class.java:453)
+	at org.jpos.util.SimpleLogListener.setConfiguration(SimpleLogListener.java:93)
+	at org.jpos.q2.QFactory.setConfiguration(QFactory.java:390)
+	at org.jpos.q2.qbean.LoggerAdaptor.addListener(LoggerAdaptor.java:77)
+	at org.jpos.q2.qbean.LoggerAdaptor.startService(LoggerAdaptor.java:43)
+	at org.jpos.q2.QBeanSupport.start(QBeanSupport.java:137)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:112)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:46)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at org.jpos.q2.QFactory.startQBean(QFactory.java:183)
+	at org.jpos.q2.Q2.start(Q2.java:633)
+	at org.jpos.q2.Q2.deploy(Q2.java:418)
+	at org.jpos.q2.Q2.initSystemLogger(Q2.java:652)
+	at org.jpos.q2.Q2.run(Q2.java:230)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+        </nested-exception>
+        org.jpos.core.ConfigurationException: java.lang.ClassNotFoundException: org.jpos.util.XmlLogWriter (java.lang.ClassNotFoundException: org.jpos.util.XmlLogWriter)
+	at org.jpos.util.SimpleLogListener.setConfiguration(SimpleLogListener.java:95)
+	at org.jpos.q2.QFactory.setConfiguration(QFactory.java:390)
+	at org.jpos.q2.qbean.LoggerAdaptor.addListener(LoggerAdaptor.java:77)
+	at org.jpos.q2.qbean.LoggerAdaptor.startService(LoggerAdaptor.java:43)
+	at org.jpos.q2.QBeanSupport.start(QBeanSupport.java:137)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:112)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:46)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at org.jpos.q2.QFactory.startQBean(QFactory.java:183)
+	at org.jpos.q2.Q2.start(Q2.java:633)
+	at org.jpos.q2.Q2.deploy(Q2.java:418)
+	at org.jpos.q2.Q2.initSystemLogger(Q2.java:652)
+	at org.jpos.q2.Q2.run(Q2.java:230)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Nested:java.lang.ClassNotFoundException: org.jpos.util.XmlLogWriter
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:528)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:462)
+	at java.base/java.lang.Class.forName(Class.java:453)
+	at org.jpos.util.SimpleLogListener.setConfiguration(SimpleLogListener.java:93)
+	at org.jpos.q2.QFactory.setConfiguration(QFactory.java:390)
+	at org.jpos.q2.qbean.LoggerAdaptor.addListener(LoggerAdaptor.java:77)
+	at org.jpos.q2.qbean.LoggerAdaptor.startService(LoggerAdaptor.java:43)
+	at org.jpos.q2.QBeanSupport.start(QBeanSupport.java:137)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:112)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:46)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at org.jpos.q2.QFactory.startQBean(QFactory.java:183)
+	at org.jpos.q2.Q2.start(Q2.java:633)
+	at org.jpos.q2.Q2.deploy(Q2.java:418)
+	at org.jpos.q2.Q2.initSystemLogger(Q2.java:652)
+	at org.jpos.q2.Q2.run(Q2.java:230)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+      </iso-exception>
+      org.jpos.core.ConfigurationException: org.jpos.core.ConfigurationException: java.lang.ClassNotFoundException: org.jpos.util.XmlLogWriter (java.lang.ClassNotFoundException: org.jpos.util.XmlLogWriter) (org.jpos.core.ConfigurationException: java.lang.ClassNotFoundException: org.jpos.util.XmlLogWriter (java.lang.ClassNotFoundException: org.jpos.util.XmlLogWriter))
+	at org.jpos.q2.QFactory.setConfiguration(QFactory.java:392)
+	at org.jpos.q2.qbean.LoggerAdaptor.addListener(LoggerAdaptor.java:77)
+	at org.jpos.q2.qbean.LoggerAdaptor.startService(LoggerAdaptor.java:43)
+	at org.jpos.q2.QBeanSupport.start(QBeanSupport.java:137)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:112)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:46)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at org.jpos.q2.QFactory.startQBean(QFactory.java:183)
+	at org.jpos.q2.Q2.start(Q2.java:633)
+	at org.jpos.q2.Q2.deploy(Q2.java:418)
+	at org.jpos.q2.Q2.initSystemLogger(Q2.java:652)
+	at org.jpos.q2.Q2.run(Q2.java:230)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Nested:org.jpos.core.ConfigurationException: java.lang.ClassNotFoundException: org.jpos.util.XmlLogWriter (java.lang.ClassNotFoundException: org.jpos.util.XmlLogWriter)
+	at org.jpos.util.SimpleLogListener.setConfiguration(SimpleLogListener.java:95)
+	at org.jpos.q2.QFactory.setConfiguration(QFactory.java:390)
+	at org.jpos.q2.qbean.LoggerAdaptor.addListener(LoggerAdaptor.java:77)
+	at org.jpos.q2.qbean.LoggerAdaptor.startService(LoggerAdaptor.java:43)
+	at org.jpos.q2.QBeanSupport.start(QBeanSupport.java:137)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:112)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:46)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at org.jpos.q2.QFactory.startQBean(QFactory.java:183)
+	at org.jpos.q2.Q2.start(Q2.java:633)
+	at org.jpos.q2.Q2.deploy(Q2.java:418)
+	at org.jpos.q2.Q2.initSystemLogger(Q2.java:652)
+	at org.jpos.q2.Q2.run(Q2.java:230)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Nested:java.lang.ClassNotFoundException: org.jpos.util.XmlLogWriter
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:528)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:462)
+	at java.base/java.lang.Class.forName(Class.java:453)
+	at org.jpos.util.SimpleLogListener.setConfiguration(SimpleLogListener.java:93)
+	at org.jpos.q2.QFactory.setConfiguration(QFactory.java:390)
+	at org.jpos.q2.qbean.LoggerAdaptor.addListener(LoggerAdaptor.java:77)
+	at org.jpos.q2.qbean.LoggerAdaptor.startService(LoggerAdaptor.java:43)
+	at org.jpos.q2.QBeanSupport.start(QBeanSupport.java:137)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:112)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:46)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at org.jpos.q2.QFactory.startQBean(QFactory.java:183)
+	at org.jpos.q2.Q2.start(Q2.java:633)
+	at org.jpos.q2.Q2.deploy(Q2.java:418)
+	at org.jpos.q2.Q2.initSystemLogger(Q2.java:652)
+	at org.jpos.q2.Q2.run(Q2.java:230)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+    </iso-exception>
+  </warn>
+</log>
+<log realm="Q2.system" at="2025-06-12T13:47:57.376234">
+  <info>
+    Q2 started, deployDir=/Users/peace/jpos-springboot/deploy, environment=default
+  </info>
+</log>
+<log realm="Q2.system" at="2025-06-12T13:47:57.936135" lifespan="557ms">
+  <version>
+    jPOS 2.1.4 master/6225824 (2020-03-31 18:07:15 UYT) 
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+jPOS Community Edition, licensed under GNU AGPL v3.0.
+This software is probably not suitable for commercial use.
+Please see http://jpos.org/license for details.
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.9 (Darwin)
+
+iQEcBAEBAgAGBQJMolHDAAoJEOQyeO71nYtFv74H/3OgehDGEy1VXp2U3/GcAobg
+HH2eZjPUz53r38ARPiU3pzm9LwDa3WZgJJaa/b9VrJwKvbPwe9+0kY3gScDE1skT
+ladHt+KHHmGQArEutkzHlpZa73RbroFEIa1qmN6MaDEHGoxZqDh0Sv2cpvOaVYGO
+St8ZaddLBPC17bSjAPWo9sWbvL7FgPFOHhnPmbeux8SLtnfWxXWsgo5hLBanKmO1
+1z+I/w/6DL6ZYZU6bAJUk+eyVVImJqw0x3IEElI07Nh9MC6BA4iJ77ejobj8HI2r
+q9ulRPEqH9NR79619lNKVUkE206dVlXo7xHmJS1QZy5v/GT66xBxyDVfTduPFXk=
+=oP+v
+-----END PGP SIGNATURE-----
+
+  </version>
+</log>
+<log realm="Q2.system" at="2025-06-12T13:47:57.950647" lifespan="9ms">
+  <info>
+    deploy: /Users/peace/jpos-springboot/deploy/05_serversimulator.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2025-06-12T13:47:57.962839" lifespan="11ms">
+  <info>
+    deploy: /Users/peace/jpos-springboot/deploy/10_jpos_channel.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2025-06-12T13:47:58.002222" lifespan="38ms">
+  <info>
+    deploy: /Users/peace/jpos-springboot/deploy/20_mux.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2025-06-12T13:47:58.110372" lifespan="107ms">
+  <info>
+    deploy: /Users/peace/jpos-springboot/deploy/99_sysmon.xml
+  </info>
+</log>
+<log realm="simulator_10000.server" at="2025-06-12T13:47:58.189957">
+  <iso-server>
+    listening on port 10000
+  </iso-server>
+</log>
+<log realm="org.jpos.q2.qbean.SystemMonitor" at="2025-06-12T13:47:58.269361">
+  <info>
+    Starting SystemMonitor
+  </info>
+</log>
+<log realm="simulator_10000.server.session/127.0.0.1:52189" at="2025-06-12T13:47:58.274819">
+  <session-start/>
+</log>
+<log realm="org.jpos.q2.qbean.SystemMonitor" at="2025-06-12T13:47:58.292416">
+  <info>
+           OS: Mac OS X (12.7.6)
+         Java: 23 (Oracle Corporation) AES-secure
+  environment: default
+ process name: 96172@Peaces-MacBook-Pro-2.local
+    user name: peace
+         host: Peaces-MacBook-Pro-2.local/192.168.1.40
+          cwd: /Users/peace/jpos-springboot
+   free space: 18.1 GiB
+      version: 2.1.4 (6225824)
+     instance: 89337a45-f74e-4703-bc8c-3b88872e51b0
+       uptime: 00:00:01.134 (7.538574)
+   processors: 8
+       drift : 0
+memory(t/u/f): 56/34/21
+     encoding: UTF-8
+     timezone: Asia/Ho_Chi_Minh (Ho Chi Minh City Time) +07:00
+watch service: sun.nio.fs.PollingWatchService
+        clock: 1749710878 2025-06-12T06:47:58.272560Z
+ thread count: 136
+ peak threads: 136
+ user threads: 124
+        Thread[#9,Reference Handler,10,system]
+        Thread[#10,Finalizer,8,system]
+        Thread[#11,Signal Dispatcher,9,system]
+        Thread[#18,Common-Cleaner,8,InnocuousThreadGroup]
+        Thread[#19,Notification Thread,9,system]
+        Thread[#21,RMI TCP Accept-0,5,system]
+        Thread[#22,RMI TCP Accept-45556,5,system]
+        Thread[#23,RMI TCP Accept-0,5,system]
+        Thread[#35,RMI TCP Connection(1)-127.0.0.1,5,RMI Runtime]
+        Thread[#36,RMI Scheduler(0),5,system]
+        Thread[#37,RMI TCP Connection(2)-127.0.0.1,5,RMI Runtime]
+        Thread[#38,JMX server connection timeout 38,5,RMI Runtime]
+        Thread[#39,Catalina-utility-1,1,main]
+        Thread[#40,Catalina-utility-2,1,main]
+        Thread[#41,container-0,5,main]
+        Thread[#42,http-nio-8080-exec-1,5,main]
+        Thread[#43,http-nio-8080-exec-2,5,main]
+        Thread[#44,http-nio-8080-exec-3,5,main]
+        Thread[#45,http-nio-8080-exec-4,5,main]
+        Thread[#46,http-nio-8080-exec-5,5,main]
+        Thread[#47,http-nio-8080-exec-6,5,main]
+        Thread[#48,http-nio-8080-exec-7,5,main]
+        Thread[#49,http-nio-8080-exec-8,5,main]
+        Thread[#50,http-nio-8080-exec-9,5,main]
+        Thread[#51,http-nio-8080-exec-10,5,main]
+        Thread[#52,http-nio-8080-Poller,5,main]
+        Thread[#53,http-nio-8080-Acceptor,5,main]
+        Thread[#54,pool-2-thread-1,5,main]
+        Thread[#55,Q2-89337a45-f74e-4703-bc8c-3b88872e51b0,5,main]
+        Thread[#56,DestroyJavaVM,5,main]
+        Thread[#57,FileSystemWatcher,5,main]
+        Thread[#58,Timer-0,5,main]
+        Thread[#60,simulator_10000-ThreadPool.PooledThread-0-running,5,simulator_10000-ThreadPool-0]
+        Thread[#61,simulator_10000-ThreadPool.PooledThread-1,5,simulator_10000-ThreadPool-0]
+        Thread[#62,simulator_10000-ThreadPool.PooledThread-2,5,simulator_10000-ThreadPool-0]
+        Thread[#63,simulator_10000-ThreadPool.PooledThread-3,5,simulator_10000-ThreadPool-0]
+        Thread[#64,simulator_10000-ThreadPool.PooledThread-4,5,simulator_10000-ThreadPool-0]
+        Thread[#65,simulator_10000-ThreadPool.PooledThread-5,5,simulator_10000-ThreadPool-0]
+        Thread[#66,simulator_10000-ThreadPool.PooledThread-6,5,simulator_10000-ThreadPool-0]
+        Thread[#67,simulator_10000-ThreadPool.PooledThread-7,5,simulator_10000-ThreadPool-0]
+        Thread[#68,simulator_10000-ThreadPool.PooledThread-8,5,simulator_10000-ThreadPool-0]
+        Thread[#69,simulator_10000-ThreadPool.PooledThread-9,5,simulator_10000-ThreadPool-0]
+        Thread[#70,simulator_10000-ThreadPool.PooledThread-10,5,simulator_10000-ThreadPool-0]
+        Thread[#71,simulator_10000-ThreadPool.PooledThread-11,5,simulator_10000-ThreadPool-0]
+        Thread[#72,simulator_10000-ThreadPool.PooledThread-12,5,simulator_10000-ThreadPool-0]
+        Thread[#73,simulator_10000-ThreadPool.PooledThread-13,5,simulator_10000-ThreadPool-0]
+        Thread[#74,simulator_10000-ThreadPool.PooledThread-14,5,simulator_10000-ThreadPool-0]
+        Thread[#75,simulator_10000-ThreadPool.PooledThread-15,5,simulator_10000-ThreadPool-0]
+        Thread[#76,simulator_10000-ThreadPool.PooledThread-16,5,simulator_10000-ThreadPool-0]
+        Thread[#77,simulator_10000-ThreadPool.PooledThread-17,5,simulator_10000-ThreadPool-0]
+        Thread[#78,simulator_10000-ThreadPool.PooledThread-18,5,simulator_10000-ThreadPool-0]
+        Thread[#79,simulator_10000-ThreadPool.PooledThread-19,5,simulator_10000-ThreadPool-0]
+        Thread[#80,simulator_10000-ThreadPool.PooledThread-20,5,simulator_10000-ThreadPool-0]
+        Thread[#81,simulator_10000-ThreadPool.PooledThread-21,5,simulator_10000-ThreadPool-0]
+        Thread[#82,simulator_10000-ThreadPool.PooledThread-22,5,simulator_10000-ThreadPool-0]
+        Thread[#83,simulator_10000-ThreadPool.PooledThread-23,5,simulator_10000-ThreadPool-0]
+        Thread[#84,simulator_10000-ThreadPool.PooledThread-24,5,simulator_10000-ThreadPool-0]
+        Thread[#85,simulator_10000-ThreadPool.PooledThread-25,5,simulator_10000-ThreadPool-0]
+        Thread[#86,simulator_10000-ThreadPool.PooledThread-26,5,simulator_10000-ThreadPool-0]
+        Thread[#87,simulator_10000-ThreadPool.PooledThread-27,5,simulator_10000-ThreadPool-0]
+        Thread[#88,simulator_10000-ThreadPool.PooledThread-28,5,simulator_10000-ThreadPool-0]
+        Thread[#89,simulator_10000-ThreadPool.PooledThread-29,5,simulator_10000-ThreadPool-0]
+        Thread[#90,simulator_10000-ThreadPool.PooledThread-30,5,simulator_10000-ThreadPool-0]
+        Thread[#91,simulator_10000-ThreadPool.PooledThread-31,5,simulator_10000-ThreadPool-0]
+        Thread[#92,simulator_10000-ThreadPool.PooledThread-32,5,simulator_10000-ThreadPool-0]
+        Thread[#93,simulator_10000-ThreadPool.PooledThread-33,5,simulator_10000-ThreadPool-0]
+        Thread[#94,simulator_10000-ThreadPool.PooledThread-34,5,simulator_10000-ThreadPool-0]
+        Thread[#95,simulator_10000-ThreadPool.PooledThread-35,5,simulator_10000-ThreadPool-0]
+        Thread[#96,simulator_10000-ThreadPool.PooledThread-36,5,simulator_10000-ThreadPool-0]
+        Thread[#97,simulator_10000-ThreadPool.PooledThread-37,5,simulator_10000-ThreadPool-0]
+        Thread[#98,simulator_10000-ThreadPool.PooledThread-38,5,simulator_10000-ThreadPool-0]
+        Thread[#99,simulator_10000-ThreadPool.PooledThread-39,5,simulator_10000-ThreadPool-0]
+        Thread[#100,simulator_10000-ThreadPool.PooledThread-40,5,simulator_10000-ThreadPool-0]
+        Thread[#101,simulator_10000-ThreadPool.PooledThread-41,5,simulator_10000-ThreadPool-0]
+        Thread[#102,simulator_10000-ThreadPool.PooledThread-42,5,simulator_10000-ThreadPool-0]
+        Thread[#103,simulator_10000-ThreadPool.PooledThread-43,5,simulator_10000-ThreadPool-0]
+        Thread[#104,simulator_10000-ThreadPool.PooledThread-44,5,simulator_10000-ThreadPool-0]
+        Thread[#105,simulator_10000-ThreadPool.PooledThread-45,5,simulator_10000-ThreadPool-0]
+        Thread[#106,simulator_10000-ThreadPool.PooledThread-46,5,simulator_10000-ThreadPool-0]
+        Thread[#107,simulator_10000-ThreadPool.PooledThread-47,5,simulator_10000-ThreadPool-0]
+        Thread[#108,simulator_10000-ThreadPool.PooledThread-48,5,simulator_10000-ThreadPool-0]
+        Thread[#109,simulator_10000-ThreadPool.PooledThread-49,5,simulator_10000-ThreadPool-0]
+        Thread[#110,simulator_10000-ThreadPool.PooledThread-50,5,simulator_10000-ThreadPool-0]
+        Thread[#111,simulator_10000-ThreadPool.PooledThread-51,5,simulator_10000-ThreadPool-0]
+        Thread[#112,simulator_10000-ThreadPool.PooledThread-52,5,simulator_10000-ThreadPool-0]
+        Thread[#113,simulator_10000-ThreadPool.PooledThread-53,5,simulator_10000-ThreadPool-0]
+        Thread[#114,simulator_10000-ThreadPool.PooledThread-54,5,simulator_10000-ThreadPool-0]
+        Thread[#115,simulator_10000-ThreadPool.PooledThread-55,5,simulator_10000-ThreadPool-0]
+        Thread[#116,simulator_10000-ThreadPool.PooledThread-56,5,simulator_10000-ThreadPool-0]
+        Thread[#117,simulator_10000-ThreadPool.PooledThread-57,5,simulator_10000-ThreadPool-0]
+        Thread[#118,simulator_10000-ThreadPool.PooledThread-58,5,simulator_10000-ThreadPool-0]
+        Thread[#119,simulator_10000-ThreadPool.PooledThread-59,5,simulator_10000-ThreadPool-0]
+        Thread[#120,simulator_10000-ThreadPool.PooledThread-60,5,simulator_10000-ThreadPool-0]
+        Thread[#121,simulator_10000-ThreadPool.PooledThread-61,5,simulator_10000-ThreadPool-0]
+        Thread[#122,simulator_10000-ThreadPool.PooledThread-62,5,simulator_10000-ThreadPool-0]
+        Thread[#123,simulator_10000-ThreadPool.PooledThread-63,5,simulator_10000-ThreadPool-0]
+        Thread[#124,simulator_10000-ThreadPool.PooledThread-64,5,simulator_10000-ThreadPool-0]
+        Thread[#125,simulator_10000-ThreadPool.PooledThread-65,5,simulator_10000-ThreadPool-0]
+        Thread[#126,simulator_10000-ThreadPool.PooledThread-66,5,simulator_10000-ThreadPool-0]
+        Thread[#127,simulator_10000-ThreadPool.PooledThread-67,5,simulator_10000-ThreadPool-0]
+        Thread[#128,simulator_10000-ThreadPool.PooledThread-68,5,simulator_10000-ThreadPool-0]
+        Thread[#129,simulator_10000-ThreadPool.PooledThread-69,5,simulator_10000-ThreadPool-0]
+        Thread[#130,simulator_10000-ThreadPool.PooledThread-70,5,simulator_10000-ThreadPool-0]
+        Thread[#131,simulator_10000-ThreadPool.PooledThread-71,5,simulator_10000-ThreadPool-0]
+        Thread[#132,simulator_10000-ThreadPool.PooledThread-72,5,simulator_10000-ThreadPool-0]
+        Thread[#133,simulator_10000-ThreadPool.PooledThread-73,5,simulator_10000-ThreadPool-0]
+        Thread[#134,simulator_10000-ThreadPool.PooledThread-74,5,simulator_10000-ThreadPool-0]
+        Thread[#135,simulator_10000-ThreadPool.PooledThread-75,5,simulator_10000-ThreadPool-0]
+        Thread[#136,simulator_10000-ThreadPool.PooledThread-76,5,simulator_10000-ThreadPool-0]
+        Thread[#137,simulator_10000-ThreadPool.PooledThread-77,5,simulator_10000-ThreadPool-0]
+        Thread[#138,simulator_10000-ThreadPool.PooledThread-78,5,simulator_10000-ThreadPool-0]
+        Thread[#139,simulator_10000-ThreadPool.PooledThread-79,5,simulator_10000-ThreadPool-0]
+        Thread[#140,simulator_10000-ThreadPool.PooledThread-80,5,simulator_10000-ThreadPool-0]
+        Thread[#141,simulator_10000-ThreadPool.PooledThread-81,5,simulator_10000-ThreadPool-0]
+        Thread[#142,simulator_10000-ThreadPool.PooledThread-82,5,simulator_10000-ThreadPool-0]
+        Thread[#143,simulator_10000-ThreadPool.PooledThread-83,5,simulator_10000-ThreadPool-0]
+        Thread[#144,simulator_10000-ThreadPool.PooledThread-84,5,simulator_10000-ThreadPool-0]
+        Thread[#145,simulator_10000-ThreadPool.PooledThread-85,5,simulator_10000-ThreadPool-0]
+        Thread[#146,simulator_10000-ThreadPool.PooledThread-86,5,simulator_10000-ThreadPool-0]
+        Thread[#147,simulator_10000-ThreadPool.PooledThread-87,5,simulator_10000-ThreadPool-0]
+        Thread[#148,simulator_10000-ThreadPool.PooledThread-88,5,simulator_10000-ThreadPool-0]
+        Thread[#149,simulator_10000-ThreadPool.PooledThread-89,5,simulator_10000-ThreadPool-0]
+        Thread[#150,simulator_10000-ThreadPool.PooledThread-90,5,simulator_10000-ThreadPool-0]
+        Thread[#151,simulator_10000-ThreadPool.PooledThread-91,5,simulator_10000-ThreadPool-0]
+        Thread[#152,simulator_10000-ThreadPool.PooledThread-92,5,simulator_10000-ThreadPool-0]
+        Thread[#153,simulator_10000-ThreadPool.PooledThread-93,5,simulator_10000-ThreadPool-0]
+        Thread[#154,simulator_10000-ThreadPool.PooledThread-94,5,simulator_10000-ThreadPool-0]
+        Thread[#155,simulator_10000-ThreadPool.PooledThread-95,5,simulator_10000-ThreadPool-0]
+        Thread[#156,simulator_10000-ThreadPool.PooledThread-96,5,simulator_10000-ThreadPool-0]
+        Thread[#157,simulator_10000-ThreadPool.PooledThread-97,5,simulator_10000-ThreadPool-0]
+        Thread[#158,simulator_10000-ThreadPool.PooledThread-98,5,simulator_10000-ThreadPool-0]
+        Thread[#159,simulator_10000-ThreadPool.PooledThread-99,5,simulator_10000-ThreadPool-0]
+        Thread[#160,Thread-3,5,main]
+        Thread[#161,channel-sender-network-out,5,main]
+        Thread[#162,channel-receiver-network-in,5,main]
+        Thread[#163,SystemMonitor,5,main]
+name-registrar:
+  tspace:default: org.jpos.space.TSpace
+    <key count='1'>jpos-channel.ready</key>
+     key-count: 1
+        gcinfo: 0,0
+  Q2: org.jpos.q2.Q2
+  jpos-channel: org.jpos.q2.iso.ChannelAdaptor
+    tx=0, rx=0, connects=1, last=0
+  simulator_10000: org.jpos.q2.iso.QServer
+  channel.jpos-channel: org.jpos.iso.channel.NACChannel
+  logger.Q2: org.jpos.util.Logger
+  logger.: org.jpos.util.Logger
+  mux.s-mux: org.jpos.q2.iso.QMUX
+    tx=0, rx=0, tx_expired=0, tx_pending=0, rx_expired=0, rx_pending=0, rx_unhandled=0, rx_forwarded=0, connected=false, last=0
+  server.simulator_10000: org.jpos.iso.ISOServer
+    connected=1, rx=0, tx=0, last=0
+      127.0.0.1:52189: rx=0, tx=0, last=0
+  </info>
+</log>
+<log realm="channel/127.0.0.1:52189" at="2025-06-12T13:52:58.282531" lifespan="300007ms">
+  <receive>
+    <io-timeout/>
+  </receive>
+</log>
+<log realm="org.jpos.q2.iso.ChannelAdaptor" at="2025-06-12T13:52:58.282838">
+  <warn>
+    channel-receiver-network-in
+    Read timeout / EOF - reconnecting
+  </warn>
+</log>
+<log realm="simulator_10000.server.session/127.0.0.1:52189" at="2025-06-12T13:52:58.289403">
+  <session-end/>
+</log>
+<log realm="simulator_10000.server.session/127.0.0.1:52223" at="2025-06-12T13:53:08.310979">
+  <session-start/>
+</log>
+<log realm="org.jpos.q2.iso.ChannelAdaptor" at="2025-06-12T13:58:08.308983">
+  <warn>
+    channel-receiver-network-in
+    Read timeout / EOF - reconnecting
+  </warn>
+</log>
+<log realm="channel/127.0.0.1:52223" at="2025-06-12T13:58:08.309396" lifespan="299995ms">
+  <receive>
+    <peer-disconnect/>
+  </receive>
+</log>
+<log realm="simulator_10000.server.session/127.0.0.1:52223" at="2025-06-12T13:58:08.316566">
+  <session-end/>
+</log>
+<log realm="simulator_10000.server.session/127.0.0.1:52266" at="2025-06-12T13:58:18.441542">
+  <session-start/>
+</log>
+<log realm="org.jpos.q2.iso.ChannelAdaptor" at="2025-06-12T14:03:18.438671">
+  <warn>
+    channel-receiver-network-in
+    Read timeout / EOF - reconnecting
+  </warn>
+</log>
+<log realm="channel/127.0.0.1:52266" at="2025-06-12T14:03:18.438822" lifespan="299996ms">
+  <receive>
+    <peer-disconnect/>
+  </receive>
+</log>
+<log realm="simulator_10000.server.session/127.0.0.1:52266" at="2025-06-12T14:03:18.440025">
+  <session-end/>
+</log>
+<log realm="simulator_10000.server.session/127.0.0.1:52288" at="2025-06-12T14:03:28.553742">
+  <session-start/>
+</log>
+<log realm="org.jpos.q2.iso.ChannelAdaptor" at="2025-06-12T14:08:28.550792">
+  <warn>
+    channel-receiver-network-in
+    Read timeout / EOF - reconnecting
+  </warn>
+</log>
+<log realm="channel/127.0.0.1:52288" at="2025-06-12T14:08:28.550962" lifespan="299997ms">
+  <receive>
+    <peer-disconnect/>
+  </receive>
+</log>
+<log realm="simulator_10000.server.session/127.0.0.1:52288" at="2025-06-12T14:08:28.558317">
+  <session-end/>
+</log>
+<log realm="simulator_10000.server.session/127.0.0.1:52354" at="2025-06-12T14:08:38.577062">
+  <session-start/>
+</log>
+<log realm="org.jpos.q2.iso.ChannelAdaptor" at="2025-06-12T14:13:38.574438">
+  <warn>
+    channel-receiver-network-in
+    Read timeout / EOF - reconnecting
+  </warn>
+</log>
+<log realm="channel/127.0.0.1:52354" at="2025-06-12T14:13:38.574752" lifespan="299997ms">
+  <receive>
+    <io-timeout/>
+  </receive>
+</log>
+<log realm="simulator_10000.server.session/127.0.0.1:52354" at="2025-06-12T14:13:38.581630">
+  <session-end/>
+</log>
+<log realm="simulator_10000.server.session/127.0.0.1:52399" at="2025-06-12T14:13:48.773714">
+  <session-start/>
+</log>
+<log realm="Q2.system" at="2025-06-12T14:18:39.237990" lifespan="1ms">
+  <info>
+    modified deploy/10_jpos_channel.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2025-06-12T14:18:39.242771">
+  <trace>
+    undeploying:/Users/peace/jpos-springboot/deploy/10_jpos_channel.xml
+  </trace>
+</log>
+<log realm="channel/127.0.0.1:52399" at="2025-06-12T14:18:39.248557" lifespan="290474ms">
+  <receive>
+    <peer-disconnect/>
+  </receive>
+</log>
+<log realm="simulator_10000.server.session/127.0.0.1:52399" at="2025-06-12T14:18:39.249149">
+  <session-end/>
+</log>
+<log realm="Q2.system" at="2025-06-12T14:18:39.251571">
+  <info>
+    undeployed:/Users/peace/jpos-springboot/deploy/10_jpos_channel.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2025-06-12T14:18:41.770626" lifespan="13ms">
+  <info>
+    deploy: /Users/peace/jpos-springboot/deploy/10_jpos_channel.xml
+  </info>
+</log>
+<log realm="simulator_10000.server.session/127.0.0.1:52462" at="2025-06-12T14:18:41.828933">
+  <session-start/>
+</log>
+<log realm="simulator_10000.server.session/127.0.0.1:52465" at="2025-06-12T14:19:03.566122">
+  <session-start/>
+</log>
+<log realm="channel/127.0.0.1:52465" at="2025-06-12T14:19:03.574660" lifespan="8ms">
+  <receive>
+    <isomsg direction="incoming">
+      <!-- org.jpos.iso.packager.XMLPackager -->
+      <field id="0" value="0200"/>
+      <field id="2" value="4000001234567890"/>
+      <field id="3" value="310000"/>
+      <field id="4" value="000000000000"/>
+      <field id="7" value="0611171833"/>
+      <field id="11" value="000004"/>
+      <field id="12" value="171833"/>
+      <field id="13" value="0611"/>
+      <field id="22" value="012"/>
+      <field id="41" value="TERM003"/>
+      <field id="42" value="MERCHANT003"/>
+      <field id="49" value="840"/>
+    </isomsg>
+  </receive>
+</log>
+<log realm="channel/127.0.0.1:52465" at="2025-06-12T14:19:03.583417">
+  <send>
+    <isomsg>
+      <!-- org.jpos.iso.packager.XMLPackager -->
+      <field id="0" value="0210"/>
+      <field id="2" value="4000001234567890"/>
+      <field id="3" value="310000"/>
+      <field id="4" value="000000000000"/>
+      <field id="7" value="0611171833"/>
+      <field id="11" value="000004"/>
+      <field id="12" value="171833"/>
+      <field id="13" value="0611"/>
+      <field id="22" value="012"/>
+      <field id="37" value="002147483647"/>
+      <field id="38" value="B17F8F"/>
+      <field id="39" value="00"/>
+      <field id="41" value="TERM003"/>
+      <field id="42" value="MERCHANT003"/>
+      <field id="49" value="840"/>
+    </isomsg>
+  </send>
+</log>
+<log realm="channel/127.0.0.1:52465" at="2025-06-12T14:19:03.587238" lifespan="3ms">
+  <receive>
+    <peer-disconnect/>
+  </receive>
+</log>
+<log realm="simulator_10000.server.session/127.0.0.1:52465" at="2025-06-12T14:19:03.587687">
+  <session-end/>
+</log>
+<log realm="org.jpos.q2.iso.ChannelAdaptor" at="2025-06-12T14:23:41.826752">
+  <warn>
+    channel-receiver-network-in
+    Read timeout / EOF - reconnecting
+  </warn>
+</log>
+<log realm="channel/127.0.0.1:52462" at="2025-06-12T14:23:41.827028" lifespan="299997ms">
+  <receive>
+    <peer-disconnect/>
+  </receive>
+</log>
+<log realm="simulator_10000.server.session/127.0.0.1:52462" at="2025-06-12T14:23:41.827993">
+  <session-end/>
+</log>
+<log realm="simulator_10000.server.session/127.0.0.1:52532" at="2025-06-12T14:23:51.854815">
+  <session-start/>
+</log>
+<log realm="org.jpos.q2.iso.ChannelAdaptor" at="2025-06-12T14:28:51.851680">
+  <warn>
+    channel-receiver-network-in
+    Read timeout / EOF - reconnecting
+  </warn>
+</log>
+<log realm="channel/127.0.0.1:52532" at="2025-06-12T14:28:51.852142" lifespan="299997ms">
+  <receive>
+    <peer-disconnect/>
+  </receive>
+</log>
+<log realm="simulator_10000.server.session/127.0.0.1:52532" at="2025-06-12T14:28:51.859305">
+  <session-end/>
+</log>
+<log realm="simulator_10000.server.session/127.0.0.1:52558" at="2025-06-12T14:29:02.025056">
+  <session-start/>
+</log>
+<log realm="Q2.system" at="2025-06-12T14:33:35.490732">
+  <info>
+    shutting down (hook)
+  </info>
+</log>
+<log realm="Q2.system" at="2025-06-12T14:33:36.365443">
+  <trace>
+    undeploying:/Users/peace/jpos-springboot/deploy/99_sysmon.xml
+  </trace>
+</log>
+<log realm="org.jpos.q2.qbean.SystemMonitor" at="2025-06-12T14:33:36.365780">
+  <info>
+    Stopping SystemMonitor
+  </info>
+</log>
+<log realm="Q2.system" at="2025-06-12T14:33:36.366062">
+  <info>
+    undeployed:/Users/peace/jpos-springboot/deploy/99_sysmon.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2025-06-12T14:33:36.366251">
+  <trace>
+    undeploying:/Users/peace/jpos-springboot/deploy/20_mux.xml
+  </trace>
+</log>
+<log realm="Q2.system" at="2025-06-12T14:33:36.373627">
+  <info>
+    undeployed:/Users/peace/jpos-springboot/deploy/20_mux.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2025-06-12T14:33:36.374218">
+  <trace>
+    undeploying:/Users/peace/jpos-springboot/deploy/10_jpos_channel.xml
+  </trace>
+</log>
+<log realm="org.jpos.q2.qbean.SystemMonitor" at="2025-06-12T14:33:36.374513">
+  <info>
+           OS: Mac OS X (12.7.6)
+         Java: 23 (Oracle Corporation) AES-secure
+  environment: default
+ process name: 96172@Peaces-MacBook-Pro-2.local
+    user name: peace
+         host: Peaces-MacBook-Pro-2.local/192.168.1.40
+          cwd: /Users/peace/jpos-springboot
+   free space: 17.1 GiB
+      version: 2.1.4 (6225824)
+     instance: 89337a45-f74e-4703-bc8c-3b88872e51b0
+       uptime: 00:45:39.227 (4.416992)
+   processors: 8
+       drift : 0
+memory(t/u/f): 56/27/28
+     encoding: UTF-8
+     timezone: Asia/Ho_Chi_Minh (Ho Chi Minh City Time) +07:00
+watch service: sun.nio.fs.PollingWatchService
+        clock: 1749713616 2025-06-12T07:33:36.366889Z
+ thread count: 122
+ peak threads: 139
+ user threads: 110
+        Thread[#9,Reference Handler,10,system]
+        Thread[#10,Finalizer,8,system]
+        Thread[#11,Signal Dispatcher,9,system]
+        Thread[#18,Common-Cleaner,8,InnocuousThreadGroup]
+        Thread[#19,Notification Thread,9,system]
+        Thread[#21,RMI TCP Accept-0,5,system]
+        Thread[#22,RMI TCP Accept-45556,5,system]
+        Thread[#23,RMI TCP Accept-0,5,system]
+        Thread[#36,RMI Scheduler(0),5,system]
+        Thread[#37,RMI TCP Connection(2)-127.0.0.1,5,RMI Runtime]
+        Thread[#38,JMX server connection timeout 38,5,RMI Runtime]
+        Thread[#54,pool-2-thread-1,5,main]
+        Thread[#55,Q2-89337a45-f74e-4703-bc8c-3b88872e51b0,5,main]
+        Thread[#56,DestroyJavaVM,5,main]
+        Thread[#57,FileSystemWatcher,5,main]
+        Thread[#58,Timer-0,5,main]
+        Thread[#60,simulator_10000-ThreadPool.PooledThread-0-idle,5,simulator_10000-ThreadPool-0]
+        Thread[#61,simulator_10000-ThreadPool.PooledThread-1-idle,5,simulator_10000-ThreadPool-0]
+        Thread[#62,simulator_10000-ThreadPool.PooledThread-2-idle,5,simulator_10000-ThreadPool-0]
+        Thread[#63,simulator_10000-ThreadPool.PooledThread-3-idle,5,simulator_10000-ThreadPool-0]
+        Thread[#64,simulator_10000-ThreadPool.PooledThread-4-idle,5,simulator_10000-ThreadPool-0]
+        Thread[#65,simulator_10000-ThreadPool.PooledThread-5-idle,5,simulator_10000-ThreadPool-0]
+        Thread[#66,simulator_10000-ThreadPool.PooledThread-6-idle,5,simulator_10000-ThreadPool-0]
+        Thread[#67,simulator_10000-ThreadPool.PooledThread-7-idle,5,simulator_10000-ThreadPool-0]
+        Thread[#68,simulator_10000-ThreadPool.PooledThread-8-idle,5,simulator_10000-ThreadPool-0]
+        Thread[#69,simulator_10000-ThreadPool.PooledThread-9-running,5,simulator_10000-ThreadPool-0]
+        Thread[#70,simulator_10000-ThreadPool.PooledThread-10,5,simulator_10000-ThreadPool-0]
+        Thread[#71,simulator_10000-ThreadPool.PooledThread-11,5,simulator_10000-ThreadPool-0]
+        Thread[#72,simulator_10000-ThreadPool.PooledThread-12,5,simulator_10000-ThreadPool-0]
+        Thread[#73,simulator_10000-ThreadPool.PooledThread-13,5,simulator_10000-ThreadPool-0]
+        Thread[#74,simulator_10000-ThreadPool.PooledThread-14,5,simulator_10000-ThreadPool-0]
+        Thread[#75,simulator_10000-ThreadPool.PooledThread-15,5,simulator_10000-ThreadPool-0]
+        Thread[#76,simulator_10000-ThreadPool.PooledThread-16,5,simulator_10000-ThreadPool-0]
+        Thread[#77,simulator_10000-ThreadPool.PooledThread-17,5,simulator_10000-ThreadPool-0]
+        Thread[#78,simulator_10000-ThreadPool.PooledThread-18,5,simulator_10000-ThreadPool-0]
+        Thread[#79,simulator_10000-ThreadPool.PooledThread-19,5,simulator_10000-ThreadPool-0]
+        Thread[#80,simulator_10000-ThreadPool.PooledThread-20,5,simulator_10000-ThreadPool-0]
+        Thread[#81,simulator_10000-ThreadPool.PooledThread-21,5,simulator_10000-ThreadPool-0]
+        Thread[#82,simulator_10000-ThreadPool.PooledThread-22,5,simulator_10000-ThreadPool-0]
+        Thread[#83,simulator_10000-ThreadPool.PooledThread-23,5,simulator_10000-ThreadPool-0]
+        Thread[#84,simulator_10000-ThreadPool.PooledThread-24,5,simulator_10000-ThreadPool-0]
+        Thread[#85,simulator_10000-ThreadPool.PooledThread-25,5,simulator_10000-ThreadPool-0]
+        Thread[#86,simulator_10000-ThreadPool.PooledThread-26,5,simulator_10000-ThreadPool-0]
+        Thread[#87,simulator_10000-ThreadPool.PooledThread-27,5,simulator_10000-ThreadPool-0]
+        Thread[#88,simulator_10000-ThreadPool.PooledThread-28,5,simulator_10000-ThreadPool-0]
+        Thread[#89,simulator_10000-ThreadPool.PooledThread-29,5,simulator_10000-ThreadPool-0]
+        Thread[#90,simulator_10000-ThreadPool.PooledThread-30,5,simulator_10000-ThreadPool-0]
+        Thread[#91,simulator_10000-ThreadPool.PooledThread-31,5,simulator_10000-ThreadPool-0]
+        Thread[#92,simulator_10000-ThreadPool.PooledThread-32,5,simulator_10000-ThreadPool-0]
+        Thread[#93,simulator_10000-ThreadPool.PooledThread-33,5,simulator_10000-ThreadPool-0]
+        Thread[#94,simulator_10000-ThreadPool.PooledThread-34,5,simulator_10000-ThreadPool-0]
+        Thread[#95,simulator_10000-ThreadPool.PooledThread-35,5,simulator_10000-ThreadPool-0]
+        Thread[#96,simulator_10000-ThreadPool.PooledThread-36,5,simulator_10000-ThreadPool-0]
+        Thread[#97,simulator_10000-ThreadPool.PooledThread-37,5,simulator_10000-ThreadPool-0]
+        Thread[#98,simulator_10000-ThreadPool.PooledThread-38,5,simulator_10000-ThreadPool-0]
+        Thread[#99,simulator_10000-ThreadPool.PooledThread-39,5,simulator_10000-ThreadPool-0]
+        Thread[#100,simulator_10000-ThreadPool.PooledThread-40,5,simulator_10000-ThreadPool-0]
+        Thread[#101,simulator_10000-ThreadPool.PooledThread-41,5,simulator_10000-ThreadPool-0]
+        Thread[#102,simulator_10000-ThreadPool.PooledThread-42,5,simulator_10000-ThreadPool-0]
+        Thread[#103,simulator_10000-ThreadPool.PooledThread-43,5,simulator_10000-ThreadPool-0]
+        Thread[#104,simulator_10000-ThreadPool.PooledThread-44,5,simulator_10000-ThreadPool-0]
+        Thread[#105,simulator_10000-ThreadPool.PooledThread-45,5,simulator_10000-ThreadPool-0]
+        Thread[#106,simulator_10000-ThreadPool.PooledThread-46,5,simulator_10000-ThreadPool-0]
+        Thread[#107,simulator_10000-ThreadPool.PooledThread-47,5,simulator_10000-ThreadPool-0]
+        Thread[#108,simulator_10000-ThreadPool.PooledThread-48,5,simulator_10000-ThreadPool-0]
+        Thread[#109,simulator_10000-ThreadPool.PooledThread-49,5,simulator_10000-ThreadPool-0]
+        Thread[#110,simulator_10000-ThreadPool.PooledThread-50,5,simulator_10000-ThreadPool-0]
+        Thread[#111,simulator_10000-ThreadPool.PooledThread-51,5,simulator_10000-ThreadPool-0]
+        Thread[#112,simulator_10000-ThreadPool.PooledThread-52,5,simulator_10000-ThreadPool-0]
+        Thread[#113,simulator_10000-ThreadPool.PooledThread-53,5,simulator_10000-ThreadPool-0]
+        Thread[#114,simulator_10000-ThreadPool.PooledThread-54,5,simulator_10000-ThreadPool-0]
+        Thread[#115,simulator_10000-ThreadPool.PooledThread-55,5,simulator_10000-ThreadPool-0]
+        Thread[#116,simulator_10000-ThreadPool.PooledThread-56,5,simulator_10000-ThreadPool-0]
+        Thread[#117,simulator_10000-ThreadPool.PooledThread-57,5,simulator_10000-ThreadPool-0]
+        Thread[#118,simulator_10000-ThreadPool.PooledThread-58,5,simulator_10000-ThreadPool-0]
+        Thread[#119,simulator_10000-ThreadPool.PooledThread-59,5,simulator_10000-ThreadPool-0]
+        Thread[#120,simulator_10000-ThreadPool.PooledThread-60,5,simulator_10000-ThreadPool-0]
+        Thread[#121,simulator_10000-ThreadPool.PooledThread-61,5,simulator_10000-ThreadPool-0]
+        Thread[#122,simulator_10000-ThreadPool.PooledThread-62,5,simulator_10000-ThreadPool-0]
+        Thread[#123,simulator_10000-ThreadPool.PooledThread-63,5,simulator_10000-ThreadPool-0]
+        Thread[#124,simulator_10000-ThreadPool.PooledThread-64,5,simulator_10000-ThreadPool-0]
+        Thread[#125,simulator_10000-ThreadPool.PooledThread-65,5,simulator_10000-ThreadPool-0]
+        Thread[#126,simulator_10000-ThreadPool.PooledThread-66,5,simulator_10000-ThreadPool-0]
+        Thread[#127,simulator_10000-ThreadPool.PooledThread-67,5,simulator_10000-ThreadPool-0]
+        Thread[#128,simulator_10000-ThreadPool.PooledThread-68,5,simulator_10000-ThreadPool-0]
+        Thread[#129,simulator_10000-ThreadPool.PooledThread-69,5,simulator_10000-ThreadPool-0]
+        Thread[#130,simulator_10000-ThreadPool.PooledThread-70,5,simulator_10000-ThreadPool-0]
+        Thread[#131,simulator_10000-ThreadPool.PooledThread-71,5,simulator_10000-ThreadPool-0]
+        Thread[#132,simulator_10000-ThreadPool.PooledThread-72,5,simulator_10000-ThreadPool-0]
+        Thread[#133,simulator_10000-ThreadPool.PooledThread-73,5,simulator_10000-ThreadPool-0]
+        Thread[#134,simulator_10000-ThreadPool.PooledThread-74,5,simulator_10000-ThreadPool-0]
+        Thread[#135,simulator_10000-ThreadPool.PooledThread-75,5,simulator_10000-ThreadPool-0]
+        Thread[#136,simulator_10000-ThreadPool.PooledThread-76,5,simulator_10000-ThreadPool-0]
+        Thread[#137,simulator_10000-ThreadPool.PooledThread-77,5,simulator_10000-ThreadPool-0]
+        Thread[#138,simulator_10000-ThreadPool.PooledThread-78,5,simulator_10000-ThreadPool-0]
+        Thread[#139,simulator_10000-ThreadPool.PooledThread-79,5,simulator_10000-ThreadPool-0]
+        Thread[#140,simulator_10000-ThreadPool.PooledThread-80,5,simulator_10000-ThreadPool-0]
+        Thread[#141,simulator_10000-ThreadPool.PooledThread-81,5,simulator_10000-ThreadPool-0]
+        Thread[#142,simulator_10000-ThreadPool.PooledThread-82,5,simulator_10000-ThreadPool-0]
+        Thread[#143,simulator_10000-ThreadPool.PooledThread-83,5,simulator_10000-ThreadPool-0]
+        Thread[#144,simulator_10000-ThreadPool.PooledThread-84,5,simulator_10000-ThreadPool-0]
+        Thread[#145,simulator_10000-ThreadPool.PooledThread-85,5,simulator_10000-ThreadPool-0]
+        Thread[#146,simulator_10000-ThreadPool.PooledThread-86,5,simulator_10000-ThreadPool-0]
+        Thread[#147,simulator_10000-ThreadPool.PooledThread-87,5,simulator_10000-ThreadPool-0]
+        Thread[#148,simulator_10000-ThreadPool.PooledThread-88,5,simulator_10000-ThreadPool-0]
+        Thread[#149,simulator_10000-ThreadPool.PooledThread-89,5,simulator_10000-ThreadPool-0]
+        Thread[#150,simulator_10000-ThreadPool.PooledThread-90,5,simulator_10000-ThreadPool-0]
+        Thread[#151,simulator_10000-ThreadPool.PooledThread-91,5,simulator_10000-ThreadPool-0]
+        Thread[#152,simulator_10000-ThreadPool.PooledThread-92,5,simulator_10000-ThreadPool-0]
+        Thread[#153,simulator_10000-ThreadPool.PooledThread-93,5,simulator_10000-ThreadPool-0]
+        Thread[#154,simulator_10000-ThreadPool.PooledThread-94,5,simulator_10000-ThreadPool-0]
+        Thread[#155,simulator_10000-ThreadPool.PooledThread-95,5,simulator_10000-ThreadPool-0]
+        Thread[#156,simulator_10000-ThreadPool.PooledThread-96,5,simulator_10000-ThreadPool-0]
+        Thread[#157,simulator_10000-ThreadPool.PooledThread-97,5,simulator_10000-ThreadPool-0]
+        Thread[#158,simulator_10000-ThreadPool.PooledThread-98,5,simulator_10000-ThreadPool-0]
+        Thread[#159,simulator_10000-ThreadPool.PooledThread-99,5,simulator_10000-ThreadPool-0]
+        Thread[#160,Thread-3,5,main]
+        Thread[#163,SystemMonitor,5,main]
+        Thread[#164,channel-sender-network-out,5,main]
+        Thread[#165,channel-receiver-network-in,5,main]
+        Thread[#166,SIGINT handler,9,system]
+        Thread[#59,Q2-ShutdownHook,5,main]
+name-registrar:
+  tspace:default: org.jpos.space.TSpace
+    <key count='1'>jpos-channel.ready</key>
+     key-count: 1
+        gcinfo: 0,0
+  Q2: org.jpos.q2.Q2
+  jpos-channel: org.jpos.q2.iso.ChannelAdaptor
+    tx=0, rx=0, connects=3, last=0
+  simulator_10000: org.jpos.q2.iso.QServer
+  channel.jpos-channel: org.jpos.iso.channel.NACChannel
+  logger.Q2: org.jpos.util.Logger
+  logger.: org.jpos.util.Logger
+  mux.s-mux: <NULL>
+  server.simulator_10000: org.jpos.iso.ISOServer
+    connected=1, rx=0, tx=0, last=1749712743575, idle=872799ms
+      127.0.0.1:52558: rx=0, tx=0, last=1749712743575
+  </info>
+</log>
+<log realm="channel/127.0.0.1:52558" at="2025-06-12T14:33:36.376536" lifespan="274351ms">
+  <receive>
+    <peer-disconnect/>
+  </receive>
+</log>
+<log realm="Q2.system" at="2025-06-12T14:33:36.376418">
+  <info>
+    undeployed:/Users/peace/jpos-springboot/deploy/10_jpos_channel.xml
+  </info>
+</log>
+<log realm="simulator_10000.server.session/127.0.0.1:52558" at="2025-06-12T14:33:36.377023">
+  <session-end/>
+</log>
+<log realm="Q2.system" at="2025-06-12T14:33:36.377261">
+  <trace>
+    undeploying:/Users/peace/jpos-springboot/deploy/05_serversimulator.xml
+  </trace>
+</log>
+<log realm="Q2.system" at="2025-06-12T14:33:36.378532">
+  <info>
+    undeployed:/Users/peace/jpos-springboot/deploy/05_serversimulator.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2025-06-12T14:33:36.378908">
+  <trace>
+    undeploying:/Users/peace/jpos-springboot/deploy/00_logger.xml
+  </trace>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:33:36.379029">
+  <queue-closed/>
+</log>
+<log realm="Q2.system" at="2025-06-12T14:33:36.379316">
+  <info>
+    undeployed:/Users/peace/jpos-springboot/deploy/00_logger.xml
+  </info>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:33:36.379742">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:33:36.379210">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:33:36.380688">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:33:36.380521" lifespan="1ms">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:33:36.380999" lifespan="1ms">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:33:36.379460">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:33:36.381840">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:33:36.382253">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:33:36.381610">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:33:36.382847">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:33:36.382522">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:33:36.383225">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:33:36.383038">
+  <queue-closed/>
+<?xml version="1.0" encoding="UTF-8"?>
+<logger class="org.jpos.util.DailyLogListener">
+<log realm="system" at="2025-06-12T14:36:28.772091">
+  <warn>
+    start
+    <iso-exception>
+      org.jpos.core.ConfigurationException: java.lang.ClassNotFoundException: org.jpos.util.XmlLogWriter (java.lang.ClassNotFoundException: org.jpos.util.XmlLogWriter)
+      <iso-exception>
+        java.lang.ClassNotFoundException: org.jpos.util.XmlLogWriter
+        <nested-exception>
+        java.lang.ClassNotFoundException: org.jpos.util.XmlLogWriter
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:528)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:462)
+	at java.base/java.lang.Class.forName(Class.java:453)
+	at org.jpos.util.SimpleLogListener.setConfiguration(SimpleLogListener.java:93)
+	at org.jpos.q2.QFactory.setConfiguration(QFactory.java:390)
+	at org.jpos.q2.qbean.LoggerAdaptor.addListener(LoggerAdaptor.java:77)
+	at org.jpos.q2.qbean.LoggerAdaptor.startService(LoggerAdaptor.java:43)
+	at org.jpos.q2.QBeanSupport.start(QBeanSupport.java:137)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:112)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:46)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at org.jpos.q2.QFactory.startQBean(QFactory.java:183)
+	at org.jpos.q2.Q2.start(Q2.java:633)
+	at org.jpos.q2.Q2.deploy(Q2.java:418)
+	at org.jpos.q2.Q2.initSystemLogger(Q2.java:652)
+	at org.jpos.q2.Q2.run(Q2.java:230)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+        </nested-exception>
+        org.jpos.core.ConfigurationException: java.lang.ClassNotFoundException: org.jpos.util.XmlLogWriter (java.lang.ClassNotFoundException: org.jpos.util.XmlLogWriter)
+	at org.jpos.util.SimpleLogListener.setConfiguration(SimpleLogListener.java:95)
+	at org.jpos.q2.QFactory.setConfiguration(QFactory.java:390)
+	at org.jpos.q2.qbean.LoggerAdaptor.addListener(LoggerAdaptor.java:77)
+	at org.jpos.q2.qbean.LoggerAdaptor.startService(LoggerAdaptor.java:43)
+	at org.jpos.q2.QBeanSupport.start(QBeanSupport.java:137)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:112)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:46)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at org.jpos.q2.QFactory.startQBean(QFactory.java:183)
+	at org.jpos.q2.Q2.start(Q2.java:633)
+	at org.jpos.q2.Q2.deploy(Q2.java:418)
+	at org.jpos.q2.Q2.initSystemLogger(Q2.java:652)
+	at org.jpos.q2.Q2.run(Q2.java:230)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Nested:java.lang.ClassNotFoundException: org.jpos.util.XmlLogWriter
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:528)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:462)
+	at java.base/java.lang.Class.forName(Class.java:453)
+	at org.jpos.util.SimpleLogListener.setConfiguration(SimpleLogListener.java:93)
+	at org.jpos.q2.QFactory.setConfiguration(QFactory.java:390)
+	at org.jpos.q2.qbean.LoggerAdaptor.addListener(LoggerAdaptor.java:77)
+	at org.jpos.q2.qbean.LoggerAdaptor.startService(LoggerAdaptor.java:43)
+	at org.jpos.q2.QBeanSupport.start(QBeanSupport.java:137)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:112)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:46)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at org.jpos.q2.QFactory.startQBean(QFactory.java:183)
+	at org.jpos.q2.Q2.start(Q2.java:633)
+	at org.jpos.q2.Q2.deploy(Q2.java:418)
+	at org.jpos.q2.Q2.initSystemLogger(Q2.java:652)
+	at org.jpos.q2.Q2.run(Q2.java:230)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+      </iso-exception>
+      org.jpos.core.ConfigurationException: org.jpos.core.ConfigurationException: java.lang.ClassNotFoundException: org.jpos.util.XmlLogWriter (java.lang.ClassNotFoundException: org.jpos.util.XmlLogWriter) (org.jpos.core.ConfigurationException: java.lang.ClassNotFoundException: org.jpos.util.XmlLogWriter (java.lang.ClassNotFoundException: org.jpos.util.XmlLogWriter))
+	at org.jpos.q2.QFactory.setConfiguration(QFactory.java:392)
+	at org.jpos.q2.qbean.LoggerAdaptor.addListener(LoggerAdaptor.java:77)
+	at org.jpos.q2.qbean.LoggerAdaptor.startService(LoggerAdaptor.java:43)
+	at org.jpos.q2.QBeanSupport.start(QBeanSupport.java:137)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:112)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:46)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at org.jpos.q2.QFactory.startQBean(QFactory.java:183)
+	at org.jpos.q2.Q2.start(Q2.java:633)
+	at org.jpos.q2.Q2.deploy(Q2.java:418)
+	at org.jpos.q2.Q2.initSystemLogger(Q2.java:652)
+	at org.jpos.q2.Q2.run(Q2.java:230)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Nested:org.jpos.core.ConfigurationException: java.lang.ClassNotFoundException: org.jpos.util.XmlLogWriter (java.lang.ClassNotFoundException: org.jpos.util.XmlLogWriter)
+	at org.jpos.util.SimpleLogListener.setConfiguration(SimpleLogListener.java:95)
+	at org.jpos.q2.QFactory.setConfiguration(QFactory.java:390)
+	at org.jpos.q2.qbean.LoggerAdaptor.addListener(LoggerAdaptor.java:77)
+	at org.jpos.q2.qbean.LoggerAdaptor.startService(LoggerAdaptor.java:43)
+	at org.jpos.q2.QBeanSupport.start(QBeanSupport.java:137)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:112)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:46)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at org.jpos.q2.QFactory.startQBean(QFactory.java:183)
+	at org.jpos.q2.Q2.start(Q2.java:633)
+	at org.jpos.q2.Q2.deploy(Q2.java:418)
+	at org.jpos.q2.Q2.initSystemLogger(Q2.java:652)
+	at org.jpos.q2.Q2.run(Q2.java:230)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Nested:java.lang.ClassNotFoundException: org.jpos.util.XmlLogWriter
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:528)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:462)
+	at java.base/java.lang.Class.forName(Class.java:453)
+	at org.jpos.util.SimpleLogListener.setConfiguration(SimpleLogListener.java:93)
+	at org.jpos.q2.QFactory.setConfiguration(QFactory.java:390)
+	at org.jpos.q2.qbean.LoggerAdaptor.addListener(LoggerAdaptor.java:77)
+	at org.jpos.q2.qbean.LoggerAdaptor.startService(LoggerAdaptor.java:43)
+	at org.jpos.q2.QBeanSupport.start(QBeanSupport.java:137)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:112)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:46)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at org.jpos.q2.QFactory.startQBean(QFactory.java:183)
+	at org.jpos.q2.Q2.start(Q2.java:633)
+	at org.jpos.q2.Q2.deploy(Q2.java:418)
+	at org.jpos.q2.Q2.initSystemLogger(Q2.java:652)
+	at org.jpos.q2.Q2.run(Q2.java:230)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+    </iso-exception>
+  </warn>
+</log>
+<log realm="Q2.system" at="2025-06-12T14:36:28.812297">
+  <info>
+    Q2 started, deployDir=/Users/peace/jpos-springboot/deploy, environment=default
+  </info>
+</log>
+<log realm="Q2.system" at="2025-06-12T14:36:29.495781" lifespan="678ms">
+  <version>
+    jPOS 2.1.4 master/6225824 (2020-03-31 18:07:15 UYT) 
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+jPOS Community Edition, licensed under GNU AGPL v3.0.
+This software is probably not suitable for commercial use.
+Please see http://jpos.org/license for details.
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.9 (Darwin)
+
+iQEcBAEBAgAGBQJMolHDAAoJEOQyeO71nYtFv74H/3OgehDGEy1VXp2U3/GcAobg
+HH2eZjPUz53r38ARPiU3pzm9LwDa3WZgJJaa/b9VrJwKvbPwe9+0kY3gScDE1skT
+ladHt+KHHmGQArEutkzHlpZa73RbroFEIa1qmN6MaDEHGoxZqDh0Sv2cpvOaVYGO
+St8ZaddLBPC17bSjAPWo9sWbvL7FgPFOHhnPmbeux8SLtnfWxXWsgo5hLBanKmO1
+1z+I/w/6DL6ZYZU6bAJUk+eyVVImJqw0x3IEElI07Nh9MC6BA4iJ77ejobj8HI2r
+q9ulRPEqH9NR79619lNKVUkE206dVlXo7xHmJS1QZy5v/GT66xBxyDVfTduPFXk=
+=oP+v
+-----END PGP SIGNATURE-----
+
+  </version>
+</log>
+<log realm="Q2.system" at="2025-06-12T14:36:29.513540" lifespan="6ms">
+  <info>
+    deploy: /Users/peace/jpos-springboot/deploy/05_serversimulator.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2025-06-12T14:36:29.524342" lifespan="10ms">
+  <info>
+    deploy: /Users/peace/jpos-springboot/deploy/10_jpos_channel.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2025-06-12T14:36:29.539578" lifespan="14ms">
+  <info>
+    deploy: /Users/peace/jpos-springboot/deploy/20_mux.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2025-06-12T14:36:29.550118" lifespan="10ms">
+  <info>
+    deploy: /Users/peace/jpos-springboot/deploy/99_sysmon.xml
+  </info>
+</log>
+<log realm="simulator_10000.server" at="2025-06-12T14:36:29.580966">
+  <iso-server>
+    listening on port 10000
+  </iso-server>
+</log>
+<log realm="org.jpos.q2.qbean.SystemMonitor" at="2025-06-12T14:36:29.614539">
+  <info>
+    Starting SystemMonitor
+  </info>
+</log>
+<log realm="simulator_10000.server.session/127.0.0.1:52734" at="2025-06-12T14:36:29.618967">
+  <session-start/>
+</log>
+<log realm="org.jpos.q2.qbean.SystemMonitor" at="2025-06-12T14:36:29.631569">
+  <info>
+           OS: Mac OS X (12.7.6)
+         Java: 23 (Oracle Corporation) AES-secure
+  environment: default
+ process name: 21843@Peaces-MacBook-Pro-2.local
+    user name: peace
+         host: Peaces-MacBook-Pro-2.local/127.0.0.1
+          cwd: /Users/peace/jpos-springboot
+   free space: 16.1 GiB
+      version: 2.1.4 (6225824)
+     instance: debb4fe5-df8a-4ed0-9bc3-af013662c18e
+       uptime: 00:00:01.039 (5.545410)
+   processors: 8
+       drift : 0
+memory(t/u/f): 74/36/37
+     encoding: UTF-8
+     timezone: Asia/Ho_Chi_Minh (Ho Chi Minh City Time) +07:00
+watch service: sun.nio.fs.PollingWatchService
+        clock: 1749713789 2025-06-12T07:36:29.616520Z
+ thread count: 136
+ peak threads: 136
+ user threads: 124
+        Thread[#9,Reference Handler,10,system]
+        Thread[#10,Finalizer,8,system]
+        Thread[#11,Signal Dispatcher,9,system]
+        Thread[#18,Common-Cleaner,8,InnocuousThreadGroup]
+        Thread[#19,Notification Thread,9,system]
+        Thread[#21,RMI TCP Accept-0,5,system]
+        Thread[#22,RMI TCP Accept-45556,5,system]
+        Thread[#23,RMI TCP Accept-0,5,system]
+        Thread[#35,Catalina-utility-1,1,main]
+        Thread[#36,Catalina-utility-2,1,main]
+        Thread[#37,container-0,5,main]
+        Thread[#38,RMI TCP Connection(1)-127.0.0.1,5,RMI Runtime]
+        Thread[#39,RMI Scheduler(0),5,system]
+        Thread[#40,RMI TCP Connection(2)-127.0.0.1,5,RMI Runtime]
+        Thread[#41,JMX server connection timeout 41,5,RMI Runtime]
+        Thread[#42,http-nio-8080-exec-1,5,main]
+        Thread[#43,http-nio-8080-exec-2,5,main]
+        Thread[#44,http-nio-8080-exec-3,5,main]
+        Thread[#45,http-nio-8080-exec-4,5,main]
+        Thread[#46,http-nio-8080-exec-5,5,main]
+        Thread[#47,http-nio-8080-exec-6,5,main]
+        Thread[#48,http-nio-8080-exec-7,5,main]
+        Thread[#49,http-nio-8080-exec-8,5,main]
+        Thread[#50,http-nio-8080-exec-9,5,main]
+        Thread[#51,http-nio-8080-exec-10,5,main]
+        Thread[#52,http-nio-8080-Poller,5,main]
+        Thread[#53,http-nio-8080-Acceptor,5,main]
+        Thread[#54,pool-2-thread-1,5,main]
+        Thread[#55,Q2-debb4fe5-df8a-4ed0-9bc3-af013662c18e,5,main]
+        Thread[#56,DestroyJavaVM,5,main]
+        Thread[#57,FileSystemWatcher,5,main]
+        Thread[#58,Timer-0,5,main]
+        Thread[#60,simulator_10000-ThreadPool.PooledThread-0-running,5,simulator_10000-ThreadPool-0]
+        Thread[#61,simulator_10000-ThreadPool.PooledThread-1,5,simulator_10000-ThreadPool-0]
+        Thread[#62,simulator_10000-ThreadPool.PooledThread-2,5,simulator_10000-ThreadPool-0]
+        Thread[#63,simulator_10000-ThreadPool.PooledThread-3,5,simulator_10000-ThreadPool-0]
+        Thread[#64,simulator_10000-ThreadPool.PooledThread-4,5,simulator_10000-ThreadPool-0]
+        Thread[#65,simulator_10000-ThreadPool.PooledThread-5,5,simulator_10000-ThreadPool-0]
+        Thread[#66,simulator_10000-ThreadPool.PooledThread-6,5,simulator_10000-ThreadPool-0]
+        Thread[#67,simulator_10000-ThreadPool.PooledThread-7,5,simulator_10000-ThreadPool-0]
+        Thread[#68,simulator_10000-ThreadPool.PooledThread-8,5,simulator_10000-ThreadPool-0]
+        Thread[#69,simulator_10000-ThreadPool.PooledThread-9,5,simulator_10000-ThreadPool-0]
+        Thread[#70,simulator_10000-ThreadPool.PooledThread-10,5,simulator_10000-ThreadPool-0]
+        Thread[#71,simulator_10000-ThreadPool.PooledThread-11,5,simulator_10000-ThreadPool-0]
+        Thread[#72,simulator_10000-ThreadPool.PooledThread-12,5,simulator_10000-ThreadPool-0]
+        Thread[#73,simulator_10000-ThreadPool.PooledThread-13,5,simulator_10000-ThreadPool-0]
+        Thread[#74,simulator_10000-ThreadPool.PooledThread-14,5,simulator_10000-ThreadPool-0]
+        Thread[#75,simulator_10000-ThreadPool.PooledThread-15,5,simulator_10000-ThreadPool-0]
+        Thread[#76,simulator_10000-ThreadPool.PooledThread-16,5,simulator_10000-ThreadPool-0]
+        Thread[#77,simulator_10000-ThreadPool.PooledThread-17,5,simulator_10000-ThreadPool-0]
+        Thread[#78,simulator_10000-ThreadPool.PooledThread-18,5,simulator_10000-ThreadPool-0]
+        Thread[#79,simulator_10000-ThreadPool.PooledThread-19,5,simulator_10000-ThreadPool-0]
+        Thread[#80,simulator_10000-ThreadPool.PooledThread-20,5,simulator_10000-ThreadPool-0]
+        Thread[#81,simulator_10000-ThreadPool.PooledThread-21,5,simulator_10000-ThreadPool-0]
+        Thread[#82,simulator_10000-ThreadPool.PooledThread-22,5,simulator_10000-ThreadPool-0]
+        Thread[#83,simulator_10000-ThreadPool.PooledThread-23,5,simulator_10000-ThreadPool-0]
+        Thread[#84,simulator_10000-ThreadPool.PooledThread-24,5,simulator_10000-ThreadPool-0]
+        Thread[#85,simulator_10000-ThreadPool.PooledThread-25,5,simulator_10000-ThreadPool-0]
+        Thread[#86,simulator_10000-ThreadPool.PooledThread-26,5,simulator_10000-ThreadPool-0]
+        Thread[#87,simulator_10000-ThreadPool.PooledThread-27,5,simulator_10000-ThreadPool-0]
+        Thread[#88,simulator_10000-ThreadPool.PooledThread-28,5,simulator_10000-ThreadPool-0]
+        Thread[#89,simulator_10000-ThreadPool.PooledThread-29,5,simulator_10000-ThreadPool-0]
+        Thread[#90,simulator_10000-ThreadPool.PooledThread-30,5,simulator_10000-ThreadPool-0]
+        Thread[#91,simulator_10000-ThreadPool.PooledThread-31,5,simulator_10000-ThreadPool-0]
+        Thread[#92,simulator_10000-ThreadPool.PooledThread-32,5,simulator_10000-ThreadPool-0]
+        Thread[#93,simulator_10000-ThreadPool.PooledThread-33,5,simulator_10000-ThreadPool-0]
+        Thread[#94,simulator_10000-ThreadPool.PooledThread-34,5,simulator_10000-ThreadPool-0]
+        Thread[#95,simulator_10000-ThreadPool.PooledThread-35,5,simulator_10000-ThreadPool-0]
+        Thread[#96,simulator_10000-ThreadPool.PooledThread-36,5,simulator_10000-ThreadPool-0]
+        Thread[#97,simulator_10000-ThreadPool.PooledThread-37,5,simulator_10000-ThreadPool-0]
+        Thread[#98,simulator_10000-ThreadPool.PooledThread-38,5,simulator_10000-ThreadPool-0]
+        Thread[#99,simulator_10000-ThreadPool.PooledThread-39,5,simulator_10000-ThreadPool-0]
+        Thread[#100,simulator_10000-ThreadPool.PooledThread-40,5,simulator_10000-ThreadPool-0]
+        Thread[#101,simulator_10000-ThreadPool.PooledThread-41,5,simulator_10000-ThreadPool-0]
+        Thread[#102,simulator_10000-ThreadPool.PooledThread-42,5,simulator_10000-ThreadPool-0]
+        Thread[#103,simulator_10000-ThreadPool.PooledThread-43,5,simulator_10000-ThreadPool-0]
+        Thread[#104,simulator_10000-ThreadPool.PooledThread-44,5,simulator_10000-ThreadPool-0]
+        Thread[#105,simulator_10000-ThreadPool.PooledThread-45,5,simulator_10000-ThreadPool-0]
+        Thread[#106,simulator_10000-ThreadPool.PooledThread-46,5,simulator_10000-ThreadPool-0]
+        Thread[#107,simulator_10000-ThreadPool.PooledThread-47,5,simulator_10000-ThreadPool-0]
+        Thread[#108,simulator_10000-ThreadPool.PooledThread-48,5,simulator_10000-ThreadPool-0]
+        Thread[#109,simulator_10000-ThreadPool.PooledThread-49,5,simulator_10000-ThreadPool-0]
+        Thread[#110,simulator_10000-ThreadPool.PooledThread-50,5,simulator_10000-ThreadPool-0]
+        Thread[#111,simulator_10000-ThreadPool.PooledThread-51,5,simulator_10000-ThreadPool-0]
+        Thread[#112,simulator_10000-ThreadPool.PooledThread-52,5,simulator_10000-ThreadPool-0]
+        Thread[#113,simulator_10000-ThreadPool.PooledThread-53,5,simulator_10000-ThreadPool-0]
+        Thread[#114,simulator_10000-ThreadPool.PooledThread-54,5,simulator_10000-ThreadPool-0]
+        Thread[#115,simulator_10000-ThreadPool.PooledThread-55,5,simulator_10000-ThreadPool-0]
+        Thread[#116,simulator_10000-ThreadPool.PooledThread-56,5,simulator_10000-ThreadPool-0]
+        Thread[#117,simulator_10000-ThreadPool.PooledThread-57,5,simulator_10000-ThreadPool-0]
+        Thread[#118,simulator_10000-ThreadPool.PooledThread-58,5,simulator_10000-ThreadPool-0]
+        Thread[#119,simulator_10000-ThreadPool.PooledThread-59,5,simulator_10000-ThreadPool-0]
+        Thread[#120,simulator_10000-ThreadPool.PooledThread-60,5,simulator_10000-ThreadPool-0]
+        Thread[#121,simulator_10000-ThreadPool.PooledThread-61,5,simulator_10000-ThreadPool-0]
+        Thread[#122,simulator_10000-ThreadPool.PooledThread-62,5,simulator_10000-ThreadPool-0]
+        Thread[#123,simulator_10000-ThreadPool.PooledThread-63,5,simulator_10000-ThreadPool-0]
+        Thread[#124,simulator_10000-ThreadPool.PooledThread-64,5,simulator_10000-ThreadPool-0]
+        Thread[#125,simulator_10000-ThreadPool.PooledThread-65,5,simulator_10000-ThreadPool-0]
+        Thread[#126,simulator_10000-ThreadPool.PooledThread-66,5,simulator_10000-ThreadPool-0]
+        Thread[#127,simulator_10000-ThreadPool.PooledThread-67,5,simulator_10000-ThreadPool-0]
+        Thread[#128,simulator_10000-ThreadPool.PooledThread-68,5,simulator_10000-ThreadPool-0]
+        Thread[#129,simulator_10000-ThreadPool.PooledThread-69,5,simulator_10000-ThreadPool-0]
+        Thread[#130,simulator_10000-ThreadPool.PooledThread-70,5,simulator_10000-ThreadPool-0]
+        Thread[#131,simulator_10000-ThreadPool.PooledThread-71,5,simulator_10000-ThreadPool-0]
+        Thread[#132,simulator_10000-ThreadPool.PooledThread-72,5,simulator_10000-ThreadPool-0]
+        Thread[#133,simulator_10000-ThreadPool.PooledThread-73,5,simulator_10000-ThreadPool-0]
+        Thread[#134,simulator_10000-ThreadPool.PooledThread-74,5,simulator_10000-ThreadPool-0]
+        Thread[#135,simulator_10000-ThreadPool.PooledThread-75,5,simulator_10000-ThreadPool-0]
+        Thread[#136,simulator_10000-ThreadPool.PooledThread-76,5,simulator_10000-ThreadPool-0]
+        Thread[#137,simulator_10000-ThreadPool.PooledThread-77,5,simulator_10000-ThreadPool-0]
+        Thread[#138,simulator_10000-ThreadPool.PooledThread-78,5,simulator_10000-ThreadPool-0]
+        Thread[#139,simulator_10000-ThreadPool.PooledThread-79,5,simulator_10000-ThreadPool-0]
+        Thread[#140,simulator_10000-ThreadPool.PooledThread-80,5,simulator_10000-ThreadPool-0]
+        Thread[#141,simulator_10000-ThreadPool.PooledThread-81,5,simulator_10000-ThreadPool-0]
+        Thread[#142,simulator_10000-ThreadPool.PooledThread-82,5,simulator_10000-ThreadPool-0]
+        Thread[#143,simulator_10000-ThreadPool.PooledThread-83,5,simulator_10000-ThreadPool-0]
+        Thread[#144,simulator_10000-ThreadPool.PooledThread-84,5,simulator_10000-ThreadPool-0]
+        Thread[#145,simulator_10000-ThreadPool.PooledThread-85,5,simulator_10000-ThreadPool-0]
+        Thread[#146,simulator_10000-ThreadPool.PooledThread-86,5,simulator_10000-ThreadPool-0]
+        Thread[#147,simulator_10000-ThreadPool.PooledThread-87,5,simulator_10000-ThreadPool-0]
+        Thread[#148,simulator_10000-ThreadPool.PooledThread-88,5,simulator_10000-ThreadPool-0]
+        Thread[#149,simulator_10000-ThreadPool.PooledThread-89,5,simulator_10000-ThreadPool-0]
+        Thread[#150,simulator_10000-ThreadPool.PooledThread-90,5,simulator_10000-ThreadPool-0]
+        Thread[#151,simulator_10000-ThreadPool.PooledThread-91,5,simulator_10000-ThreadPool-0]
+        Thread[#152,simulator_10000-ThreadPool.PooledThread-92,5,simulator_10000-ThreadPool-0]
+        Thread[#153,simulator_10000-ThreadPool.PooledThread-93,5,simulator_10000-ThreadPool-0]
+        Thread[#154,simulator_10000-ThreadPool.PooledThread-94,5,simulator_10000-ThreadPool-0]
+        Thread[#155,simulator_10000-ThreadPool.PooledThread-95,5,simulator_10000-ThreadPool-0]
+        Thread[#156,simulator_10000-ThreadPool.PooledThread-96,5,simulator_10000-ThreadPool-0]
+        Thread[#157,simulator_10000-ThreadPool.PooledThread-97,5,simulator_10000-ThreadPool-0]
+        Thread[#158,simulator_10000-ThreadPool.PooledThread-98,5,simulator_10000-ThreadPool-0]
+        Thread[#159,simulator_10000-ThreadPool.PooledThread-99,5,simulator_10000-ThreadPool-0]
+        Thread[#160,Thread-3,5,main]
+        Thread[#161,channel-sender-network-out,5,main]
+        Thread[#162,channel-receiver-network-in,5,main]
+        Thread[#163,SystemMonitor,5,main]
+name-registrar:
+  tspace:default: org.jpos.space.TSpace
+    <key count='1'>jpos-channel.ready</key>
+     key-count: 1
+        gcinfo: 0,0
+  Q2: org.jpos.q2.Q2
+  jpos-channel: org.jpos.q2.iso.ChannelAdaptor
+    tx=0, rx=0, connects=1, last=0
+  simulator_10000: org.jpos.q2.iso.QServer
+  channel.jpos-channel: org.jpos.iso.channel.NACChannel
+  logger.Q2: org.jpos.util.Logger
+  logger.: org.jpos.util.Logger
+  mux.s-mux: org.jpos.q2.iso.QMUX
+    tx=0, rx=0, tx_expired=0, tx_pending=0, rx_expired=0, rx_pending=0, rx_unhandled=0, rx_forwarded=0, connected=false, last=0
+  server.simulator_10000: org.jpos.iso.ISOServer
+    connected=1, rx=0, tx=0, last=0
+      127.0.0.1:52734: rx=0, tx=0, last=0
+  </info>
+</log>
+<log realm="Q2.system" at="2025-06-12T14:38:47.472588">
+  <info>
+    shutting down (hook)
+  </info>
+</log>
+<log realm="Q2.system" at="2025-06-12T14:38:49.816472">
+  <trace>
+    undeploying:/Users/peace/jpos-springboot/deploy/99_sysmon.xml
+  </trace>
+</log>
+<log realm="org.jpos.q2.qbean.SystemMonitor" at="2025-06-12T14:38:49.817251">
+  <info>
+    Stopping SystemMonitor
+  </info>
+</log>
+<log realm="Q2.system" at="2025-06-12T14:38:49.817878">
+  <info>
+    undeployed:/Users/peace/jpos-springboot/deploy/99_sysmon.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2025-06-12T14:38:49.818508">
+  <trace>
+    undeploying:/Users/peace/jpos-springboot/deploy/20_mux.xml
+  </trace>
+</log>
+<log realm="Q2.system" at="2025-06-12T14:38:49.819612">
+  <info>
+    undeployed:/Users/peace/jpos-springboot/deploy/20_mux.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2025-06-12T14:38:49.820046">
+  <trace>
+    undeploying:/Users/peace/jpos-springboot/deploy/10_jpos_channel.xml
+  </trace>
+</log>
+<log realm="org.jpos.q2.qbean.SystemMonitor" at="2025-06-12T14:38:49.820126">
+  <info>
+           OS: Mac OS X (12.7.6)
+         Java: 23 (Oracle Corporation) AES-secure
+  environment: default
+ process name: 21843@Peaces-MacBook-Pro-2.local
+    user name: peace
+         host: Peaces-MacBook-Pro-2.local/127.0.0.1
+          cwd: /Users/peace/jpos-springboot
+   free space: 16.1 GiB
+      version: 2.1.4 (6225824)
+     instance: debb4fe5-df8a-4ed0-9bc3-af013662c18e
+       uptime: 00:02:21.238 (2.437500)
+   processors: 8
+       drift : 0
+memory(t/u/f): 74/41/32
+     encoding: UTF-8
+     timezone: Asia/Ho_Chi_Minh (Ho Chi Minh City Time) +07:00
+watch service: sun.nio.fs.PollingWatchService
+        clock: 1749713929 2025-06-12T07:38:49.817787Z
+ thread count: 122
+ peak threads: 139
+ user threads: 110
+        Thread[#9,Reference Handler,10,system]
+        Thread[#10,Finalizer,8,system]
+        Thread[#11,Signal Dispatcher,9,system]
+        Thread[#18,Common-Cleaner,8,InnocuousThreadGroup]
+        Thread[#19,Notification Thread,9,system]
+        Thread[#21,RMI TCP Accept-0,5,system]
+        Thread[#22,RMI TCP Accept-45556,5,system]
+        Thread[#23,RMI TCP Accept-0,5,system]
+        Thread[#39,RMI Scheduler(0),5,system]
+        Thread[#40,RMI TCP Connection(2)-127.0.0.1,5,RMI Runtime]
+        Thread[#41,JMX server connection timeout 41,5,RMI Runtime]
+        Thread[#54,pool-2-thread-1,5,main]
+        Thread[#55,Q2-debb4fe5-df8a-4ed0-9bc3-af013662c18e,5,main]
+        Thread[#56,DestroyJavaVM,5,main]
+        Thread[#57,FileSystemWatcher,5,main]
+        Thread[#58,Timer-0,5,main]
+        Thread[#60,simulator_10000-ThreadPool.PooledThread-0-running,5,simulator_10000-ThreadPool-0]
+        Thread[#61,simulator_10000-ThreadPool.PooledThread-1,5,simulator_10000-ThreadPool-0]
+        Thread[#62,simulator_10000-ThreadPool.PooledThread-2,5,simulator_10000-ThreadPool-0]
+        Thread[#63,simulator_10000-ThreadPool.PooledThread-3,5,simulator_10000-ThreadPool-0]
+        Thread[#64,simulator_10000-ThreadPool.PooledThread-4,5,simulator_10000-ThreadPool-0]
+        Thread[#65,simulator_10000-ThreadPool.PooledThread-5,5,simulator_10000-ThreadPool-0]
+        Thread[#66,simulator_10000-ThreadPool.PooledThread-6,5,simulator_10000-ThreadPool-0]
+        Thread[#67,simulator_10000-ThreadPool.PooledThread-7,5,simulator_10000-ThreadPool-0]
+        Thread[#68,simulator_10000-ThreadPool.PooledThread-8,5,simulator_10000-ThreadPool-0]
+        Thread[#69,simulator_10000-ThreadPool.PooledThread-9,5,simulator_10000-ThreadPool-0]
+        Thread[#70,simulator_10000-ThreadPool.PooledThread-10,5,simulator_10000-ThreadPool-0]
+        Thread[#71,simulator_10000-ThreadPool.PooledThread-11,5,simulator_10000-ThreadPool-0]
+        Thread[#72,simulator_10000-ThreadPool.PooledThread-12,5,simulator_10000-ThreadPool-0]
+        Thread[#73,simulator_10000-ThreadPool.PooledThread-13,5,simulator_10000-ThreadPool-0]
+        Thread[#74,simulator_10000-ThreadPool.PooledThread-14,5,simulator_10000-ThreadPool-0]
+        Thread[#75,simulator_10000-ThreadPool.PooledThread-15,5,simulator_10000-ThreadPool-0]
+        Thread[#76,simulator_10000-ThreadPool.PooledThread-16,5,simulator_10000-ThreadPool-0]
+        Thread[#77,simulator_10000-ThreadPool.PooledThread-17,5,simulator_10000-ThreadPool-0]
+        Thread[#78,simulator_10000-ThreadPool.PooledThread-18,5,simulator_10000-ThreadPool-0]
+        Thread[#79,simulator_10000-ThreadPool.PooledThread-19,5,simulator_10000-ThreadPool-0]
+        Thread[#80,simulator_10000-ThreadPool.PooledThread-20,5,simulator_10000-ThreadPool-0]
+        Thread[#81,simulator_10000-ThreadPool.PooledThread-21,5,simulator_10000-ThreadPool-0]
+        Thread[#82,simulator_10000-ThreadPool.PooledThread-22,5,simulator_10000-ThreadPool-0]
+        Thread[#83,simulator_10000-ThreadPool.PooledThread-23,5,simulator_10000-ThreadPool-0]
+        Thread[#84,simulator_10000-ThreadPool.PooledThread-24,5,simulator_10000-ThreadPool-0]
+        Thread[#85,simulator_10000-ThreadPool.PooledThread-25,5,simulator_10000-ThreadPool-0]
+        Thread[#86,simulator_10000-ThreadPool.PooledThread-26,5,simulator_10000-ThreadPool-0]
+        Thread[#87,simulator_10000-ThreadPool.PooledThread-27,5,simulator_10000-ThreadPool-0]
+        Thread[#88,simulator_10000-ThreadPool.PooledThread-28,5,simulator_10000-ThreadPool-0]
+        Thread[#89,simulator_10000-ThreadPool.PooledThread-29,5,simulator_10000-ThreadPool-0]
+        Thread[#90,simulator_10000-ThreadPool.PooledThread-30,5,simulator_10000-ThreadPool-0]
+        Thread[#91,simulator_10000-ThreadPool.PooledThread-31,5,simulator_10000-ThreadPool-0]
+        Thread[#92,simulator_10000-ThreadPool.PooledThread-32,5,simulator_10000-ThreadPool-0]
+        Thread[#93,simulator_10000-ThreadPool.PooledThread-33,5,simulator_10000-ThreadPool-0]
+        Thread[#94,simulator_10000-ThreadPool.PooledThread-34,5,simulator_10000-ThreadPool-0]
+        Thread[#95,simulator_10000-ThreadPool.PooledThread-35,5,simulator_10000-ThreadPool-0]
+        Thread[#96,simulator_10000-ThreadPool.PooledThread-36,5,simulator_10000-ThreadPool-0]
+        Thread[#97,simulator_10000-ThreadPool.PooledThread-37,5,simulator_10000-ThreadPool-0]
+        Thread[#98,simulator_10000-ThreadPool.PooledThread-38,5,simulator_10000-ThreadPool-0]
+        Thread[#99,simulator_10000-ThreadPool.PooledThread-39,5,simulator_10000-ThreadPool-0]
+        Thread[#100,simulator_10000-ThreadPool.PooledThread-40,5,simulator_10000-ThreadPool-0]
+        Thread[#101,simulator_10000-ThreadPool.PooledThread-41,5,simulator_10000-ThreadPool-0]
+        Thread[#102,simulator_10000-ThreadPool.PooledThread-42,5,simulator_10000-ThreadPool-0]
+        Thread[#103,simulator_10000-ThreadPool.PooledThread-43,5,simulator_10000-ThreadPool-0]
+        Thread[#104,simulator_10000-ThreadPool.PooledThread-44,5,simulator_10000-ThreadPool-0]
+        Thread[#105,simulator_10000-ThreadPool.PooledThread-45,5,simulator_10000-ThreadPool-0]
+        Thread[#106,simulator_10000-ThreadPool.PooledThread-46,5,simulator_10000-ThreadPool-0]
+        Thread[#107,simulator_10000-ThreadPool.PooledThread-47,5,simulator_10000-ThreadPool-0]
+        Thread[#108,simulator_10000-ThreadPool.PooledThread-48,5,simulator_10000-ThreadPool-0]
+        Thread[#109,simulator_10000-ThreadPool.PooledThread-49,5,simulator_10000-ThreadPool-0]
+        Thread[#110,simulator_10000-ThreadPool.PooledThread-50,5,simulator_10000-ThreadPool-0]
+        Thread[#111,simulator_10000-ThreadPool.PooledThread-51,5,simulator_10000-ThreadPool-0]
+        Thread[#112,simulator_10000-ThreadPool.PooledThread-52,5,simulator_10000-ThreadPool-0]
+        Thread[#113,simulator_10000-ThreadPool.PooledThread-53,5,simulator_10000-ThreadPool-0]
+        Thread[#114,simulator_10000-ThreadPool.PooledThread-54,5,simulator_10000-ThreadPool-0]
+        Thread[#115,simulator_10000-ThreadPool.PooledThread-55,5,simulator_10000-ThreadPool-0]
+        Thread[#116,simulator_10000-ThreadPool.PooledThread-56,5,simulator_10000-ThreadPool-0]
+        Thread[#117,simulator_10000-ThreadPool.PooledThread-57,5,simulator_10000-ThreadPool-0]
+        Thread[#118,simulator_10000-ThreadPool.PooledThread-58,5,simulator_10000-ThreadPool-0]
+        Thread[#119,simulator_10000-ThreadPool.PooledThread-59,5,simulator_10000-ThreadPool-0]
+        Thread[#120,simulator_10000-ThreadPool.PooledThread-60,5,simulator_10000-ThreadPool-0]
+        Thread[#121,simulator_10000-ThreadPool.PooledThread-61,5,simulator_10000-ThreadPool-0]
+        Thread[#122,simulator_10000-ThreadPool.PooledThread-62,5,simulator_10000-ThreadPool-0]
+        Thread[#123,simulator_10000-ThreadPool.PooledThread-63,5,simulator_10000-ThreadPool-0]
+        Thread[#124,simulator_10000-ThreadPool.PooledThread-64,5,simulator_10000-ThreadPool-0]
+        Thread[#125,simulator_10000-ThreadPool.PooledThread-65,5,simulator_10000-ThreadPool-0]
+        Thread[#126,simulator_10000-ThreadPool.PooledThread-66,5,simulator_10000-ThreadPool-0]
+        Thread[#127,simulator_10000-ThreadPool.PooledThread-67,5,simulator_10000-ThreadPool-0]
+        Thread[#128,simulator_10000-ThreadPool.PooledThread-68,5,simulator_10000-ThreadPool-0]
+        Thread[#129,simulator_10000-ThreadPool.PooledThread-69,5,simulator_10000-ThreadPool-0]
+        Thread[#130,simulator_10000-ThreadPool.PooledThread-70,5,simulator_10000-ThreadPool-0]
+        Thread[#131,simulator_10000-ThreadPool.PooledThread-71,5,simulator_10000-ThreadPool-0]
+        Thread[#132,simulator_10000-ThreadPool.PooledThread-72,5,simulator_10000-ThreadPool-0]
+        Thread[#133,simulator_10000-ThreadPool.PooledThread-73,5,simulator_10000-ThreadPool-0]
+        Thread[#134,simulator_10000-ThreadPool.PooledThread-74,5,simulator_10000-ThreadPool-0]
+        Thread[#135,simulator_10000-ThreadPool.PooledThread-75,5,simulator_10000-ThreadPool-0]
+        Thread[#136,simulator_10000-ThreadPool.PooledThread-76,5,simulator_10000-ThreadPool-0]
+        Thread[#137,simulator_10000-ThreadPool.PooledThread-77,5,simulator_10000-ThreadPool-0]
+        Thread[#138,simulator_10000-ThreadPool.PooledThread-78,5,simulator_10000-ThreadPool-0]
+        Thread[#139,simulator_10000-ThreadPool.PooledThread-79,5,simulator_10000-ThreadPool-0]
+        Thread[#140,simulator_10000-ThreadPool.PooledThread-80,5,simulator_10000-ThreadPool-0]
+        Thread[#141,simulator_10000-ThreadPool.PooledThread-81,5,simulator_10000-ThreadPool-0]
+        Thread[#142,simulator_10000-ThreadPool.PooledThread-82,5,simulator_10000-ThreadPool-0]
+        Thread[#143,simulator_10000-ThreadPool.PooledThread-83,5,simulator_10000-ThreadPool-0]
+        Thread[#144,simulator_10000-ThreadPool.PooledThread-84,5,simulator_10000-ThreadPool-0]
+        Thread[#145,simulator_10000-ThreadPool.PooledThread-85,5,simulator_10000-ThreadPool-0]
+        Thread[#146,simulator_10000-ThreadPool.PooledThread-86,5,simulator_10000-ThreadPool-0]
+        Thread[#147,simulator_10000-ThreadPool.PooledThread-87,5,simulator_10000-ThreadPool-0]
+        Thread[#148,simulator_10000-ThreadPool.PooledThread-88,5,simulator_10000-ThreadPool-0]
+        Thread[#149,simulator_10000-ThreadPool.PooledThread-89,5,simulator_10000-ThreadPool-0]
+        Thread[#150,simulator_10000-ThreadPool.PooledThread-90,5,simulator_10000-ThreadPool-0]
+        Thread[#151,simulator_10000-ThreadPool.PooledThread-91,5,simulator_10000-ThreadPool-0]
+        Thread[#152,simulator_10000-ThreadPool.PooledThread-92,5,simulator_10000-ThreadPool-0]
+        Thread[#153,simulator_10000-ThreadPool.PooledThread-93,5,simulator_10000-ThreadPool-0]
+        Thread[#154,simulator_10000-ThreadPool.PooledThread-94,5,simulator_10000-ThreadPool-0]
+        Thread[#155,simulator_10000-ThreadPool.PooledThread-95,5,simulator_10000-ThreadPool-0]
+        Thread[#156,simulator_10000-ThreadPool.PooledThread-96,5,simulator_10000-ThreadPool-0]
+        Thread[#157,simulator_10000-ThreadPool.PooledThread-97,5,simulator_10000-ThreadPool-0]
+        Thread[#158,simulator_10000-ThreadPool.PooledThread-98,5,simulator_10000-ThreadPool-0]
+        Thread[#159,simulator_10000-ThreadPool.PooledThread-99,5,simulator_10000-ThreadPool-0]
+        Thread[#160,Thread-3,5,main]
+        Thread[#161,channel-sender-network-out,5,main]
+        Thread[#162,channel-receiver-network-in,5,main]
+        Thread[#163,SystemMonitor,5,main]
+        Thread[#164,SIGINT handler,9,system]
+        Thread[#59,Q2-ShutdownHook,5,main]
+name-registrar:
+  tspace:default: org.jpos.space.TSpace
+    <key count='1'>jpos-channel.ready</key>
+     key-count: 1
+        gcinfo: 0,0
+  Q2: org.jpos.q2.Q2
+  jpos-channel: org.jpos.q2.iso.ChannelAdaptor
+    tx=0, rx=0, connects=1, last=0
+  simulator_10000: org.jpos.q2.iso.QServer
+  channel.jpos-channel: org.jpos.iso.channel.NACChannel
+  logger.Q2: org.jpos.util.Logger
+  logger.: org.jpos.util.Logger
+  server.simulator_10000: org.jpos.iso.ISOServer
+    connected=1, rx=0, tx=0, last=0
+      127.0.0.1:52734: rx=0, tx=0, last=0
+  </info>
+</log>
+<log realm="channel/127.0.0.1:52734" at="2025-06-12T14:38:49.823536" lifespan="140204ms">
+  <receive>
+    <peer-disconnect/>
+  </receive>
+</log>
+<log realm="simulator_10000.server.session/127.0.0.1:52734" at="2025-06-12T14:38:49.824295">
+  <session-end/>
+</log>
+<log realm="Q2.system" at="2025-06-12T14:38:49.825096">
+  <info>
+    undeployed:/Users/peace/jpos-springboot/deploy/10_jpos_channel.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2025-06-12T14:38:49.825353">
+  <trace>
+    undeploying:/Users/peace/jpos-springboot/deploy/05_serversimulator.xml
+  </trace>
+</log>
+<log realm="Q2.system" at="2025-06-12T14:38:49.826377">
+  <info>
+    undeployed:/Users/peace/jpos-springboot/deploy/05_serversimulator.xml
+  </info>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.826658">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.827006">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.827130">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.827293">
+  <queue-closed/>
+</log>
+<log realm="Q2.system" at="2025-06-12T14:38:49.827432">
+  <trace>
+    undeploying:/Users/peace/jpos-springboot/deploy/00_logger.xml
+  </trace>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.827607">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.827963">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.827764">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.828210">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.828043">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.828863">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.829119">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.828732">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.828640">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.828505">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.829560">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.829735">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.829492">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.829365">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.829245" lifespan="1ms">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.830267">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.829039">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.828932">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.830372">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.830113" lifespan="2ms">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.829987">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.830763">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.831090" lifespan="2ms">
+  <queue-closed/>
+</log>
+<log realm="Q2.system" at="2025-06-12T14:38:49.829819" lifespan="1ms">
+  <info>
+    undeployed:/Users/peace/jpos-springboot/deploy/00_logger.xml
+  </info>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.829642">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.831446">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.831637">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.831336" lifespan="3ms">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.832099">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.831177" lifespan="3ms">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.830964">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.832617">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.832776" lifespan="1ms">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.832943" lifespan="1ms">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.833148">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.830484">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.833427" lifespan="2ms">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.833351">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.833659" lifespan="2ms">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.833923" lifespan="3ms">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.832680">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.832305" lifespan="1ms">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.834626" lifespan="4ms">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.831802">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.835137" lifespan="4ms">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.831566">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.835345" lifespan="5ms">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.835639">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.835245" lifespan="5ms">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.835068" lifespan="4ms">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.834971" lifespan="4ms">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.834858">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.834742">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.834196">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.836940" lifespan="7ms">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.834099" lifespan="3ms">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.837563" lifespan="8ms">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.834016">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.833856">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.833781">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.837983" lifespan="1ms">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.838085" lifespan="1ms">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.838249" lifespan="1ms">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.837905" lifespan="1ms">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.838454" lifespan="2ms">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.837830" lifespan="9ms">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.838566" lifespan="2ms">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.837738" lifespan="9ms">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.839005" lifespan="3ms">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.839216" lifespan="3ms">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.839438" lifespan="4ms">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.837063" lifespan="8ms">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.836858">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.839880" lifespan="4ms">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.836769" lifespan="7ms">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.840641" lifespan="6ms">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:38:49.836667">
+  <queue-closed/>
+</log>
+<?xml version="1.0" encoding="UTF-8"?>
+<logger class="org.jpos.util.DailyLogListener">
+<log realm="system" at="2025-06-12T14:39:01.030639">
+  <warn>
+    start
+    <iso-exception>
+      org.jpos.core.ConfigurationException: java.lang.ClassNotFoundException: org.jpos.util.XmlLogWriter (java.lang.ClassNotFoundException: org.jpos.util.XmlLogWriter)
+      <iso-exception>
+        java.lang.ClassNotFoundException: org.jpos.util.XmlLogWriter
+        <nested-exception>
+        java.lang.ClassNotFoundException: org.jpos.util.XmlLogWriter
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:528)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:462)
+	at java.base/java.lang.Class.forName(Class.java:453)
+	at org.jpos.util.SimpleLogListener.setConfiguration(SimpleLogListener.java:93)
+	at org.jpos.q2.QFactory.setConfiguration(QFactory.java:390)
+	at org.jpos.q2.qbean.LoggerAdaptor.addListener(LoggerAdaptor.java:77)
+	at org.jpos.q2.qbean.LoggerAdaptor.startService(LoggerAdaptor.java:43)
+	at org.jpos.q2.QBeanSupport.start(QBeanSupport.java:137)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:112)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:46)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at org.jpos.q2.QFactory.startQBean(QFactory.java:183)
+	at org.jpos.q2.Q2.start(Q2.java:633)
+	at org.jpos.q2.Q2.deploy(Q2.java:418)
+	at org.jpos.q2.Q2.initSystemLogger(Q2.java:652)
+	at org.jpos.q2.Q2.run(Q2.java:230)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+        </nested-exception>
+        org.jpos.core.ConfigurationException: java.lang.ClassNotFoundException: org.jpos.util.XmlLogWriter (java.lang.ClassNotFoundException: org.jpos.util.XmlLogWriter)
+	at org.jpos.util.SimpleLogListener.setConfiguration(SimpleLogListener.java:95)
+	at org.jpos.q2.QFactory.setConfiguration(QFactory.java:390)
+	at org.jpos.q2.qbean.LoggerAdaptor.addListener(LoggerAdaptor.java:77)
+	at org.jpos.q2.qbean.LoggerAdaptor.startService(LoggerAdaptor.java:43)
+	at org.jpos.q2.QBeanSupport.start(QBeanSupport.java:137)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:112)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:46)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at org.jpos.q2.QFactory.startQBean(QFactory.java:183)
+	at org.jpos.q2.Q2.start(Q2.java:633)
+	at org.jpos.q2.Q2.deploy(Q2.java:418)
+	at org.jpos.q2.Q2.initSystemLogger(Q2.java:652)
+	at org.jpos.q2.Q2.run(Q2.java:230)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Nested:java.lang.ClassNotFoundException: org.jpos.util.XmlLogWriter
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:528)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:462)
+	at java.base/java.lang.Class.forName(Class.java:453)
+	at org.jpos.util.SimpleLogListener.setConfiguration(SimpleLogListener.java:93)
+	at org.jpos.q2.QFactory.setConfiguration(QFactory.java:390)
+	at org.jpos.q2.qbean.LoggerAdaptor.addListener(LoggerAdaptor.java:77)
+	at org.jpos.q2.qbean.LoggerAdaptor.startService(LoggerAdaptor.java:43)
+	at org.jpos.q2.QBeanSupport.start(QBeanSupport.java:137)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:112)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:46)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at org.jpos.q2.QFactory.startQBean(QFactory.java:183)
+	at org.jpos.q2.Q2.start(Q2.java:633)
+	at org.jpos.q2.Q2.deploy(Q2.java:418)
+	at org.jpos.q2.Q2.initSystemLogger(Q2.java:652)
+	at org.jpos.q2.Q2.run(Q2.java:230)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+      </iso-exception>
+      org.jpos.core.ConfigurationException: org.jpos.core.ConfigurationException: java.lang.ClassNotFoundException: org.jpos.util.XmlLogWriter (java.lang.ClassNotFoundException: org.jpos.util.XmlLogWriter) (org.jpos.core.ConfigurationException: java.lang.ClassNotFoundException: org.jpos.util.XmlLogWriter (java.lang.ClassNotFoundException: org.jpos.util.XmlLogWriter))
+	at org.jpos.q2.QFactory.setConfiguration(QFactory.java:392)
+	at org.jpos.q2.qbean.LoggerAdaptor.addListener(LoggerAdaptor.java:77)
+	at org.jpos.q2.qbean.LoggerAdaptor.startService(LoggerAdaptor.java:43)
+	at org.jpos.q2.QBeanSupport.start(QBeanSupport.java:137)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:112)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:46)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at org.jpos.q2.QFactory.startQBean(QFactory.java:183)
+	at org.jpos.q2.Q2.start(Q2.java:633)
+	at org.jpos.q2.Q2.deploy(Q2.java:418)
+	at org.jpos.q2.Q2.initSystemLogger(Q2.java:652)
+	at org.jpos.q2.Q2.run(Q2.java:230)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Nested:org.jpos.core.ConfigurationException: java.lang.ClassNotFoundException: org.jpos.util.XmlLogWriter (java.lang.ClassNotFoundException: org.jpos.util.XmlLogWriter)
+	at org.jpos.util.SimpleLogListener.setConfiguration(SimpleLogListener.java:95)
+	at org.jpos.q2.QFactory.setConfiguration(QFactory.java:390)
+	at org.jpos.q2.qbean.LoggerAdaptor.addListener(LoggerAdaptor.java:77)
+	at org.jpos.q2.qbean.LoggerAdaptor.startService(LoggerAdaptor.java:43)
+	at org.jpos.q2.QBeanSupport.start(QBeanSupport.java:137)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:112)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:46)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at org.jpos.q2.QFactory.startQBean(QFactory.java:183)
+	at org.jpos.q2.Q2.start(Q2.java:633)
+	at org.jpos.q2.Q2.deploy(Q2.java:418)
+	at org.jpos.q2.Q2.initSystemLogger(Q2.java:652)
+	at org.jpos.q2.Q2.run(Q2.java:230)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Nested:java.lang.ClassNotFoundException: org.jpos.util.XmlLogWriter
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:528)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:462)
+	at java.base/java.lang.Class.forName(Class.java:453)
+	at org.jpos.util.SimpleLogListener.setConfiguration(SimpleLogListener.java:93)
+	at org.jpos.q2.QFactory.setConfiguration(QFactory.java:390)
+	at org.jpos.q2.qbean.LoggerAdaptor.addListener(LoggerAdaptor.java:77)
+	at org.jpos.q2.qbean.LoggerAdaptor.startService(LoggerAdaptor.java:43)
+	at org.jpos.q2.QBeanSupport.start(QBeanSupport.java:137)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:112)
+	at java.management/com.sun.jmx.mbeanserver.StandardMBeanIntrospector.invokeM2(StandardMBeanIntrospector.java:46)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at org.jpos.q2.QFactory.startQBean(QFactory.java:183)
+	at org.jpos.q2.Q2.start(Q2.java:633)
+	at org.jpos.q2.Q2.deploy(Q2.java:418)
+	at org.jpos.q2.Q2.initSystemLogger(Q2.java:652)
+	at org.jpos.q2.Q2.run(Q2.java:230)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+    </iso-exception>
+  </warn>
+</log>
+<log realm="Q2.system" at="2025-06-12T14:39:01.051404">
+  <info>
+    Q2 started, deployDir=/Users/peace/jpos-springboot/deploy, environment=default
+  </info>
+</log>
+<log realm="Q2.system" at="2025-06-12T14:39:01.613907" lifespan="559ms">
+  <version>
+    jPOS 2.1.4 master/6225824 (2020-03-31 18:07:15 UYT) 
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+jPOS Community Edition, licensed under GNU AGPL v3.0.
+This software is probably not suitable for commercial use.
+Please see http://jpos.org/license for details.
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.9 (Darwin)
+
+iQEcBAEBAgAGBQJMolHDAAoJEOQyeO71nYtFv74H/3OgehDGEy1VXp2U3/GcAobg
+HH2eZjPUz53r38ARPiU3pzm9LwDa3WZgJJaa/b9VrJwKvbPwe9+0kY3gScDE1skT
+ladHt+KHHmGQArEutkzHlpZa73RbroFEIa1qmN6MaDEHGoxZqDh0Sv2cpvOaVYGO
+St8ZaddLBPC17bSjAPWo9sWbvL7FgPFOHhnPmbeux8SLtnfWxXWsgo5hLBanKmO1
+1z+I/w/6DL6ZYZU6bAJUk+eyVVImJqw0x3IEElI07Nh9MC6BA4iJ77ejobj8HI2r
+q9ulRPEqH9NR79619lNKVUkE206dVlXo7xHmJS1QZy5v/GT66xBxyDVfTduPFXk=
+=oP+v
+-----END PGP SIGNATURE-----
+
+  </version>
+</log>
+<log realm="Q2.system" at="2025-06-12T14:39:01.626121" lifespan="6ms">
+  <info>
+    deploy: /Users/peace/jpos-springboot/deploy/05_serversimulator.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2025-06-12T14:39:01.632640" lifespan="5ms">
+  <info>
+    deploy: /Users/peace/jpos-springboot/deploy/10_jpos_channel.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2025-06-12T14:39:01.648126" lifespan="14ms">
+  <info>
+    deploy: /Users/peace/jpos-springboot/deploy/20_mux.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2025-06-12T14:39:01.656167" lifespan="7ms">
+  <info>
+    deploy: /Users/peace/jpos-springboot/deploy/99_sysmon.xml
+  </info>
+</log>
+<log realm="simulator_10000.server" at="2025-06-12T14:39:01.697296">
+  <iso-server>
+    listening on port 10000
+  </iso-server>
+</log>
+<log realm="org.jpos.q2.qbean.SystemMonitor" at="2025-06-12T14:39:01.737508">
+  <info>
+    Starting SystemMonitor
+  </info>
+</log>
+<log realm="simulator_10000.server.session/127.0.0.1:52754" at="2025-06-12T14:39:01.742551">
+  <session-start/>
+</log>
+<log realm="org.jpos.q2.qbean.SystemMonitor" at="2025-06-12T14:39:01.762034">
+  <info>
+           OS: Mac OS X (12.7.6)
+         Java: 23 (Oracle Corporation) AES-secure
+  environment: default
+ process name: 24328@Peaces-MacBook-Pro-2.local
+    user name: peace
+         host: Peaces-MacBook-Pro-2.local/127.0.0.1
+          cwd: /Users/peace/jpos-springboot
+   free space: 16.1 GiB
+      version: 2.1.4 (6225824)
+     instance: 754eda9c-d9ba-4fba-9e37-9bf90471e605
+       uptime: 00:00:00.898 (4.880859)
+   processors: 8
+       drift : 0
+memory(t/u/f): 80/53/26
+     encoding: UTF-8
+     timezone: Asia/Ho_Chi_Minh (Ho Chi Minh City Time) +07:00
+watch service: sun.nio.fs.PollingWatchService
+        clock: 1749713941 2025-06-12T07:39:01.739479Z
+ thread count: 136
+ peak threads: 136
+ user threads: 124
+        Thread[#9,Reference Handler,10,system]
+        Thread[#10,Finalizer,8,system]
+        Thread[#11,Signal Dispatcher,9,system]
+        Thread[#18,Common-Cleaner,8,InnocuousThreadGroup]
+        Thread[#19,Notification Thread,9,system]
+        Thread[#21,RMI TCP Accept-0,5,system]
+        Thread[#22,RMI TCP Accept-45556,5,system]
+        Thread[#23,RMI TCP Accept-0,5,system]
+        Thread[#35,Catalina-utility-1,1,main]
+        Thread[#36,Catalina-utility-2,1,main]
+        Thread[#37,container-0,5,main]
+        Thread[#38,RMI TCP Connection(1)-127.0.0.1,5,RMI Runtime]
+        Thread[#39,RMI Scheduler(0),5,system]
+        Thread[#40,RMI TCP Connection(2)-127.0.0.1,5,RMI Runtime]
+        Thread[#41,JMX server connection timeout 41,5,RMI Runtime]
+        Thread[#42,http-nio-8080-exec-1,5,main]
+        Thread[#43,http-nio-8080-exec-2,5,main]
+        Thread[#44,http-nio-8080-exec-3,5,main]
+        Thread[#45,http-nio-8080-exec-4,5,main]
+        Thread[#46,http-nio-8080-exec-5,5,main]
+        Thread[#47,http-nio-8080-exec-6,5,main]
+        Thread[#48,http-nio-8080-exec-7,5,main]
+        Thread[#49,http-nio-8080-exec-8,5,main]
+        Thread[#50,http-nio-8080-exec-9,5,main]
+        Thread[#51,http-nio-8080-exec-10,5,main]
+        Thread[#52,http-nio-8080-Poller,5,main]
+        Thread[#53,http-nio-8080-Acceptor,5,main]
+        Thread[#54,pool-2-thread-1,5,main]
+        Thread[#55,Q2-754eda9c-d9ba-4fba-9e37-9bf90471e605,5,main]
+        Thread[#56,FileSystemWatcher,5,main]
+        Thread[#57,DestroyJavaVM,5,main]
+        Thread[#58,Timer-0,5,main]
+        Thread[#60,simulator_10000-ThreadPool.PooledThread-0-running,5,simulator_10000-ThreadPool-0]
+        Thread[#61,simulator_10000-ThreadPool.PooledThread-1,5,simulator_10000-ThreadPool-0]
+        Thread[#62,simulator_10000-ThreadPool.PooledThread-2,5,simulator_10000-ThreadPool-0]
+        Thread[#63,simulator_10000-ThreadPool.PooledThread-3,5,simulator_10000-ThreadPool-0]
+        Thread[#64,simulator_10000-ThreadPool.PooledThread-4,5,simulator_10000-ThreadPool-0]
+        Thread[#65,simulator_10000-ThreadPool.PooledThread-5,5,simulator_10000-ThreadPool-0]
+        Thread[#66,simulator_10000-ThreadPool.PooledThread-6,5,simulator_10000-ThreadPool-0]
+        Thread[#67,simulator_10000-ThreadPool.PooledThread-7,5,simulator_10000-ThreadPool-0]
+        Thread[#68,simulator_10000-ThreadPool.PooledThread-8,5,simulator_10000-ThreadPool-0]
+        Thread[#69,simulator_10000-ThreadPool.PooledThread-9,5,simulator_10000-ThreadPool-0]
+        Thread[#70,simulator_10000-ThreadPool.PooledThread-10,5,simulator_10000-ThreadPool-0]
+        Thread[#71,simulator_10000-ThreadPool.PooledThread-11,5,simulator_10000-ThreadPool-0]
+        Thread[#72,simulator_10000-ThreadPool.PooledThread-12,5,simulator_10000-ThreadPool-0]
+        Thread[#73,simulator_10000-ThreadPool.PooledThread-13,5,simulator_10000-ThreadPool-0]
+        Thread[#74,simulator_10000-ThreadPool.PooledThread-14,5,simulator_10000-ThreadPool-0]
+        Thread[#75,simulator_10000-ThreadPool.PooledThread-15,5,simulator_10000-ThreadPool-0]
+        Thread[#76,simulator_10000-ThreadPool.PooledThread-16,5,simulator_10000-ThreadPool-0]
+        Thread[#77,simulator_10000-ThreadPool.PooledThread-17,5,simulator_10000-ThreadPool-0]
+        Thread[#78,simulator_10000-ThreadPool.PooledThread-18,5,simulator_10000-ThreadPool-0]
+        Thread[#79,simulator_10000-ThreadPool.PooledThread-19,5,simulator_10000-ThreadPool-0]
+        Thread[#80,simulator_10000-ThreadPool.PooledThread-20,5,simulator_10000-ThreadPool-0]
+        Thread[#81,simulator_10000-ThreadPool.PooledThread-21,5,simulator_10000-ThreadPool-0]
+        Thread[#82,simulator_10000-ThreadPool.PooledThread-22,5,simulator_10000-ThreadPool-0]
+        Thread[#83,simulator_10000-ThreadPool.PooledThread-23,5,simulator_10000-ThreadPool-0]
+        Thread[#84,simulator_10000-ThreadPool.PooledThread-24,5,simulator_10000-ThreadPool-0]
+        Thread[#85,simulator_10000-ThreadPool.PooledThread-25,5,simulator_10000-ThreadPool-0]
+        Thread[#86,simulator_10000-ThreadPool.PooledThread-26,5,simulator_10000-ThreadPool-0]
+        Thread[#87,simulator_10000-ThreadPool.PooledThread-27,5,simulator_10000-ThreadPool-0]
+        Thread[#88,simulator_10000-ThreadPool.PooledThread-28,5,simulator_10000-ThreadPool-0]
+        Thread[#89,simulator_10000-ThreadPool.PooledThread-29,5,simulator_10000-ThreadPool-0]
+        Thread[#90,simulator_10000-ThreadPool.PooledThread-30,5,simulator_10000-ThreadPool-0]
+        Thread[#91,simulator_10000-ThreadPool.PooledThread-31,5,simulator_10000-ThreadPool-0]
+        Thread[#92,simulator_10000-ThreadPool.PooledThread-32,5,simulator_10000-ThreadPool-0]
+        Thread[#93,simulator_10000-ThreadPool.PooledThread-33,5,simulator_10000-ThreadPool-0]
+        Thread[#94,simulator_10000-ThreadPool.PooledThread-34,5,simulator_10000-ThreadPool-0]
+        Thread[#95,simulator_10000-ThreadPool.PooledThread-35,5,simulator_10000-ThreadPool-0]
+        Thread[#96,simulator_10000-ThreadPool.PooledThread-36,5,simulator_10000-ThreadPool-0]
+        Thread[#97,simulator_10000-ThreadPool.PooledThread-37,5,simulator_10000-ThreadPool-0]
+        Thread[#98,simulator_10000-ThreadPool.PooledThread-38,5,simulator_10000-ThreadPool-0]
+        Thread[#99,simulator_10000-ThreadPool.PooledThread-39,5,simulator_10000-ThreadPool-0]
+        Thread[#100,simulator_10000-ThreadPool.PooledThread-40,5,simulator_10000-ThreadPool-0]
+        Thread[#101,simulator_10000-ThreadPool.PooledThread-41,5,simulator_10000-ThreadPool-0]
+        Thread[#102,simulator_10000-ThreadPool.PooledThread-42,5,simulator_10000-ThreadPool-0]
+        Thread[#103,simulator_10000-ThreadPool.PooledThread-43,5,simulator_10000-ThreadPool-0]
+        Thread[#104,simulator_10000-ThreadPool.PooledThread-44,5,simulator_10000-ThreadPool-0]
+        Thread[#105,simulator_10000-ThreadPool.PooledThread-45,5,simulator_10000-ThreadPool-0]
+        Thread[#106,simulator_10000-ThreadPool.PooledThread-46,5,simulator_10000-ThreadPool-0]
+        Thread[#107,simulator_10000-ThreadPool.PooledThread-47,5,simulator_10000-ThreadPool-0]
+        Thread[#108,simulator_10000-ThreadPool.PooledThread-48,5,simulator_10000-ThreadPool-0]
+        Thread[#109,simulator_10000-ThreadPool.PooledThread-49,5,simulator_10000-ThreadPool-0]
+        Thread[#110,simulator_10000-ThreadPool.PooledThread-50,5,simulator_10000-ThreadPool-0]
+        Thread[#111,simulator_10000-ThreadPool.PooledThread-51,5,simulator_10000-ThreadPool-0]
+        Thread[#112,simulator_10000-ThreadPool.PooledThread-52,5,simulator_10000-ThreadPool-0]
+        Thread[#113,simulator_10000-ThreadPool.PooledThread-53,5,simulator_10000-ThreadPool-0]
+        Thread[#114,simulator_10000-ThreadPool.PooledThread-54,5,simulator_10000-ThreadPool-0]
+        Thread[#115,simulator_10000-ThreadPool.PooledThread-55,5,simulator_10000-ThreadPool-0]
+        Thread[#116,simulator_10000-ThreadPool.PooledThread-56,5,simulator_10000-ThreadPool-0]
+        Thread[#117,simulator_10000-ThreadPool.PooledThread-57,5,simulator_10000-ThreadPool-0]
+        Thread[#118,simulator_10000-ThreadPool.PooledThread-58,5,simulator_10000-ThreadPool-0]
+        Thread[#119,simulator_10000-ThreadPool.PooledThread-59,5,simulator_10000-ThreadPool-0]
+        Thread[#120,simulator_10000-ThreadPool.PooledThread-60,5,simulator_10000-ThreadPool-0]
+        Thread[#121,simulator_10000-ThreadPool.PooledThread-61,5,simulator_10000-ThreadPool-0]
+        Thread[#122,simulator_10000-ThreadPool.PooledThread-62,5,simulator_10000-ThreadPool-0]
+        Thread[#123,simulator_10000-ThreadPool.PooledThread-63,5,simulator_10000-ThreadPool-0]
+        Thread[#124,simulator_10000-ThreadPool.PooledThread-64,5,simulator_10000-ThreadPool-0]
+        Thread[#125,simulator_10000-ThreadPool.PooledThread-65,5,simulator_10000-ThreadPool-0]
+        Thread[#126,simulator_10000-ThreadPool.PooledThread-66,5,simulator_10000-ThreadPool-0]
+        Thread[#127,simulator_10000-ThreadPool.PooledThread-67,5,simulator_10000-ThreadPool-0]
+        Thread[#128,simulator_10000-ThreadPool.PooledThread-68,5,simulator_10000-ThreadPool-0]
+        Thread[#129,simulator_10000-ThreadPool.PooledThread-69,5,simulator_10000-ThreadPool-0]
+        Thread[#130,simulator_10000-ThreadPool.PooledThread-70,5,simulator_10000-ThreadPool-0]
+        Thread[#131,simulator_10000-ThreadPool.PooledThread-71,5,simulator_10000-ThreadPool-0]
+        Thread[#132,simulator_10000-ThreadPool.PooledThread-72,5,simulator_10000-ThreadPool-0]
+        Thread[#133,simulator_10000-ThreadPool.PooledThread-73,5,simulator_10000-ThreadPool-0]
+        Thread[#134,simulator_10000-ThreadPool.PooledThread-74,5,simulator_10000-ThreadPool-0]
+        Thread[#135,simulator_10000-ThreadPool.PooledThread-75,5,simulator_10000-ThreadPool-0]
+        Thread[#136,simulator_10000-ThreadPool.PooledThread-76,5,simulator_10000-ThreadPool-0]
+        Thread[#137,simulator_10000-ThreadPool.PooledThread-77,5,simulator_10000-ThreadPool-0]
+        Thread[#138,simulator_10000-ThreadPool.PooledThread-78,5,simulator_10000-ThreadPool-0]
+        Thread[#139,simulator_10000-ThreadPool.PooledThread-79,5,simulator_10000-ThreadPool-0]
+        Thread[#140,simulator_10000-ThreadPool.PooledThread-80,5,simulator_10000-ThreadPool-0]
+        Thread[#141,simulator_10000-ThreadPool.PooledThread-81,5,simulator_10000-ThreadPool-0]
+        Thread[#142,simulator_10000-ThreadPool.PooledThread-82,5,simulator_10000-ThreadPool-0]
+        Thread[#143,simulator_10000-ThreadPool.PooledThread-83,5,simulator_10000-ThreadPool-0]
+        Thread[#144,simulator_10000-ThreadPool.PooledThread-84,5,simulator_10000-ThreadPool-0]
+        Thread[#145,simulator_10000-ThreadPool.PooledThread-85,5,simulator_10000-ThreadPool-0]
+        Thread[#146,simulator_10000-ThreadPool.PooledThread-86,5,simulator_10000-ThreadPool-0]
+        Thread[#147,simulator_10000-ThreadPool.PooledThread-87,5,simulator_10000-ThreadPool-0]
+        Thread[#148,simulator_10000-ThreadPool.PooledThread-88,5,simulator_10000-ThreadPool-0]
+        Thread[#149,simulator_10000-ThreadPool.PooledThread-89,5,simulator_10000-ThreadPool-0]
+        Thread[#150,simulator_10000-ThreadPool.PooledThread-90,5,simulator_10000-ThreadPool-0]
+        Thread[#151,simulator_10000-ThreadPool.PooledThread-91,5,simulator_10000-ThreadPool-0]
+        Thread[#152,simulator_10000-ThreadPool.PooledThread-92,5,simulator_10000-ThreadPool-0]
+        Thread[#153,simulator_10000-ThreadPool.PooledThread-93,5,simulator_10000-ThreadPool-0]
+        Thread[#154,simulator_10000-ThreadPool.PooledThread-94,5,simulator_10000-ThreadPool-0]
+        Thread[#155,simulator_10000-ThreadPool.PooledThread-95,5,simulator_10000-ThreadPool-0]
+        Thread[#156,simulator_10000-ThreadPool.PooledThread-96,5,simulator_10000-ThreadPool-0]
+        Thread[#157,simulator_10000-ThreadPool.PooledThread-97,5,simulator_10000-ThreadPool-0]
+        Thread[#158,simulator_10000-ThreadPool.PooledThread-98,5,simulator_10000-ThreadPool-0]
+        Thread[#159,simulator_10000-ThreadPool.PooledThread-99,5,simulator_10000-ThreadPool-0]
+        Thread[#160,Thread-3,5,main]
+        Thread[#161,channel-sender-network-out,5,main]
+        Thread[#162,channel-receiver-network-in,5,main]
+        Thread[#163,SystemMonitor,5,main]
+name-registrar:
+  tspace:default: org.jpos.space.TSpace
+    <key count='1'>jpos-channel.ready</key>
+     key-count: 1
+        gcinfo: 0,0
+  Q2: org.jpos.q2.Q2
+  jpos-channel: org.jpos.q2.iso.ChannelAdaptor
+    tx=0, rx=0, connects=1, last=0
+  simulator_10000: org.jpos.q2.iso.QServer
+  channel.jpos-channel: org.jpos.iso.channel.NACChannel
+  logger.Q2: org.jpos.util.Logger
+  logger.: org.jpos.util.Logger
+  mux.s-mux: org.jpos.q2.iso.QMUX
+    tx=0, rx=0, tx_expired=0, tx_pending=0, rx_expired=0, rx_pending=0, rx_unhandled=0, rx_forwarded=0, connected=false, last=0
+  server.simulator_10000: org.jpos.iso.ISOServer
+    connected=1, rx=0, tx=0, last=0
+      127.0.0.1:52754: rx=0, tx=0, last=0
+  </info>
+</log>
+<log realm="simulator_10000.server.session/127.0.0.1:52780" at="2025-06-12T14:41:13.637260">
+  <session-start/>
+</log>
+<log realm="channel/127.0.0.1:52780" at="2025-06-12T14:41:13.642884" lifespan="4ms">
+  <receive>
+    <isomsg direction="incoming">
+      <!-- org.jpos.iso.packager.XMLPackager -->
+      <field id="0" value="0200"/>
+      <field id="2" value="4000001234567890"/>
+      <field id="3" value="000000"/>
+      <field id="4" value="000000009999"/>
+      <field id="7" value="0611171832"/>
+      <field id="11" value="000003"/>
+      <field id="12" value="171832"/>
+      <field id="13" value="0611"/>
+      <field id="22" value="012"/>
+      <field id="41" value="TERM002"/>
+      <field id="42" value="MERCHANT002"/>
+      <field id="49" value="840"/>
+    </isomsg>
+  </receive>
+</log>
+<log realm="channel/127.0.0.1:52780" at="2025-06-12T14:41:13.646482">
+  <send>
+    <isomsg>
+      <!-- org.jpos.iso.packager.XMLPackager -->
+      <field id="0" value="0210"/>
+      <field id="2" value="4000001234567890"/>
+      <field id="3" value="000000"/>
+      <field id="4" value="000000009999"/>
+      <field id="7" value="0611171832"/>
+      <field id="11" value="000003"/>
+      <field id="12" value="171832"/>
+      <field id="13" value="0611"/>
+      <field id="22" value="012"/>
+      <field id="37" value="002147483647"/>
+      <field id="38" value="B1075F"/>
+      <field id="39" value="01"/>
+      <field id="41" value="TERM002"/>
+      <field id="42" value="MERCHANT002"/>
+      <field id="49" value="840"/>
+    </isomsg>
+  </send>
+</log>
+<log realm="channel/127.0.0.1:52780" at="2025-06-12T14:41:13.652412" lifespan="4ms">
+  <receive>
+    <peer-disconnect/>
+  </receive>
+</log>
+<log realm="simulator_10000.server.session/127.0.0.1:52780" at="2025-06-12T14:41:13.653101">
+  <session-end/>
+</log>
+<log realm="channel/127.0.0.1:52754" at="2025-06-12T14:44:01.738647" lifespan="299995ms">
+  <receive>
+    <io-timeout/>
+  </receive>
+</log>
+<log realm="org.jpos.q2.iso.ChannelAdaptor" at="2025-06-12T14:44:01.739035">
+  <warn>
+    channel-receiver-network-in
+    Read timeout / EOF - reconnecting
+  </warn>
+</log>
+<log realm="simulator_10000.server.session/127.0.0.1:52754" at="2025-06-12T14:44:01.741450">
+  <session-end/>
+</log>
+<log realm="simulator_10000.server.session/127.0.0.1:52796" at="2025-06-12T14:44:11.780553">
+  <session-start/>
+</log>
+<log realm="Q2.system" at="2025-06-12T14:47:26.744673">
+  <info>
+    shutting down (hook)
+  </info>
+</log>
+<log realm="Q2.system" at="2025-06-12T14:47:27.531277">
+  <trace>
+    undeploying:/Users/peace/jpos-springboot/deploy/99_sysmon.xml
+  </trace>
+</log>
+<log realm="org.jpos.q2.qbean.SystemMonitor" at="2025-06-12T14:47:27.531984">
+  <info>
+    Stopping SystemMonitor
+  </info>
+</log>
+<log realm="Q2.system" at="2025-06-12T14:47:27.532515">
+  <info>
+    undeployed:/Users/peace/jpos-springboot/deploy/99_sysmon.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2025-06-12T14:47:27.533016">
+  <trace>
+    undeploying:/Users/peace/jpos-springboot/deploy/20_mux.xml
+  </trace>
+</log>
+<log realm="Q2.system" at="2025-06-12T14:47:27.534253">
+  <info>
+    undeployed:/Users/peace/jpos-springboot/deploy/20_mux.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2025-06-12T14:47:27.534661">
+  <trace>
+    undeploying:/Users/peace/jpos-springboot/deploy/10_jpos_channel.xml
+  </trace>
+</log>
+<log realm="channel/127.0.0.1:52796" at="2025-06-12T14:47:27.535276" lifespan="195748ms">
+  <receive>
+    <peer-disconnect/>
+  </receive>
+</log>
+<log realm="simulator_10000.server.session/127.0.0.1:52796" at="2025-06-12T14:47:27.535689">
+  <session-end/>
+</log>
+<log realm="Q2.system" at="2025-06-12T14:47:27.538277">
+  <info>
+    undeployed:/Users/peace/jpos-springboot/deploy/10_jpos_channel.xml
+  </info>
+</log>
+<log realm="org.jpos.q2.qbean.SystemMonitor" at="2025-06-12T14:47:27.538494">
+  <info>
+           OS: Mac OS X (12.7.6)
+         Java: 23 (Oracle Corporation) AES-secure
+  environment: default
+ process name: 24328@Peaces-MacBook-Pro-2.local
+    user name: peace
+         host: Peaces-MacBook-Pro-2.local/127.0.0.1
+          cwd: /Users/peace/jpos-springboot
+   free space: 16.1 GiB
+      version: 2.1.4 (6225824)
+     instance: 754eda9c-d9ba-4fba-9e37-9bf90471e605
+       uptime: 00:08:26.690 (1.574219)
+   processors: 8
+       drift : 0
+memory(t/u/f): 80/47/32
+     encoding: UTF-8
+     timezone: Asia/Ho_Chi_Minh (Ho Chi Minh City Time) +07:00
+watch service: sun.nio.fs.PollingWatchService
+        clock: 1749714447 2025-06-12T07:47:27.533192Z
+ thread count: 121
+ peak threads: 139
+ user threads: 109
+        Thread[#9,Reference Handler,10,system]
+        Thread[#10,Finalizer,8,system]
+        Thread[#11,Signal Dispatcher,9,system]
+        Thread[#18,Common-Cleaner,8,InnocuousThreadGroup]
+        Thread[#19,Notification Thread,9,system]
+        Thread[#21,RMI TCP Accept-0,5,system]
+        Thread[#22,RMI TCP Accept-45556,5,system]
+        Thread[#23,RMI TCP Accept-0,5,system]
+        Thread[#39,RMI Scheduler(0),5,system]
+        Thread[#40,RMI TCP Connection(2)-127.0.0.1,5,RMI Runtime]
+        Thread[#41,JMX server connection timeout 41,5,RMI Runtime]
+        Thread[#54,pool-2-thread-1,5,main]
+        Thread[#55,Q2-754eda9c-d9ba-4fba-9e37-9bf90471e605,5,main]
+        Thread[#56,FileSystemWatcher,5,main]
+        Thread[#57,DestroyJavaVM,5,main]
+        Thread[#58,Timer-0,5,main]
+        Thread[#60,simulator_10000-ThreadPool.PooledThread-0-idle,5,simulator_10000-ThreadPool-0]
+        Thread[#61,simulator_10000-ThreadPool.PooledThread-1-idle,5,simulator_10000-ThreadPool-0]
+        Thread[#62,simulator_10000-ThreadPool.PooledThread-2-idle,5,simulator_10000-ThreadPool-0]
+        Thread[#63,simulator_10000-ThreadPool.PooledThread-3,5,simulator_10000-ThreadPool-0]
+        Thread[#64,simulator_10000-ThreadPool.PooledThread-4,5,simulator_10000-ThreadPool-0]
+        Thread[#65,simulator_10000-ThreadPool.PooledThread-5,5,simulator_10000-ThreadPool-0]
+        Thread[#66,simulator_10000-ThreadPool.PooledThread-6,5,simulator_10000-ThreadPool-0]
+        Thread[#67,simulator_10000-ThreadPool.PooledThread-7,5,simulator_10000-ThreadPool-0]
+        Thread[#68,simulator_10000-ThreadPool.PooledThread-8,5,simulator_10000-ThreadPool-0]
+        Thread[#69,simulator_10000-ThreadPool.PooledThread-9,5,simulator_10000-ThreadPool-0]
+        Thread[#70,simulator_10000-ThreadPool.PooledThread-10,5,simulator_10000-ThreadPool-0]
+        Thread[#71,simulator_10000-ThreadPool.PooledThread-11,5,simulator_10000-ThreadPool-0]
+        Thread[#72,simulator_10000-ThreadPool.PooledThread-12,5,simulator_10000-ThreadPool-0]
+        Thread[#73,simulator_10000-ThreadPool.PooledThread-13,5,simulator_10000-ThreadPool-0]
+        Thread[#74,simulator_10000-ThreadPool.PooledThread-14,5,simulator_10000-ThreadPool-0]
+        Thread[#75,simulator_10000-ThreadPool.PooledThread-15,5,simulator_10000-ThreadPool-0]
+        Thread[#76,simulator_10000-ThreadPool.PooledThread-16,5,simulator_10000-ThreadPool-0]
+        Thread[#77,simulator_10000-ThreadPool.PooledThread-17,5,simulator_10000-ThreadPool-0]
+        Thread[#78,simulator_10000-ThreadPool.PooledThread-18,5,simulator_10000-ThreadPool-0]
+        Thread[#79,simulator_10000-ThreadPool.PooledThread-19,5,simulator_10000-ThreadPool-0]
+        Thread[#80,simulator_10000-ThreadPool.PooledThread-20,5,simulator_10000-ThreadPool-0]
+        Thread[#81,simulator_10000-ThreadPool.PooledThread-21,5,simulator_10000-ThreadPool-0]
+        Thread[#82,simulator_10000-ThreadPool.PooledThread-22,5,simulator_10000-ThreadPool-0]
+        Thread[#83,simulator_10000-ThreadPool.PooledThread-23,5,simulator_10000-ThreadPool-0]
+        Thread[#84,simulator_10000-ThreadPool.PooledThread-24,5,simulator_10000-ThreadPool-0]
+        Thread[#85,simulator_10000-ThreadPool.PooledThread-25,5,simulator_10000-ThreadPool-0]
+        Thread[#86,simulator_10000-ThreadPool.PooledThread-26,5,simulator_10000-ThreadPool-0]
+        Thread[#87,simulator_10000-ThreadPool.PooledThread-27,5,simulator_10000-ThreadPool-0]
+        Thread[#88,simulator_10000-ThreadPool.PooledThread-28,5,simulator_10000-ThreadPool-0]
+        Thread[#89,simulator_10000-ThreadPool.PooledThread-29,5,simulator_10000-ThreadPool-0]
+        Thread[#90,simulator_10000-ThreadPool.PooledThread-30,5,simulator_10000-ThreadPool-0]
+        Thread[#91,simulator_10000-ThreadPool.PooledThread-31,5,simulator_10000-ThreadPool-0]
+        Thread[#92,simulator_10000-ThreadPool.PooledThread-32,5,simulator_10000-ThreadPool-0]
+        Thread[#93,simulator_10000-ThreadPool.PooledThread-33,5,simulator_10000-ThreadPool-0]
+        Thread[#94,simulator_10000-ThreadPool.PooledThread-34,5,simulator_10000-ThreadPool-0]
+        Thread[#95,simulator_10000-ThreadPool.PooledThread-35,5,simulator_10000-ThreadPool-0]
+        Thread[#96,simulator_10000-ThreadPool.PooledThread-36,5,simulator_10000-ThreadPool-0]
+        Thread[#97,simulator_10000-ThreadPool.PooledThread-37,5,simulator_10000-ThreadPool-0]
+        Thread[#98,simulator_10000-ThreadPool.PooledThread-38,5,simulator_10000-ThreadPool-0]
+        Thread[#99,simulator_10000-ThreadPool.PooledThread-39,5,simulator_10000-ThreadPool-0]
+        Thread[#100,simulator_10000-ThreadPool.PooledThread-40,5,simulator_10000-ThreadPool-0]
+        Thread[#101,simulator_10000-ThreadPool.PooledThread-41,5,simulator_10000-ThreadPool-0]
+        Thread[#102,simulator_10000-ThreadPool.PooledThread-42,5,simulator_10000-ThreadPool-0]
+        Thread[#103,simulator_10000-ThreadPool.PooledThread-43,5,simulator_10000-ThreadPool-0]
+        Thread[#104,simulator_10000-ThreadPool.PooledThread-44,5,simulator_10000-ThreadPool-0]
+        Thread[#105,simulator_10000-ThreadPool.PooledThread-45,5,simulator_10000-ThreadPool-0]
+        Thread[#106,simulator_10000-ThreadPool.PooledThread-46,5,simulator_10000-ThreadPool-0]
+        Thread[#107,simulator_10000-ThreadPool.PooledThread-47,5,simulator_10000-ThreadPool-0]
+        Thread[#108,simulator_10000-ThreadPool.PooledThread-48,5,simulator_10000-ThreadPool-0]
+        Thread[#109,simulator_10000-ThreadPool.PooledThread-49,5,simulator_10000-ThreadPool-0]
+        Thread[#110,simulator_10000-ThreadPool.PooledThread-50,5,simulator_10000-ThreadPool-0]
+        Thread[#111,simulator_10000-ThreadPool.PooledThread-51,5,simulator_10000-ThreadPool-0]
+        Thread[#112,simulator_10000-ThreadPool.PooledThread-52,5,simulator_10000-ThreadPool-0]
+        Thread[#113,simulator_10000-ThreadPool.PooledThread-53,5,simulator_10000-ThreadPool-0]
+        Thread[#114,simulator_10000-ThreadPool.PooledThread-54,5,simulator_10000-ThreadPool-0]
+        Thread[#115,simulator_10000-ThreadPool.PooledThread-55,5,simulator_10000-ThreadPool-0]
+        Thread[#116,simulator_10000-ThreadPool.PooledThread-56,5,simulator_10000-ThreadPool-0]
+        Thread[#117,simulator_10000-ThreadPool.PooledThread-57,5,simulator_10000-ThreadPool-0]
+        Thread[#118,simulator_10000-ThreadPool.PooledThread-58,5,simulator_10000-ThreadPool-0]
+        Thread[#119,simulator_10000-ThreadPool.PooledThread-59,5,simulator_10000-ThreadPool-0]
+        Thread[#120,simulator_10000-ThreadPool.PooledThread-60,5,simulator_10000-ThreadPool-0]
+        Thread[#121,simulator_10000-ThreadPool.PooledThread-61,5,simulator_10000-ThreadPool-0]
+        Thread[#122,simulator_10000-ThreadPool.PooledThread-62,5,simulator_10000-ThreadPool-0]
+        Thread[#123,simulator_10000-ThreadPool.PooledThread-63,5,simulator_10000-ThreadPool-0]
+        Thread[#124,simulator_10000-ThreadPool.PooledThread-64,5,simulator_10000-ThreadPool-0]
+        Thread[#125,simulator_10000-ThreadPool.PooledThread-65,5,simulator_10000-ThreadPool-0]
+        Thread[#126,simulator_10000-ThreadPool.PooledThread-66,5,simulator_10000-ThreadPool-0]
+        Thread[#127,simulator_10000-ThreadPool.PooledThread-67,5,simulator_10000-ThreadPool-0]
+        Thread[#128,simulator_10000-ThreadPool.PooledThread-68,5,simulator_10000-ThreadPool-0]
+        Thread[#129,simulator_10000-ThreadPool.PooledThread-69,5,simulator_10000-ThreadPool-0]
+        Thread[#130,simulator_10000-ThreadPool.PooledThread-70,5,simulator_10000-ThreadPool-0]
+        Thread[#131,simulator_10000-ThreadPool.PooledThread-71,5,simulator_10000-ThreadPool-0]
+        Thread[#132,simulator_10000-ThreadPool.PooledThread-72,5,simulator_10000-ThreadPool-0]
+        Thread[#133,simulator_10000-ThreadPool.PooledThread-73,5,simulator_10000-ThreadPool-0]
+        Thread[#134,simulator_10000-ThreadPool.PooledThread-74,5,simulator_10000-ThreadPool-0]
+        Thread[#135,simulator_10000-ThreadPool.PooledThread-75,5,simulator_10000-ThreadPool-0]
+        Thread[#136,simulator_10000-ThreadPool.PooledThread-76,5,simulator_10000-ThreadPool-0]
+        Thread[#137,simulator_10000-ThreadPool.PooledThread-77,5,simulator_10000-ThreadPool-0]
+        Thread[#138,simulator_10000-ThreadPool.PooledThread-78,5,simulator_10000-ThreadPool-0]
+        Thread[#139,simulator_10000-ThreadPool.PooledThread-79,5,simulator_10000-ThreadPool-0]
+        Thread[#140,simulator_10000-ThreadPool.PooledThread-80,5,simulator_10000-ThreadPool-0]
+        Thread[#141,simulator_10000-ThreadPool.PooledThread-81,5,simulator_10000-ThreadPool-0]
+        Thread[#142,simulator_10000-ThreadPool.PooledThread-82,5,simulator_10000-ThreadPool-0]
+        Thread[#143,simulator_10000-ThreadPool.PooledThread-83,5,simulator_10000-ThreadPool-0]
+        Thread[#144,simulator_10000-ThreadPool.PooledThread-84,5,simulator_10000-ThreadPool-0]
+        Thread[#145,simulator_10000-ThreadPool.PooledThread-85,5,simulator_10000-ThreadPool-0]
+        Thread[#146,simulator_10000-ThreadPool.PooledThread-86,5,simulator_10000-ThreadPool-0]
+        Thread[#147,simulator_10000-ThreadPool.PooledThread-87,5,simulator_10000-ThreadPool-0]
+        Thread[#148,simulator_10000-ThreadPool.PooledThread-88,5,simulator_10000-ThreadPool-0]
+        Thread[#149,simulator_10000-ThreadPool.PooledThread-89,5,simulator_10000-ThreadPool-0]
+        Thread[#150,simulator_10000-ThreadPool.PooledThread-90,5,simulator_10000-ThreadPool-0]
+        Thread[#151,simulator_10000-ThreadPool.PooledThread-91,5,simulator_10000-ThreadPool-0]
+        Thread[#152,simulator_10000-ThreadPool.PooledThread-92,5,simulator_10000-ThreadPool-0]
+        Thread[#153,simulator_10000-ThreadPool.PooledThread-93,5,simulator_10000-ThreadPool-0]
+        Thread[#154,simulator_10000-ThreadPool.PooledThread-94,5,simulator_10000-ThreadPool-0]
+        Thread[#155,simulator_10000-ThreadPool.PooledThread-95,5,simulator_10000-ThreadPool-0]
+        Thread[#156,simulator_10000-ThreadPool.PooledThread-96,5,simulator_10000-ThreadPool-0]
+        Thread[#157,simulator_10000-ThreadPool.PooledThread-97,5,simulator_10000-ThreadPool-0]
+        Thread[#158,simulator_10000-ThreadPool.PooledThread-98,5,simulator_10000-ThreadPool-0]
+        Thread[#159,simulator_10000-ThreadPool.PooledThread-99,5,simulator_10000-ThreadPool-0]
+        Thread[#160,Thread-3,5,main]
+        Thread[#162,channel-receiver-network-in,5,main]
+        Thread[#163,SystemMonitor,5,main]
+        Thread[#165,SIGINT handler,9,system]
+        Thread[#59,Q2-ShutdownHook,5,main]
+name-registrar:
+  tspace:default: org.jpos.space.TSpace
+     key-count: 0
+        gcinfo: 0,0
+  Q2: org.jpos.q2.Q2
+  simulator_10000: org.jpos.q2.iso.QServer
+  logger.Q2: org.jpos.util.Logger
+  logger.: org.jpos.util.Logger
+  server.simulator_10000: org.jpos.iso.ISOServer
+    connected=0, rx=0, tx=0, last=1749714073644, idle=373894ms
+  </info>
+</log>
+<log realm="Q2.system" at="2025-06-12T14:47:27.540131" lifespan="1ms">
+  <trace>
+    undeploying:/Users/peace/jpos-springboot/deploy/05_serversimulator.xml
+  </trace>
+</log>
+<log realm="Q2.system" at="2025-06-12T14:47:27.542540">
+  <info>
+    undeployed:/Users/peace/jpos-springboot/deploy/05_serversimulator.xml
+  </info>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:47:27.543117">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:47:27.542952">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:47:27.543431">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:47:27.543680">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:47:27.543926">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:47:27.544190">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:47:27.544856">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:47:27.543346">
+  <queue-closed/>
+</log>
+<log realm="Q2.system" at="2025-06-12T14:47:27.545070" lifespan="1ms">
+  <trace>
+    undeploying:/Users/peace/jpos-springboot/deploy/00_logger.xml
+  </trace>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:47:27.545508">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:47:27.544624" lifespan="1ms">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:47:27.546055" lifespan="2ms">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:47:27.545882">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:47:27.546470">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:47:27.545332" lifespan="2ms">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:47:27.546823">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:47:27.546755">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:47:27.546690">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:47:27.546564">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:47:27.547545">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:47:27.546302">
+  <queue-closed/>
+</log>
+<log realm="Q2.system" at="2025-06-12T14:47:27.546137">
+  <info>
+    undeployed:/Users/peace/jpos-springboot/deploy/00_logger.xml
+  </info>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:47:27.547924" lifespan="1ms">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:47:27.548118">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:47:27.547854">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:47:27.548985" lifespan="1ms">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:47:27.547726" lifespan="1ms">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:47:27.549633" lifespan="2ms">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:47:27.547629">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:47:27.547389">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:47:27.547280">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:47:27.550481" lifespan="3ms">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:47:27.547184">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:47:27.550774" lifespan="3ms">
+  <queue-closed/>
+</log>
+<log realm="simulator_10000.pool" at="2025-06-12T14:47:27.550895">
+  <queue-closed/>
+</log>

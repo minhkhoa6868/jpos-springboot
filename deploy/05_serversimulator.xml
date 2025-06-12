@@ -20,6 +20,9 @@
 <server class="org.jpos.q2.iso.QServer" logger="Q2"
   name="simulator_10000">
  <attr name="port" type="java.lang.Integer">10000</attr>
+ <!-- accept multiple simultaneous sockets (defaults 100) -->
+ <attr name="minSessions" type="java.lang.Integer">10</attr>
+ <attr name="minSessions" type="java.lang.Integer">250</attr>
  <channel class="org.jpos.iso.channel.XMLChannel"
         logger="Q2" packager="org.jpos.iso.packager.XMLPackager">
  </channel>
@@ -29,6 +32,9 @@
  <request-listener class="com.example.jpos_springboot.MyISORequestListener" logger="Q2" >
  </request-listener>
 
- <!-- <in>network-in</in>
- <out>network-out</out> -->
+ <in>network-in</in>
+ <out>network-out</out>
+ <ready>network.ready</ready>
+ <!-- <send-request>LAST</send-request> --> <!-- default last connected -->
+ <send-request>RR</send-request> <!-- round-robin -->
 </server>

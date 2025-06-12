@@ -10,8 +10,7 @@ import org.jpos.iso.packager.XMLPackager;
 public class ISOTestClient {
     public static void main(String[] args) throws Exception {
         if (args.length != 1) {
-            System.out.println("Usage: java ISOTestClient <xml-file>");
-            return;
+            throw new Exception("Usage: mvn exec:java -Dexec.mainClass=\"com.example.jpos_springboot.ISOTestClient\" -Dexec.args=\"testcases/echo_test_x.xml");
         }
 
         String filename = args[0];

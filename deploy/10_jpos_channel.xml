@@ -1,0 +1,20 @@
+<channel-adaptor name="jpos-channel" class="org.jpos.q2.iso.ChannelAdaptor" logger="Q2">
+    <channel class="org.jpos.iso.channel.NACChannel"
+        packager="org.jpos.iso.packager.GenericPackager"
+        header="6000000000"
+    >
+        <property name="packager-config" 
+            value="cfg/packager/iso87ascii-binary-bitmap.xml"
+        />
+        <property name="host" value="127.0.0.1" />
+        <property name="port" value="10000" />
+        <property name="timeout" value="300000" />
+        <filter class='org.jpos.iso.filter.ChannelInfoFilter' direction='both'> 
+            <property name='channel-name' value='1000' />
+            <property name='socket-info' value='1001' />
+        </filter>
+    </channel>
+    <in>network-out</in>
+    <out>network-in</out>
+    <reconnect-delay>10000</reconnect-delay>
+</channel-adaptor>

@@ -5,22 +5,6 @@
 
   <log-listener class="org.jpos.util.SimpleLogListener" enabled="${log.simple:true}" />
 
-  <log-listener class="org.jpos.util.SimpleLogListener" enabled="${log.xml:false}">
-    <writer class="org.jpos.util.XmlLogWriter" enabled="true" />
-  </log-listener>
-
-  <log-listener class="org.jpos.util.SimpleLogListener" enabled="${log.json:false}">
-    <writer class="org.jpos.util.JsonLogWriter" enabled="true" />
-  </log-listener>
-
-  <log-listener class="org.jpos.util.SimpleLogListener" enabled="${log.markdown:false}">
-    <writer class="org.jpos.util.MarkdownLogWriter" enabled="true" />
-  </log-listener>
-
-<!--  <log-listener class="org.jpos.util.SimpleLogListener" enabled="true">-->
-<!--    <writer class="org.jpos.util.TxtLogWriter" enabled="true" />-->
-<!--  </log-listener>-->
-
   <log-listener class="org.jpos.util.DailyLogListener" enabled="true">
     <property name="window" value="86400" /> <!-- optional, default one day -->
     <!--needed-->
@@ -61,4 +45,16 @@
      and the formats are HH:mm:ss and yyyy-MM-dd respectively
     -->
   </log-listener>
+
+  <log-listener class="org.jpos.util.SimpleLogListener" enabled="${log.xml:false}">
+    <writer class="org.jpos.util.XmlLogWriter" enabled="true" />
+  </log-listener>
+
+  <!-- <log-listener class="org.jpos.util.SimpleLogListener" enabled="${log.json:false}">
+    <writer class="org.jpos.util.JsonLogWriter" enabled="true" />
+  </log-listener> -->
+
+  <!-- <log-listener class="org.jpos.util.SimpleLogListener" enabled="${log.markdown:false}">
+    <writer class="org.jpos.util.MarkdownLogWriter" enabled="true" />
+  </log-listener> -->
 </logger>

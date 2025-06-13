@@ -1,4 +1,4 @@
-package com.example.jpos_springboot;
+package com.example.jpos_springboot.server;
 
 import java.io.IOException;
 

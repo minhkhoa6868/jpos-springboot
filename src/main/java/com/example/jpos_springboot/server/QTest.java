@@ -1,4 +1,4 @@
-package com.example.jpos_springboot;
+package com.example.jpos_springboot.server;
 
 import org.jpos.iso.ISOUtil;
 import org.jpos.q2.Q2;

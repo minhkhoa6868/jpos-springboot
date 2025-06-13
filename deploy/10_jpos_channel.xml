@@ -1,5 +1,5 @@
 <channel-adaptor name="jpos-channel" class="org.jpos.q2.iso.ChannelAdaptor" logger="Q2">
-    <channel class="org.jpos.iso.channel.NACChannel"
+    <channel class="org.jpos.iso.channel.ASCIIChannel"
         packager="org.jpos.iso.packager.GenericPackager"
         header="6000000000"
     >

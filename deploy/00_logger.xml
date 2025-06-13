@@ -3,7 +3,13 @@
 <logger name="Q2" class="org.jpos.q2.qbean.LoggerAdaptor" realm="system">
   <property name="redirect" value="stdout, stderr" />
 
-  <log-listener class="org.jpos.util.SimpleLogListener" enabled="${log.simple:true}" />
+  <!-- <log-listener class="org.jpos.util.SimpleLogListener" enabled="${log.simple:true}" /> -->
+
+  <log-listener class="org.jpos.util.SimpleLogListener" >
+    <property name="config" value="cfg/log4j2.xml" />
+    <property name="level" value="debug" />
+    <property name="slf4j.level" value="debug" />
+  </log-listener>
 
   <log-listener class="org.jpos.util.DailyLogListener" enabled="true">
     <property name="window" value="86400" /> <!-- optional, default one day -->

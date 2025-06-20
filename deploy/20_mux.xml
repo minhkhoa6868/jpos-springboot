@@ -1,8 +1,8 @@
 <!-- configure QMUX -->
-<mux class="org.jpos.q2.iso.QMUX" name="s-mux" >
-    <in>network-out</in>
-    <out>network-in</out>
+<mux class="org.jpos.q2.iso.QMUX" name="jPOS-AUTORESPONDER" >
+    <in>network-receive</in>
+    <out>network-send</out>
     <!-- usable MUX.isConnected() -->
-    <ready>network.ready</ready>
-    <unhandled>unhandled</unhandled>
+    <ready>network-channel.ready</ready>
+    <!-- <unhandled>unhandled</unhandled> -->
 </mux>

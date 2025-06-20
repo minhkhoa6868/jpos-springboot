@@ -1,20 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <txnmgr name="myTM" class="org.jpos.transaction.TransactionManager" logger="Q2" realm="TM">
-    <property name="space" value="transient:default" />
+    <property name="space" value="tspace:default" />
     <property name="queue" value="TXNQueue" />
-    <property name="sessions" value="5" />
+    <!-- 64 thread ready -->
+    <property name="sessions" value="64" />
+    <!-- 128 expansion -->
+    <property name="max-sessions" value="128" />
     <property name="debug" value="true" />
 
     <participant class="com.example.jpos_springboot.server.selector.Selector" name="Selector" logger="Q2">
-        <property name="0200" value="Transaction" />
+        <property name="default" value="Transaction" />
         <property name="0800" value="Network" />
     </participant>
-    <participant class="com.example.jpos_springboot.server.participant.SenderResponseParticipant" logger="Q2">
-        <group name="Transaction">
-            <participant class="com.example.jpos_springboot.server.participant.TransactionResponseParticipant" logger="Q2" />
-        </group>
-        <group name="Network">
-            <participant class="com.example.jpos_springboot.server.participant.NetworkParticipant" logger="Q2" />
-        </group>
-    </participant>
+
+    <group name="Transaction">
+        <participant class="com.example.jpos_springboot.server.participant.TransactionResponseParticipant" />
+    </group>
+
+    <group name="Network">
+        <participant class="com.example.jpos_springboot.server.participant.NetworkParticipant" />
+    </group>
+
+    <participant class="com.example.jpos_springboot.server.participant.SenderResponseParticipant" />
 </txnmgr>

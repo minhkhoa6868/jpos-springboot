@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<server class="org.jpos.q2.iso.QServer" logger="Q2"
+  name="simulator_10000">
+    <attr name="port" type="java.lang.Integer">10000</attr>
+    <!-- handle at least 64 concurrent TCP connections -->
+    <attr name="minSessions" type="java.lang.Integer">64</attr>
+    <!-- scale up to 256 -->
+    <attr name="maxSessions" type="java.lang.Integer">256</attr>
+    <channel class="org.jpos.iso.channel.ASCIIChannel"
+        packager="org.jpos.iso.packager.GenericPackager"
+        type="server"
+    >
+        <property name="packager-config" value="cfg/iso8583.xml" />
+        <property name="timeout" value="30000" />
+        <property name="keep-alive" value="true" />
+        <!-- faster TCP I/O -->
+        <property name="tcp-nodelay" value="true" />
+    </channel>
+    <request-listener class="com.example.jpos_springboot.server.listener.MyISORequestListener" logger="Q2" realm="RequestListener" >
+        <property name="space" value="tspace:default" />
+        <property name="queue" value="TXNQueue" />
+        <property name="spaceTimeout" value="60000" />
+        <property name="poolSize" value="10" />
+    </request-listener>
+
+    <connection-listener class="com.example.jpos_springboot.server.listener.MyISOEventListener" logger="Q2" realm="connection-listener" />
+
+    <in>network-receive</in>
+    <out>network-send</out>
+    <ready>network-channel.ready</ready>
+</server>

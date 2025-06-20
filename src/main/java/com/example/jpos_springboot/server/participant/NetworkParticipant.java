@@ -5,38 +5,27 @@ import java.io.Serializable;
 import org.jpos.iso.ISOMsg;
 import org.jpos.transaction.Context;
 import org.jpos.transaction.TransactionParticipant;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import com.example.jpos_springboot.server.constant.Constants;
 
-public class NetworkParticipant implements TransactionParticipant {
-    private static final Logger log = LoggerFactory.getLogger(NetworkParticipant.class);
+public class NetworkParticipant implements TransactionParticipant { 
     
     @Override
     public int prepare(long l, Serializable serializable) {
         Context ctx = (Context) serializable;
-
-        // set response for network check
-        ISOMsg respMsg = (ISOMsg) ctx.get(Constants.RESPONSE_KEY);
+        ISOMsg reqMsg = (ISOMsg) ctx.get(Constants.REQUEST_KEY);
+        ISOMsg respMsg = (ISOMsg) reqMsg.clone();
+        // set outgoing and incoming response message
+        respMsg.setDirection(2);
 
         try {
+            respMsg.setResponseMTI();
             respMsg.set(39, "00");
             ctx.put(Constants.RESPONSE_KEY, respMsg);
         } catch (Exception e) {
-            e.printStackTrace();
+            throw new RuntimeException(e);
         }
 
-        return PREPARED;
-    }
-
-    @Override
-    public void commit(long l, Serializable serializable) {
-        log.info("committing at network participant...");
-    }
-
-    @Override
-    public void abort(long l, Serializable serializable) {
-        log.info("aborting at network participant...");
+        return PREPARED | NO_JOIN;
     }
 }

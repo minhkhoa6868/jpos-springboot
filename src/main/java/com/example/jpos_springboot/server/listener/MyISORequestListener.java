@@ -45,7 +45,15 @@ public class MyISORequestListener implements ISORequestListener, Configurable {
         try {
             // receive any message
             log.info("Received message: {}", JPosUtil.getISOMessage(isoMsg));
-            // log.info("Hex string: {}", ISOUtil.hexString(isoMsg.pack()));
+            // byte[] packed = isoMsg.pack();
+            // log.info("Hex string: {}", ISOUtil.hexString(packed));
+
+            // ISOMsg unpacked = new ISOMsg();
+            // unpacked.setPackager(isoMsg.getPackager());
+            // unpacked.unpack(packed);
+
+            // log.info("Received message (after pack): {}", JPosUtil.getISOMessage(unpacked));
+            // JPosUtil.compareISOMsg(isoMsg, unpacked);
 
             try {
                 // put request key

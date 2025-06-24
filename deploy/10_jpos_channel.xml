@@ -12,7 +12,9 @@
     </channel>
 
     <!-- tăng tính ổn định và tự động kết nối nếu mất kết nối -->
+    <!-- send response -->
     <in>network-send</in>
+    <!-- receive request -->
     <out>network-receive</out>
     <reconnect-delay>10000</reconnect-delay>
 </channel-adaptor>

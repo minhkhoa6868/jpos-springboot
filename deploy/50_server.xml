@@ -20,7 +20,7 @@
     <request-listener class="com.example.jpos_springboot.server.listener.MyISORequestListener" logger="Q2" realm="RequestListener" >
         <property name="space" value="tspace:default" />
         <property name="queue" value="TXNQueue" />
-        <property name="spaceTimeout" value="60000" />
+        <property name="spaceTimeout" value="120000" />
         <property name="poolSize" value="10" />
     </request-listener>
 

@@ -5,7 +5,7 @@
         packager="org.jpos.iso.packager.GenericPackager"
         header="6000000000"
     >
-        <property name="packager-config" value="cfg/iso8583.xml" />
+        <property name="packager-config" value="cfg/iso8583_2.xml" />
         <property name="host" value="127.0.0.1" />
         <property name="port" value="10000" />
         <property name="timeout" value="300000" />

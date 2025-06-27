@@ -1,7 +1,5 @@
 package com.example.jpos_springboot.server.utils;
 
-import java.util.HashSet;
-import java.util.Objects;
 import java.util.Set;
 
 import org.jpos.iso.ISOException;
@@ -13,7 +11,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class JPosUtil {
 
-    private static final Set<Integer> SENSITIVE_FIELDS = Set.of(36, 45, 52, 55, 57, 62, 127);
+    private static final Set<Integer> MASK_FIELDS = Set.of(2, 35, 36, 45, 52);
 
     public static String getISOKey(ISOMsg isoMsg) throws ISOException {
         return isoMsg.getMTI()
@@ -43,16 +41,12 @@ public class JPosUtil {
                     continue;
                 }
 
-                if (i == 2 || i == 35 || i == 52) {
+                if (MASK_FIELDS.contains(i)) {
                     fieldVal = ISOUtil.protect(isoMsg.getString(i), '*');
                 }
 
                 else if (i == 14) {
                     fieldVal = maskExpiredDate(isoMsg.getString(i));
-                }
-
-                else if (SENSITIVE_FIELDS.contains(i)) {
-                    fieldVal = "[PROTECTED]";
                 }
 
                 else {
@@ -72,27 +66,4 @@ public class JPosUtil {
     public static String maskExpiredDate(String expiredDate) {
         return expiredDate.replaceAll("(?<=\\d{2})\\d{2}", "**");
     }
-
-    public static void compareISOMsg(ISOMsg before, ISOMsg after) {
-        try {
-            Set<Integer> allFields = new HashSet<>();
-            for (int i = 0; i <= Math.max(before.getMaxField(), after.getMaxField()); i++) {
-                if (before.hasField(i) || after.hasField(i)) {
-                    allFields.add(i);
-                }
-            }
-
-            for (Integer i : allFields) {
-                String beforeVal = before.hasField(i) ? before.getString(i) : "<null>";
-                String afterVal = after.hasField(i) ? after.getString(i) : "<null>";
-
-                if (!Objects.equals(beforeVal, afterVal)) {
-                    log.info("Field %03d changed: '%s' -> '%s'%n", i, beforeVal, afterVal);
-                }
-            }
-        } catch (Exception e) {
-            log.error("Error comparing ISO messages: " + e.getMessage());
-        }
-    }
-
 }

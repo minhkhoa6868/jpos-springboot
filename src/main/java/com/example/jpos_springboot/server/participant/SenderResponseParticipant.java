@@ -2,6 +2,8 @@ package com.example.jpos_springboot.server.participant;
 
 import java.io.Serializable;
 
+import org.jpos.core.Configurable;
+import org.jpos.core.Configuration;
 import org.jpos.iso.ISOMsg;
 import org.jpos.iso.ISOSource;
 import org.jpos.transaction.Context;
@@ -13,7 +15,8 @@ import com.example.jpos_springboot.server.utils.JPosUtil;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-public class SenderResponseParticipant implements TransactionParticipant {
+public class SenderResponseParticipant implements TransactionParticipant, Configurable {
+    private HeaderStrategy headerStrategy;
 
     @Override
     public int prepare(long l, Serializable serializable) {
@@ -35,6 +38,7 @@ public class SenderResponseParticipant implements TransactionParticipant {
 
     private void sendMessage(Context context) {
         ISOSource source = (ISOSource) context.get(Constants.RESOURCE_KEY);
+        ISOMsg reqMsg = (ISOMsg) context.get(Constants.REQUEST_KEY);
         ISOMsg respMsg = (ISOMsg) context.get(Constants.RESPONSE_KEY);
 
         try {
@@ -51,6 +55,7 @@ public class SenderResponseParticipant implements TransactionParticipant {
             }
 
             else {
+                this.headerStrategy.handleHeader(reqMsg, respMsg);
                 log.info("Response message: {}", JPosUtil.getISOMessage(respMsg));
                 source.send(respMsg);
             }
@@ -58,5 +63,39 @@ public class SenderResponseParticipant implements TransactionParticipant {
         } catch (Exception e) {
             log.error("Error: ", e);
         }
+    }
+
+    @Override
+    public void setConfiguration(Configuration cfg) {
+        try {
+            this.headerStrategy = HeaderStrategy.valueOf(cfg.get("header-strategy", "PRESERVE_RESPONSE").toUpperCase());
+        } catch (IllegalArgumentException e) {
+            log.error("Error", e);
+        }
+    }
+
+    public static enum HeaderStrategy implements HeaderHandler {
+        PRESERVE_ORIGINAL {
+            @Override
+            public void handleHeader(ISOMsg reqMsg, ISOMsg respMsg) {
+                respMsg.setHeader(reqMsg.getHeader());
+            }
+        },
+        PRESERVE_RESPONSE {
+            @Override
+            public void handleHeader(ISOMsg reqMsg, ISOMsg respMsg) {}
+        },
+        SET_TO_NULL {
+            @Override
+            public void handleHeader(ISOMsg reqMsg, ISOMsg respMsg) {
+                respMsg.setHeader((byte[]) null);
+            }
+        };
+
+        private HeaderStrategy() {}
+    }
+
+    private interface HeaderHandler {
+        void handleHeader(ISOMsg reqMsg, ISOMsg respMsg);   
     }
 }

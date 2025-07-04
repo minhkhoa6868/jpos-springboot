@@ -4,18 +4,26 @@ import java.io.Serializable;
 
 import org.jpos.core.Configurable;
 import org.jpos.core.Configuration;
+import org.jpos.iso.ISOException;
 import org.jpos.iso.ISOMsg;
 import org.jpos.iso.ISOSource;
 import org.jpos.transaction.Context;
 import org.jpos.transaction.TransactionParticipant;
+import org.springframework.jms.annotation.JmsListener;
+import org.springframework.stereotype.Component;
 
+import com.example.jpos_springboot.server.activemq.MQSender;
+import com.example.jpos_springboot.server.config.ApplicationContextProvider;
 import com.example.jpos_springboot.server.constant.Constants;
 import com.example.jpos_springboot.server.utils.JPosUtil;
+import com.example.jpos_springboot.server.service.ChannelRouteService;
+import com.example.jpos_springboot.server.utils.ISOSourceHolder;
 
 import lombok.extern.slf4j.Slf4j;
 
+@Component
 @Slf4j
-public class SenderResponseParticipant implements TransactionParticipant, Configurable {
+public class CSBIST implements TransactionParticipant, Configurable {
     private HeaderStrategy headerStrategy;
 
     @Override
@@ -37,6 +45,7 @@ public class SenderResponseParticipant implements TransactionParticipant, Config
     }
 
     private void sendMessage(Context context) {
+        log.info("CSBIST sender!");
         ISOSource source = (ISOSource) context.get(Constants.RESOURCE_KEY);
         ISOMsg reqMsg = (ISOMsg) context.get(Constants.REQUEST_KEY);
         ISOMsg respMsg = (ISOMsg) context.get(Constants.RESPONSE_KEY);
@@ -56,8 +65,16 @@ public class SenderResponseParticipant implements TransactionParticipant, Config
 
             else {
                 this.headerStrategy.handleHeader(reqMsg, respMsg);
-                log.info("Response message: {}", JPosUtil.getISOMessage(respMsg));
-                source.send(respMsg);
+
+                ChannelRouteService channelRouteService = ApplicationContextProvider.getBean(ChannelRouteService.class);
+                String destionName = channelRouteService.getDestinationName(9125);
+                String queueType = channelRouteService.getQueueType(9125);
+                log.info("Send to {} through {}", destionName, queueType);
+
+                ISOSourceHolder.put(respMsg.getString(11), source);
+                MQSender sender = ApplicationContextProvider.getBean(MQSender.class);
+                log.info("Message to send: {}", JPosUtil.isoMsgToJson(respMsg));
+                sender.sendMessage(destionName, JPosUtil.isoMsgToJson(respMsg));
             }
             
         } catch (Exception e) {
@@ -97,5 +114,25 @@ public class SenderResponseParticipant implements TransactionParticipant, Config
 
     private interface HeaderHandler {
         void handleHeader(ISOMsg reqMsg, ISOMsg respMsg);   
+    }
+
+    @JmsListener(destination = "CSBIST")
+    public void receiveMessage(String response) throws ISOException {
+        try {
+            ISOMsg resMsg = JPosUtil.jsonToIsoMsg(response);
+            
+            log.info("CSBIST receives message from MQ: {}", JPosUtil.getISOMessage(resMsg));
+
+            ISOSource source = ISOSourceHolder.get(resMsg.getString(11));
+            if (source != null && source.isConnected()) {
+                source.send(resMsg);
+                ISOSourceHolder.remove(resMsg.getString(11));
+                log.info("Send message to client: {}", JPosUtil.getISOMessage(resMsg));
+            } else {
+                log.error("ISOSource is null or disconnected - cannot send response!");
+            }
+        } catch (Exception e) {
+            log.error("Error processing message: {}", e.getMessage());
+        }
     }
 }

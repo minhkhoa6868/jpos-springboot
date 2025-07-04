@@ -1,4 +1,22 @@
 <configuration>
+    <!-- Set activemq logs to ERROR -->
+    <logger name="org.apache.activemq" level="ERROR"/>
+    <logger name="org.springframework.jms" level="ERROR"/>
+
+    <!-- Set Hibernate logs to ERROR or OFF -->
+    <logger name="org.hibernate" level="ERROR"/>
+    <logger name="org.hibernate.SQL" level="OFF"/>
+    <logger name="org.hibernate.type.descriptor.sql" level="OFF"/>
+    <logger name="org.hibernate.orm.sql.exec" level="OFF"/>
+    <logger name="org.hibernate.orm.results" level="OFF"/>
+    <logger name="org.hibernate.orm.query.plan.cache" level="OFF"/>
+
+    <!-- MariaDB JDBC Driver Logging -->
+    <logger name="org.mariadb.jdbc" level="OFF"/>
+    <logger name="org.mariadb.jdbc.client.impl.StandardClient" level="OFF"/>
+
+    <logger name="org.springframework.orm.jpa" level="INFO"/>
+
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
             <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>

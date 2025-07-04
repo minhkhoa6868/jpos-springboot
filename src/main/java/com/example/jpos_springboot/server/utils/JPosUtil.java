@@ -1,28 +1,61 @@
 package com.example.jpos_springboot.server.utils;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Set;
 
 import org.jpos.iso.ISOException;
 import org.jpos.iso.ISOMsg;
 import org.jpos.iso.ISOUtil;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 public class JPosUtil {
 
-    private static final Set<Integer> MASK_FIELDS = Set.of(2, 35, 36, 45, 52);
+    private static final Set<Integer> MASK_FIELDS = Set.of(35, 36, 45, 52);
+    private static final ObjectMapper objectMapper = new ObjectMapper();
 
-    public static String getISOKey(ISOMsg isoMsg) throws ISOException {
-        return isoMsg.getMTI()
-                + getFieldValue(isoMsg, 7, "")
-                + getFieldValue(isoMsg, 11, "")
-                + getFieldValue(isoMsg, 37, "")
-                + getFieldValue(isoMsg, 41, "");
+    // convert isomsg to json
+    public static String isoMsgToJson(ISOMsg isoMsg) throws ISOException {
+        try {
+            Map<String, String> isoFields = new HashMap<>();
+
+            isoFields.put("MTI", isoMsg.getMTI());
+
+            for (int i = 1; i <= isoMsg.getMaxField(); i++) {
+                if (isoMsg.hasField(i)) {
+                    isoFields.put(String.valueOf(i), isoMsg.getString(i));
+                }
+            }
+
+            return objectMapper.writeValueAsString(isoFields);
+        } catch (Exception e) {
+            log.error("Error converting ISOMsg to JSON", e);
+            throw new ISOException("Error converting ISOMsg to JSON", e);
+        }
     }
 
-    public static String getFieldValue(ISOMsg isoMsg, int fieldNumber, String defaultValue) throws ISOException {
-        return isoMsg.hasField(fieldNumber) ? isoMsg.getString(fieldNumber) : defaultValue;
+    // conver json to isomsg
+    public static ISOMsg jsonToIsoMsg(String json) throws ISOException {
+        try {
+            Map<String, String> isoFields = objectMapper.readValue(json, Map.class);
+            ISOMsg isoMsg = new ISOMsg();
+            isoMsg.setMTI(isoFields.get("MTI"));
+
+            for (Map.Entry<String, String> entry : isoFields.entrySet()) {
+                if (!"MTI".equals(entry.getKey())) {
+                    isoMsg.set(Integer.parseInt(entry.getKey()), entry.getValue());
+                }
+            }
+
+            return isoMsg;
+        } catch (Exception e) {
+            log.error("Error converting JSON to ISOMsg", e);
+            throw new ISOException("Error converting JSON to ISOMsg", e);
+        }
     }
 
     // field 2 keep first 6 number and last 4 number
@@ -41,8 +74,12 @@ public class JPosUtil {
                     continue;
                 }
 
-                if (MASK_FIELDS.contains(i)) {
-                    fieldVal = ISOUtil.protect(isoMsg.getString(i), '*');
+                if (i == 2) {
+                    fieldVal = maskSensitive(isoMsg.getString(i));
+                }
+
+                else if (MASK_FIELDS.contains(i)) {
+                    fieldVal = "[MASKED]";
                 }
 
                 else if (i == 14) {
@@ -61,6 +98,10 @@ public class JPosUtil {
         }
 
         return isoMessage.toString();
+    }
+
+    public static String maskSensitive(String sensitiveString) {
+        return ISOUtil.protect(sensitiveString, '*');
     }
 
     public static String maskExpiredDate(String expiredDate) {
